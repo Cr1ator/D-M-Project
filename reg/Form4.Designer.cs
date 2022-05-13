@@ -129,12 +129,12 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("Co Headline Corp", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Font = new System.Drawing.Font("Co Headline Corp", 10F);
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label6.Location = new System.Drawing.Point(25, 301);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 14);
+            this.label6.Size = new System.Drawing.Size(61, 17);
             this.label6.TabIndex = 47;
             this.label6.Text = "Ставка:";
             this.label6.UseMnemonic = false;
@@ -254,13 +254,13 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Co Headline Corp", 10.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.ForeColor = System.Drawing.Color.Silver;
+            this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label11.Location = new System.Drawing.Point(14, 411);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(125, 18);
+            this.label11.Size = new System.Drawing.Size(130, 18);
             this.label11.TabIndex = 50;
-            this.label11.Text = "Сумма вкладов";
+            this.label11.Text = "Сумма вкладов:";
             this.label11.UseMnemonic = false;
             this.label11.UseWaitCursor = true;
             // 
@@ -303,7 +303,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Co Headline Corp", 10.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.ForeColor = System.Drawing.Color.Silver;
+            this.label14.ForeColor = System.Drawing.Color.White;
             this.label14.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label14.Location = new System.Drawing.Point(178, 411);
             this.label14.Name = "label14";
