@@ -87,5 +87,10 @@ namespace reg
         {
             DateLabel.Text = DateTrackBar.Value.ToString();
         }
+
+        private void EntryRegButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

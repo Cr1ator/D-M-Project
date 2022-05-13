@@ -84,6 +84,7 @@
             this.moneyTrackBar.SmallChange = 5000;
             this.moneyTrackBar.TabIndex = 0;
             this.moneyTrackBar.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.moneyTrackBar.UseWaitCursor = true;
             this.moneyTrackBar.Value = 50000;
             this.moneyTrackBar.Scroll += new System.Windows.Forms.ScrollEventHandler(this.guna2TrackBar1_Scroll);
             // 
@@ -99,6 +100,7 @@
             this.DateTrackBar.Size = new System.Drawing.Size(311, 23);
             this.DateTrackBar.TabIndex = 1;
             this.DateTrackBar.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.DateTrackBar.UseWaitCursor = true;
             this.DateTrackBar.Value = 1;
             this.DateTrackBar.Scroll += new System.Windows.Forms.ScrollEventHandler(this.guna2TrackBar2_Scroll);
             // 
@@ -118,6 +120,7 @@
             this.EntryRegButton.TabIndex = 74;
             this.EntryRegButton.Text = "Подтвердить";
             this.EntryRegButton.UseWaitCursor = true;
+            this.EntryRegButton.Click += new System.EventHandler(this.EntryRegButton_Click);
             // 
             // label10
             // 

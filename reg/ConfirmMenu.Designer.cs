@@ -199,6 +199,7 @@
             this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
             this.guna2DateTimePicker1.Size = new System.Drawing.Size(321, 52);
             this.guna2DateTimePicker1.TabIndex = 80;
+            this.guna2DateTimePicker1.UseWaitCursor = true;
             this.guna2DateTimePicker1.Value = new System.DateTime(2022, 5, 13, 21, 57, 12, 920);
             // 
             // AccountText
@@ -294,8 +295,8 @@
             // 
             // guna2TextBox2
             // 
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
+            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.guna2TextBox2.DefaultText = "aaaa";
             this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -312,9 +313,11 @@
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderText = "";
             this.guna2TextBox2.SelectedText = "";
+            this.guna2TextBox2.SelectionStart = 4;
             this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
             this.guna2TextBox2.Size = new System.Drawing.Size(326, 63);
             this.guna2TextBox2.TabIndex = 87;
+            this.guna2TextBox2.UseWaitCursor = true;
             // 
             // ConfirmMenu
             // 
