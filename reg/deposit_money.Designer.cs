@@ -48,6 +48,7 @@
             this.DMText = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.ScoreText = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DMPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -408,13 +409,14 @@
             this.label2.Font = new System.Drawing.Font("Co Headline Corp", 20F);
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Location = new System.Drawing.Point(31, 107);
+            this.label2.Location = new System.Drawing.Point(30, 135);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(137, 32);
+            this.label2.Size = new System.Drawing.Size(58, 32);
             this.label2.TabIndex = 70;
-            this.label2.Text = "Дмитрий";
+            this.label2.Text = "0,0";
             this.label2.UseMnemonic = false;
             this.label2.UseWaitCursor = true;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // guna2PictureBox1
             // 
@@ -426,7 +428,7 @@
             this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.InitialImage")));
-            this.guna2PictureBox1.Location = new System.Drawing.Point(18, 87);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(17, 106);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.Size = new System.Drawing.Size(316, 87);
@@ -436,12 +438,28 @@
             this.guna2PictureBox1.UseTransparentBackground = true;
             this.guna2PictureBox1.UseWaitCursor = true;
             // 
+            // ScoreText
+            // 
+            this.ScoreText.AutoSize = true;
+            this.ScoreText.BackColor = System.Drawing.Color.White;
+            this.ScoreText.Font = new System.Drawing.Font("Co Headline Corp", 10.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ScoreText.ForeColor = System.Drawing.Color.Black;
+            this.ScoreText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.ScoreText.Location = new System.Drawing.Point(33, 118);
+            this.ScoreText.Name = "ScoreText";
+            this.ScoreText.Size = new System.Drawing.Size(76, 18);
+            this.ScoreText.TabIndex = 71;
+            this.ScoreText.Text = "Мой счёт";
+            this.ScoreText.UseMnemonic = false;
+            this.ScoreText.UseWaitCursor = true;
+            // 
             // deposit_money
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(354, 639);
+            this.Controls.Add(this.ScoreText);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.DMText);
@@ -492,5 +510,6 @@
         private System.Windows.Forms.Label DMText;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private System.Windows.Forms.Label ScoreText;
     }
 }
