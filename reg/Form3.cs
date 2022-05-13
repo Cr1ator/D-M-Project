@@ -71,6 +71,7 @@ namespace reg
             t.SetToolTip(guna2Button2, "Пополнить счёт");
             t.SetToolTip(guna2Button1, "Вклады");
             t.SetToolTip(Menu3, "Подтверждение");
+            t.SetToolTip(noComfirmAccount, "Подтвердите аккаунт");
 
         }
 

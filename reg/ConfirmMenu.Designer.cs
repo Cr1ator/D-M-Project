@@ -43,7 +43,6 @@
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.SuspendLayout();
             // 
@@ -55,6 +54,7 @@
             // DMText
             // 
             this.DMText.AutoSize = true;
+            this.DMText.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.DMText.Font = new System.Drawing.Font("Co Headline Corp", 22.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DMText.ForeColor = System.Drawing.Color.White;
             this.DMText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -142,7 +142,7 @@
             this.label3.Font = new System.Drawing.Font("Co Headline Corp", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.Gray;
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label3.Location = new System.Drawing.Point(20, 444);
+            this.label3.Location = new System.Drawing.Point(20, 434);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(262, 17);
             this.label3.TabIndex = 78;
@@ -170,7 +170,7 @@
             this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(16, 302);
+            this.guna2TextBox1.Location = new System.Drawing.Point(16, 292);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
@@ -192,7 +192,7 @@
             this.guna2DateTimePicker1.ForeColor = System.Drawing.SystemColors.Control;
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(16, 464);
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(16, 454);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
@@ -205,10 +205,11 @@
             // AccountText
             // 
             this.AccountText.AutoSize = true;
+            this.AccountText.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.AccountText.Font = new System.Drawing.Font("Co Headline Corp", 16.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.AccountText.ForeColor = System.Drawing.Color.White;
             this.AccountText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.AccountText.Location = new System.Drawing.Point(18, 64);
+            this.AccountText.Location = new System.Drawing.Point(18, 67);
             this.AccountText.Name = "AccountText";
             this.AccountText.Size = new System.Drawing.Size(311, 28);
             this.AccountText.TabIndex = 81;
@@ -236,7 +237,7 @@
             this.guna2TextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(16, 385);
+            this.guna2TextBox3.Location = new System.Drawing.Point(16, 375);
             this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PasswordChar = '\0';
@@ -252,10 +253,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.label1.Font = new System.Drawing.Font("Co Headline Corp", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(20, 278);
+            this.label1.Location = new System.Drawing.Point(20, 268);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(213, 17);
             this.label1.TabIndex = 77;
@@ -270,7 +272,7 @@
             this.label2.Font = new System.Drawing.Font("Co Headline Corp", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.Color.Gray;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Location = new System.Drawing.Point(20, 361);
+            this.label2.Location = new System.Drawing.Point(20, 351);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(309, 17);
             this.label2.TabIndex = 83;
@@ -278,45 +280,40 @@
             this.label2.UseMnemonic = false;
             this.label2.UseWaitCursor = true;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Co Headline Corp", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label4.Location = new System.Drawing.Point(20, 117);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(213, 17);
-            this.label4.TabIndex = 84;
-            this.label4.Text = "ВВЕДИТЕ НОМЕР ПАСПОРТА";
-            this.label4.UseMnemonic = false;
-            this.label4.UseWaitCursor = true;
-            // 
             // guna2TextBox2
             // 
+            this.guna2TextBox2.BackColor = System.Drawing.Color.RosyBrown;
+            this.guna2TextBox2.BorderColor = System.Drawing.Color.Red;
+            this.guna2TextBox2.BorderThickness = 2;
             this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.guna2TextBox2.DefaultText = "аываываыфввыафва";
+            this.guna2TextBox2.DefaultText = "Этот аккаунт не может \r\nсовершать вклады и \r\nинвестиции.\r\nПодтвердите аккаунт \r\nд" +
+    "ля дальнейшего \r\nиспользования приложения.";
             this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
             this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.Red;
             this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.Font = new System.Drawing.Font("Co Headline Corp", 11F);
+            this.guna2TextBox2.ForeColor = System.Drawing.Color.Transparent;
+            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.Red;
             this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
             this.guna2TextBox2.IconLeft = ((System.Drawing.Image)(resources.GetObject("guna2TextBox2.IconLeft")));
-            this.guna2TextBox2.IconLeftSize = new System.Drawing.Size(50, 50);
-            this.guna2TextBox2.Location = new System.Drawing.Point(11, 155);
+            this.guna2TextBox2.IconLeftSize = new System.Drawing.Size(80, 80);
+            this.guna2TextBox2.Location = new System.Drawing.Point(14, 115);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.guna2TextBox2.Multiline = true;
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderText = "";
             this.guna2TextBox2.ReadOnly = true;
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(326, 63);
+            this.guna2TextBox2.Size = new System.Drawing.Size(323, 124);
             this.guna2TextBox2.TabIndex = 87;
+            this.guna2TextBox2.TabStop = false;
             this.guna2TextBox2.UseWaitCursor = true;
             this.guna2TextBox2.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged_2);
             // 
@@ -327,7 +324,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(354, 639);
             this.Controls.Add(this.guna2TextBox2);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.guna2TextBox3);
             this.Controls.Add(this.AccountText);
@@ -340,6 +336,7 @@
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.HideMenu);
             this.Controls.Add(this.ExitMenu);
+            this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ConfirmMenu";
             this.RightToLeftLayout = true;
@@ -366,7 +363,6 @@
         private System.Windows.Forms.Label AccountText;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
     }
 }

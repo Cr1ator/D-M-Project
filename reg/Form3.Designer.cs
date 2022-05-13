@@ -58,10 +58,12 @@
             this.pictureBoxSlider = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.BackButton = new Guna.UI2.WinForms.Guna2Button();
+            this.noComfirmAccount = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noComfirmAccount)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2HScrollBar1
@@ -506,12 +508,32 @@
             this.BackButton.UseWaitCursor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
+            // noComfirmAccount
+            // 
+            this.noComfirmAccount.BackColor = System.Drawing.Color.Transparent;
+            this.noComfirmAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.noComfirmAccount.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.noComfirmAccount.ErrorImage = ((System.Drawing.Image)(resources.GetObject("noComfirmAccount.ErrorImage")));
+            this.noComfirmAccount.FillColor = System.Drawing.Color.Transparent;
+            this.noComfirmAccount.Image = ((System.Drawing.Image)(resources.GetObject("noComfirmAccount.Image")));
+            this.noComfirmAccount.InitialImage = ((System.Drawing.Image)(resources.GetObject("noComfirmAccount.InitialImage")));
+            this.noComfirmAccount.Location = new System.Drawing.Point(119, 51);
+            this.noComfirmAccount.Name = "noComfirmAccount";
+            this.noComfirmAccount.ShadowDecoration.Parent = this.noComfirmAccount;
+            this.noComfirmAccount.Size = new System.Drawing.Size(20, 20);
+            this.noComfirmAccount.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.noComfirmAccount.TabIndex = 49;
+            this.noComfirmAccount.TabStop = false;
+            this.noComfirmAccount.UseTransparentBackground = true;
+            this.noComfirmAccount.UseWaitCursor = true;
+            // 
             // ProfileMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(354, 639);
+            this.Controls.Add(this.noComfirmAccount);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.pictureBoxSlider);
             this.Controls.Add(this.guna2Button3);
@@ -548,6 +570,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.noComfirmAccount)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -583,5 +606,6 @@
         private System.Windows.Forms.PictureBox pictureBoxSlider;
         private System.Windows.Forms.Timer timer1;
         private Guna.UI2.WinForms.Guna2Button BackButton;
+        private Guna.UI2.WinForms.Guna2PictureBox noComfirmAccount;
     }
 }
