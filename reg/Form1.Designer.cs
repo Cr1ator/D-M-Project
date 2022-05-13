@@ -65,7 +65,7 @@ namespace reg
             this.PasswordImput.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.PasswordImput.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.PasswordImput.FocusedState.Parent = this.PasswordImput;
-            this.PasswordImput.Font = new System.Drawing.Font("Co Headline Corp", 18.75F);
+            this.PasswordImput.Font = new System.Drawing.Font("Co Headline Corp", 16F);
             this.PasswordImput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.PasswordImput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.PasswordImput.HoverState.Parent = this.PasswordImput;
@@ -137,10 +137,10 @@ namespace reg
             this.StrelkiPicture.FillColor = System.Drawing.Color.Transparent;
             this.StrelkiPicture.Image = ((System.Drawing.Image)(resources.GetObject("StrelkiPicture.Image")));
             this.StrelkiPicture.InitialImage = ((System.Drawing.Image)(resources.GetObject("StrelkiPicture.InitialImage")));
-            this.StrelkiPicture.Location = new System.Drawing.Point(-77, -75);
+            this.StrelkiPicture.Location = new System.Drawing.Point(-66, -71);
             this.StrelkiPicture.Name = "StrelkiPicture";
             this.StrelkiPicture.ShadowDecoration.Parent = this.StrelkiPicture;
-            this.StrelkiPicture.Size = new System.Drawing.Size(466, 254);
+            this.StrelkiPicture.Size = new System.Drawing.Size(419, 254);
             this.StrelkiPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.StrelkiPicture.TabIndex = 8;
             this.StrelkiPicture.TabStop = false;
@@ -231,7 +231,7 @@ namespace reg
             this.LoginImput.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.LoginImput.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.LoginImput.FocusedState.Parent = this.LoginImput;
-            this.LoginImput.Font = new System.Drawing.Font("Co Headline Corp", 18.75F);
+            this.LoginImput.Font = new System.Drawing.Font("Co Headline Corp", 16F);
             this.LoginImput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.LoginImput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.LoginImput.HoverState.Parent = this.LoginImput;

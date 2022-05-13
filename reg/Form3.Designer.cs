@@ -502,6 +502,7 @@
             this.BackButton.Size = new System.Drawing.Size(75, 41);
             this.BackButton.TabIndex = 47;
             this.BackButton.Text = "<";
+            this.BackButton.UseWaitCursor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // ProfileMenu

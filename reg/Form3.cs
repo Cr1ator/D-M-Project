@@ -35,7 +35,7 @@ namespace reg
 
         private void loadimage()
         {
-            if (imageno == 3)
+            if (imageno == 4)
             {
                 imageno = 1;
             }
@@ -135,7 +135,9 @@ namespace reg
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-
+            deposit_money deposit_money = new deposit_money();
+            this.Hide();
+            deposit_money.Show();
         }
     }
 }
