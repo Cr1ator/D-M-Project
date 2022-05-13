@@ -199,6 +199,7 @@
             this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
             this.guna2DateTimePicker1.Size = new System.Drawing.Size(321, 52);
             this.guna2DateTimePicker1.TabIndex = 80;
+            this.guna2DateTimePicker1.UseWaitCursor = true;
             this.guna2DateTimePicker1.Value = new System.DateTime(2022, 5, 13, 21, 57, 12, 920);
             // 
             // AccountText
