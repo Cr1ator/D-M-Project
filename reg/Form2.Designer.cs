@@ -334,7 +334,7 @@
             this.EmailInput.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.EmailInput.FocusedState.Parent = this.EmailInput;
             this.EmailInput.Font = new System.Drawing.Font("Co Headline Corp", 15.75F);
-            this.EmailInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.EmailInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(136)))));
             this.EmailInput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.EmailInput.HoverState.Parent = this.EmailInput;
             this.EmailInput.Location = new System.Drawing.Point(35, 308);
