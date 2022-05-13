@@ -94,6 +94,7 @@
             this.DMText.Text = "D&M";
             this.DMText.UseMnemonic = false;
             this.DMText.UseWaitCursor = true;
+            this.DMText.Click += new System.EventHandler(this.DMText_Click);
             // 
             // label3
             // 
@@ -330,6 +331,7 @@
             this.BackButton.Size = new System.Drawing.Size(75, 41);
             this.BackButton.TabIndex = 58;
             this.BackButton.Text = "<";
+            this.BackButton.UseWaitCursor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // EmailInput
@@ -337,7 +339,7 @@
             this.EmailInput.BorderColor = System.Drawing.Color.White;
             this.EmailInput.BorderRadius = 10;
             this.EmailInput.BorderThickness = 3;
-            this.EmailInput.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.EmailInput.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.EmailInput.DefaultText = "";
             this.EmailInput.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.EmailInput.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -362,13 +364,14 @@
             this.EmailInput.Size = new System.Drawing.Size(314, 52);
             this.EmailInput.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.EmailInput.TabIndex = 59;
+            this.EmailInput.UseWaitCursor = true;
             // 
             // guna2TextBox1
             // 
             this.guna2TextBox1.BorderColor = System.Drawing.Color.White;
             this.guna2TextBox1.BorderRadius = 10;
             this.guna2TextBox1.BorderThickness = 3;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.guna2TextBox1.DefaultText = "";
             this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -393,6 +396,7 @@
             this.guna2TextBox1.Size = new System.Drawing.Size(314, 39);
             this.guna2TextBox1.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.guna2TextBox1.TabIndex = 60;
+            this.guna2TextBox1.UseWaitCursor = true;
             // 
             // label4
             // 
@@ -470,6 +474,7 @@
             this.EntryRegButton.Size = new System.Drawing.Size(314, 54);
             this.EntryRegButton.TabIndex = 65;
             this.EntryRegButton.Text = "Подтвердить";
+            this.EntryRegButton.UseWaitCursor = true;
             // 
             // HideMenu
             // 

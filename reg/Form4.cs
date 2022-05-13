@@ -66,5 +66,10 @@ namespace reg
             this.Hide();
             form3.Show();
         }
+
+        private void DMText_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

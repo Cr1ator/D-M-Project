@@ -139,5 +139,12 @@ namespace reg
             this.Hide();
             deposit_money.Show();
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            MenuVklad MenuVklad = new MenuVklad();
+            this.Hide();
+            MenuVklad.Show();
+        }
     }
 }
