@@ -48,5 +48,10 @@ namespace reg
         {
 
         }
+
+        private void guna2TextBox2_TextChanged_2(object sender, EventArgs e)
+        {
+
+        }
     }
 }
