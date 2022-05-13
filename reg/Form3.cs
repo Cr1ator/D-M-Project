@@ -91,7 +91,9 @@ namespace reg
 
         private void Menu3_Click(object sender, EventArgs e)
         {
-
+            ConfirmMenu confirmMenu = new ConfirmMenu();
+            this.Hide();
+            confirmMenu.ShowDialog();
         }
 
         private void label1_Click(object sender, EventArgs e)
