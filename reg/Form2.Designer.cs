@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegMenu));
             this.DMText = new System.Windows.Forms.Label();
             this.NameInput = new Guna.UI2.WinForms.Guna2TextBox();
             this.PasswordInput = new Guna.UI2.WinForms.Guna2TextBox();
@@ -79,6 +80,8 @@
             this.NameInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.NameInput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.NameInput.HoverState.Parent = this.NameInput;
+            this.NameInput.IconLeft = ((System.Drawing.Image)(resources.GetObject("NameInput.IconLeft")));
+            this.NameInput.IconLeftSize = new System.Drawing.Size(25, 25);
             this.NameInput.Location = new System.Drawing.Point(35, 151);
             this.NameInput.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.NameInput.Name = "NameInput";
@@ -111,6 +114,8 @@
             this.PasswordInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.PasswordInput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.PasswordInput.HoverState.Parent = this.PasswordInput;
+            this.PasswordInput.IconLeft = ((System.Drawing.Image)(resources.GetObject("PasswordInput.IconLeft")));
+            this.PasswordInput.IconLeftSize = new System.Drawing.Size(25, 25);
             this.PasswordInput.Location = new System.Drawing.Point(33, 374);
             this.PasswordInput.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.PasswordInput.Name = "PasswordInput";
@@ -143,6 +148,9 @@
             this.repeatPasswordInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.repeatPasswordInput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.repeatPasswordInput.HoverState.Parent = this.repeatPasswordInput;
+            this.repeatPasswordInput.IconLeft = ((System.Drawing.Image)(resources.GetObject("repeatPasswordInput.IconLeft")));
+            this.repeatPasswordInput.IconLeftSize = new System.Drawing.Size(25, 25);
+            this.repeatPasswordInput.IconRightSize = new System.Drawing.Size(25, 25);
             this.repeatPasswordInput.Location = new System.Drawing.Point(33, 453);
             this.repeatPasswordInput.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.repeatPasswordInput.Name = "repeatPasswordInput";
@@ -274,6 +282,8 @@
             this.LastNameInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.LastNameInput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.LastNameInput.HoverState.Parent = this.LastNameInput;
+            this.LastNameInput.IconLeft = ((System.Drawing.Image)(resources.GetObject("LastNameInput.IconLeft")));
+            this.LastNameInput.IconLeftSize = new System.Drawing.Size(25, 25);
             this.LastNameInput.Location = new System.Drawing.Point(185, 151);
             this.LastNameInput.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.LastNameInput.Name = "LastNameInput";
@@ -306,6 +316,8 @@
             this.LoginImput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.LoginImput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.LoginImput.HoverState.Parent = this.LoginImput;
+            this.LoginImput.IconLeft = ((System.Drawing.Image)(resources.GetObject("LoginImput.IconLeft")));
+            this.LoginImput.IconLeftSize = new System.Drawing.Size(25, 25);
             this.LoginImput.Location = new System.Drawing.Point(36, 227);
             this.LoginImput.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.LoginImput.Name = "LoginImput";
@@ -337,6 +349,8 @@
             this.EmailInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(136)))));
             this.EmailInput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.EmailInput.HoverState.Parent = this.EmailInput;
+            this.EmailInput.IconLeft = ((System.Drawing.Image)(resources.GetObject("EmailInput.IconLeft")));
+            this.EmailInput.IconLeftSize = new System.Drawing.Size(25, 25);
             this.EmailInput.Location = new System.Drawing.Point(35, 308);
             this.EmailInput.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.EmailInput.Name = "EmailInput";

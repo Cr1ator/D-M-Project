@@ -173,7 +173,7 @@ namespace reg
             this.RegButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.RegButton.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.RegButton.HoverState.Parent = this.RegButton;
-            this.RegButton.Location = new System.Drawing.Point(51, 576);
+            this.RegButton.Location = new System.Drawing.Point(47, 576);
             this.RegButton.Name = "RegButton";
             this.RegButton.ShadowDecoration.Parent = this.RegButton;
             this.RegButton.Size = new System.Drawing.Size(260, 41);
@@ -265,7 +265,7 @@ namespace reg
             // RegLine
             // 
             this.RegLine.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.RegLine.Location = new System.Drawing.Point(62, 615);
+            this.RegLine.Location = new System.Drawing.Point(58, 615);
             this.RegLine.Name = "RegLine";
             this.RegLine.Size = new System.Drawing.Size(236, 2);
             this.RegLine.TabIndex = 31;
