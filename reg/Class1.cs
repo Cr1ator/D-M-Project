@@ -15,7 +15,7 @@ namespace reg
         protected SqlConnection getConnection()
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "data source = DESKTOP-MBDIP47; database=MM_appV2; integrated security = True";
+            con.ConnectionString = "data source = DESKTOP-MBDIP47; database=D&M; integrated security = True";
             return con;
         }
 
@@ -47,15 +47,14 @@ namespace reg
             {
                 while (sdr.Read())
                 {
-                    log = sdr[1].ToString();
-                    pass = sdr[2].ToString();
+                    log = sdr[3].ToString();
+                    pass = sdr[5].ToString();
                 }
             }
 
             con.Close();
             return Tuple.Create(log, pass);
         }
-
 
     }
 }

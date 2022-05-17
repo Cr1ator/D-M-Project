@@ -36,10 +36,13 @@ namespace reg
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            String query2 = "select * from users";
-            if (NameInput.Text != "" && PasswordInput.Text != "" && repeatPasswordInput.Text != "")
+            String query2 = "select * from Users1";
+            if (NameInput.Text != "" && LastNameInput.Text != "" && LoginImput.Text != "" && EmailInput.Text != "" && PasswordInput.Text != "" && repeatPasswordInput.Text != "")
             {
+                String name  = NameInput.Text;
+                String lastname = LastNameInput.Text;   
                 String login = NameInput.Text;
+                String email = EmailInput.Text;
                 String password = PasswordInput.Text;
                 String message = "Вы успешно зарегистрировались!";
                 if (PasswordInput.Text == repeatPasswordInput.Text)
@@ -50,9 +53,11 @@ namespace reg
                     }
                     else
                     {
-                        query = "insert into users(userlogin, userpassword) values ('" + login + "', '" + password + "')";
+                        query = "insert into Users1(username, usersurname, userlogin, useremail, userpassword) values ('" + name + "', '" + lastname + "', '" + login + "', '" + email + "', '" + password + "')";
                         func.setData(query, message);
-                        // переход
+                        ProfileMenu f3 = new ProfileMenu();
+                        this.Hide();
+                        f3.Show();
                     }
                 }
                 else
