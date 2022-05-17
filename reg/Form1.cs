@@ -51,12 +51,14 @@ namespace reg
         {
             if (PasswordImput.Text != "" && LoginImput.Text != "")
             {
-                query = "select * from users";
+                query = "select * from Users1";
                 string log = func.getUserInfo(query).Item1;
                 string pass = func.getUserInfo(query).Item2;
                 if (log == LoginImput.Text && pass == PasswordImput.Text)
                 {
-                    //Форма куда переходит 
+                    ProfileMenu f3 = new ProfileMenu();
+                    this.Hide();
+                    f3.Show();
                 }
                 else
                 {

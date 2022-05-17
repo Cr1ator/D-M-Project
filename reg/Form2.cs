@@ -41,7 +41,7 @@ namespace reg
             {
                 String name  = NameInput.Text;
                 String lastname = LastNameInput.Text;   
-                String login = NameInput.Text;
+                String login = LoginImput.Text;
                 String email = EmailInput.Text;
                 String password = PasswordInput.Text;
                 String message = "Вы успешно зарегистрировались!";
