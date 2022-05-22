@@ -49,25 +49,33 @@ namespace reg
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            if (PasswordImput.Text != "" && LoginImput.Text != "")
+            query = $"select Users1.userlogin, Users1.userpassword from Users1 where userlogin='{LoginImput.Text}'";
+            DataSet ds = func.getData(query);
+            if (ds.Tables[0].Rows.Count != 0)
             {
-                query = "select * from Users1";
-                string log = func.getUserInfo(query).Item1;
-                string pass = func.getUserInfo(query).Item2;
-                if (log == LoginImput.Text && pass == PasswordImput.Text)
+                if (PasswordImput.Text != "" || LoginImput.Text != "")
                 {
-                    ProfileMenu f3 = new ProfileMenu();
-                    this.Hide();
-                    f3.Show();
+                    string log = ds.Tables[0].Rows[0][0].ToString();
+                    string pass = ds.Tables[0].Rows[0][1].ToString();
+                    if (log == LoginImput.Text && pass == PasswordImput.Text)
+                    {
+                        ProfileMenu f3 = new ProfileMenu();
+                        this.Hide();
+                        f3.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Неверный пароль", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Пользователя не существует!", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Не все поля заполнены", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
             {
-                MessageBox.Show("Не все поля заполнены", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Пользователя не существует!", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

@@ -93,7 +93,7 @@ namespace reg
             this.EntryButton.CheckedState.Parent = this.EntryButton;
             this.EntryButton.CustomImages.Parent = this.EntryButton;
             this.EntryButton.FillColor = System.Drawing.Color.White;
-            this.EntryButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F);
+            this.EntryButton.Font = new System.Drawing.Font("Co Headline Corp", 20F, System.Drawing.FontStyle.Bold);
             this.EntryButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.EntryButton.HoverState.Parent = this.EntryButton;
             this.EntryButton.Image = ((System.Drawing.Image)(resources.GetObject("EntryButton.Image")));
