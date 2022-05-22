@@ -50,12 +50,12 @@
             // DMText
             // 
             this.DMText.AutoSize = true;
-            this.DMText.Font = new System.Drawing.Font("Microsoft Sans Serif", 68.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DMText.Font = new System.Drawing.Font("Co Headline Corp", 69F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DMText.ForeColor = System.Drawing.Color.White;
             this.DMText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.DMText.Location = new System.Drawing.Point(50, 34);
             this.DMText.Name = "DMText";
-            this.DMText.Size = new System.Drawing.Size(248, 104);
+            this.DMText.Size = new System.Drawing.Size(265, 110);
             this.DMText.TabIndex = 0;
             this.DMText.Text = "D&M";
             this.DMText.UseMnemonic = false;
