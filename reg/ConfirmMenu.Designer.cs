@@ -144,7 +144,7 @@
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label3.Location = new System.Drawing.Point(20, 434);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(262, 17);
+            this.label3.Size = new System.Drawing.Size(266, 17);
             this.label3.TabIndex = 78;
             this.label3.Text = "ВЫБИРИТЕ ВАШУ ДАТУ РОЖДЕНИЯ";
             this.label3.UseMnemonic = false;
@@ -166,7 +166,7 @@
             this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Co Headline Corp", 16F);
+            this.guna2TextBox1.Font = new System.Drawing.Font("Co Headline Corp", 14F);
             this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
@@ -211,7 +211,7 @@
             this.AccountText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.AccountText.Location = new System.Drawing.Point(18, 67);
             this.AccountText.Name = "AccountText";
-            this.AccountText.Size = new System.Drawing.Size(311, 28);
+            this.AccountText.Size = new System.Drawing.Size(323, 28);
             this.AccountText.TabIndex = 81;
             this.AccountText.Text = "Подтверждение аккаунта";
             this.AccountText.UseMnemonic = false;
@@ -233,7 +233,7 @@
             this.guna2TextBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Font = new System.Drawing.Font("Co Headline Corp", 16F);
+            this.guna2TextBox3.Font = new System.Drawing.Font("Co Headline Corp", 14F);
             this.guna2TextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
@@ -259,7 +259,7 @@
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Location = new System.Drawing.Point(20, 268);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(213, 17);
+            this.label1.Size = new System.Drawing.Size(214, 17);
             this.label1.TabIndex = 77;
             this.label1.Text = "ВВЕДИТЕ НОМЕР ПАСПОРТА";
             this.label1.UseMnemonic = false;
@@ -274,7 +274,7 @@
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Location = new System.Drawing.Point(20, 351);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(309, 17);
+            this.label2.Size = new System.Drawing.Size(312, 17);
             this.label2.TabIndex = 83;
             this.label2.Text = "ВВЕДИТЕ ИДЕНТИФИКАЦИОННЫЙ НОМЕР";
             this.label2.UseMnemonic = false;
@@ -303,13 +303,14 @@
             this.guna2TextBox2.IconLeft = ((System.Drawing.Image)(resources.GetObject("guna2TextBox2.IconLeft")));
             this.guna2TextBox2.IconLeftSize = new System.Drawing.Size(80, 80);
             this.guna2TextBox2.Location = new System.Drawing.Point(14, 115);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(5);
             this.guna2TextBox2.Multiline = true;
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderText = "";
             this.guna2TextBox2.ReadOnly = true;
             this.guna2TextBox2.SelectedText = "";
+            this.guna2TextBox2.SelectionStart = 123;
             this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
             this.guna2TextBox2.Size = new System.Drawing.Size(323, 124);
             this.guna2TextBox2.TabIndex = 87;

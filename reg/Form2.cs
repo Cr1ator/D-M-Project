@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -39,6 +40,7 @@ namespace reg
             String query2 = "select * from Users1";
             if (NameInput.Text != "" && LastNameInput.Text != "" && LoginImput.Text != "" && EmailInput.Text != "" && PasswordInput.Text != "" && repeatPasswordInput.Text != "")
             {
+                var email_check = new EmailAddressAttribute();
                 String name  = NameInput.Text;
                 String lastname = LastNameInput.Text;   
                 String login = LoginImput.Text;
@@ -53,11 +55,18 @@ namespace reg
                     }
                     else
                     {
-                        query = "insert into Users1(username, usersurname, userlogin, useremail, userpassword) values ('" + name + "', '" + lastname + "', '" + login + "', '" + email + "', '" + password + "')";
-                        func.setData(query, message);
-                        ProfileMenu f3 = new ProfileMenu();
-                        this.Hide();
-                        f3.Show();
+                        if (email_check.IsValid(email))
+                        {
+                            query = "insert into Users1(username, usersurname, userlogin, useremail, userpassword) values ('" + name + "', '" + lastname + "', '" + login + "', '" + email + "', '" + password + "')";
+                            func.setData(query, message);
+                            ProfileMenu f3 = new ProfileMenu();
+                            this.Hide();
+                            f3.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Неверный email", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                 }
                 else
@@ -165,6 +174,11 @@ namespace reg
         }
 
         private void RegMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EmailInput_TextChanged(object sender, EventArgs e)
         {
 
         }

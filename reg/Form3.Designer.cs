@@ -89,12 +89,12 @@
             // DMText
             // 
             this.DMText.AutoSize = true;
-            this.DMText.Font = new System.Drawing.Font("Co Headline Corp", 22.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DMText.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DMText.ForeColor = System.Drawing.Color.White;
             this.DMText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.DMText.Location = new System.Drawing.Point(136, 9);
             this.DMText.Name = "DMText";
-            this.DMText.Size = new System.Drawing.Size(90, 37);
+            this.DMText.Size = new System.Drawing.Size(84, 35);
             this.DMText.TabIndex = 1;
             this.DMText.Text = "D&M";
             this.DMText.UseMnemonic = false;
@@ -103,12 +103,12 @@
             // AccountText
             // 
             this.AccountText.AutoSize = true;
-            this.AccountText.Font = new System.Drawing.Font("Co Headline Corp", 16.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AccountText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.AccountText.ForeColor = System.Drawing.Color.White;
             this.AccountText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.AccountText.Location = new System.Drawing.Point(12, 47);
             this.AccountText.Name = "AccountText";
-            this.AccountText.Size = new System.Drawing.Size(109, 28);
+            this.AccountText.Size = new System.Drawing.Size(101, 29);
             this.AccountText.TabIndex = 2;
             this.AccountText.Text = "Аккаунт";
             this.AccountText.UseMnemonic = false;
@@ -117,12 +117,12 @@
             // ScoreText
             // 
             this.ScoreText.AutoSize = true;
-            this.ScoreText.Font = new System.Drawing.Font("Co Headline Corp", 10.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ScoreText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ScoreText.ForeColor = System.Drawing.Color.Silver;
             this.ScoreText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.ScoreText.Location = new System.Drawing.Point(14, 84);
             this.ScoreText.Name = "ScoreText";
-            this.ScoreText.Size = new System.Drawing.Size(76, 18);
+            this.ScoreText.Size = new System.Drawing.Size(73, 18);
             this.ScoreText.TabIndex = 3;
             this.ScoreText.Text = "Мой счёт";
             this.ScoreText.UseMnemonic = false;
@@ -132,12 +132,12 @@
             // SumText
             // 
             this.SumText.AutoSize = true;
-            this.SumText.Font = new System.Drawing.Font("Co Headline Corp", 10.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SumText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SumText.ForeColor = System.Drawing.Color.Silver;
             this.SumText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.SumText.Location = new System.Drawing.Point(10, 194);
             this.SumText.Name = "SumText";
-            this.SumText.Size = new System.Drawing.Size(125, 18);
+            this.SumText.Size = new System.Drawing.Size(119, 18);
             this.SumText.TabIndex = 4;
             this.SumText.Text = "Сумма вкладов";
             this.SumText.UseMnemonic = false;
@@ -146,12 +146,12 @@
             // KreditText
             // 
             this.KreditText.AutoSize = true;
-            this.KreditText.Font = new System.Drawing.Font("Co Headline Corp", 10.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.KreditText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.KreditText.ForeColor = System.Drawing.Color.Silver;
             this.KreditText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.KreditText.Location = new System.Drawing.Point(180, 194);
             this.KreditText.Name = "KreditText";
-            this.KreditText.Size = new System.Drawing.Size(129, 18);
+            this.KreditText.Size = new System.Drawing.Size(122, 18);
             this.KreditText.TabIndex = 5;
             this.KreditText.Text = "Кредитный долг";
             this.KreditText.UseMnemonic = false;
@@ -160,12 +160,12 @@
             // MenuText
             // 
             this.MenuText.AutoSize = true;
-            this.MenuText.Font = new System.Drawing.Font("Co Headline Corp", 16.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MenuText.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MenuText.ForeColor = System.Drawing.Color.White;
             this.MenuText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.MenuText.Location = new System.Drawing.Point(12, 302);
             this.MenuText.Name = "MenuText";
-            this.MenuText.Size = new System.Drawing.Size(80, 28);
+            this.MenuText.Size = new System.Drawing.Size(35, 13);
             this.MenuText.TabIndex = 6;
             this.MenuText.Text = "Меню";
             this.MenuText.UseMnemonic = false;
@@ -175,12 +175,12 @@
             // StockText
             // 
             this.StockText.AutoSize = true;
-            this.StockText.Font = new System.Drawing.Font("Co Headline Corp", 16.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.StockText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.StockText.ForeColor = System.Drawing.Color.White;
             this.StockText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.StockText.Location = new System.Drawing.Point(12, 414);
             this.StockText.Name = "StockText";
-            this.StockText.Size = new System.Drawing.Size(87, 28);
+            this.StockText.Size = new System.Drawing.Size(81, 29);
             this.StockText.TabIndex = 7;
             this.StockText.Text = "Акции";
             this.StockText.UseMnemonic = false;
@@ -220,12 +220,12 @@
             // 
             this.BynText.AutoSize = true;
             this.BynText.BackColor = System.Drawing.Color.White;
-            this.BynText.Font = new System.Drawing.Font("Co Headline Corp", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BynText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.BynText.ForeColor = System.Drawing.Color.Black;
             this.BynText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BynText.Location = new System.Drawing.Point(25, 111);
             this.BynText.Name = "BynText";
-            this.BynText.Size = new System.Drawing.Size(30, 14);
+            this.BynText.Size = new System.Drawing.Size(29, 13);
             this.BynText.TabIndex = 32;
             this.BynText.Text = "BYN";
             this.BynText.UseMnemonic = false;
@@ -235,12 +235,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Co Headline Corp", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Location = new System.Drawing.Point(21, 125);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 37);
+            this.label1.Size = new System.Drawing.Size(57, 36);
             this.label1.TabIndex = 33;
             this.label1.Text = "0,0";
             this.label1.UseMnemonic = false;
@@ -292,12 +292,12 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Co Headline Corp", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Location = new System.Drawing.Point(17, 235);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 37);
+            this.label2.Size = new System.Drawing.Size(57, 36);
             this.label2.TabIndex = 37;
             this.label2.Text = "0,0";
             this.label2.UseMnemonic = false;
@@ -307,12 +307,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Co Headline Corp", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label3.Location = new System.Drawing.Point(21, 221);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(30, 14);
+            this.label3.Size = new System.Drawing.Size(29, 13);
             this.label3.TabIndex = 36;
             this.label3.Text = "BYN";
             this.label3.UseMnemonic = false;
@@ -322,12 +322,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Co Headline Corp", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label4.Location = new System.Drawing.Point(185, 237);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 37);
+            this.label4.Size = new System.Drawing.Size(57, 36);
             this.label4.TabIndex = 39;
             this.label4.Text = "0,0";
             this.label4.UseMnemonic = false;
@@ -337,12 +337,12 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Co Headline Corp", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label5.Location = new System.Drawing.Point(189, 223);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(30, 14);
+            this.label5.Size = new System.Drawing.Size(29, 13);
             this.label5.TabIndex = 38;
             this.label5.Text = "BYN";
             this.label5.UseMnemonic = false;
@@ -390,7 +390,7 @@
             this.Menu3.CheckedState.Parent = this.Menu3;
             this.Menu3.CustomImages.Parent = this.Menu3;
             this.Menu3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.Menu3.Font = new System.Drawing.Font("Co Headline Corp", 26.25F);
+            this.Menu3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F);
             this.Menu3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.Menu3.HoverState.Parent = this.Menu3;
             this.Menu3.Image = ((System.Drawing.Image)(resources.GetObject("Menu3.Image")));
@@ -412,7 +412,7 @@
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Co Headline Corp", 26.25F);
+            this.guna2Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F);
             this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
@@ -434,7 +434,7 @@
             this.guna2Button2.CheckedState.Parent = this.guna2Button2;
             this.guna2Button2.CustomImages.Parent = this.guna2Button2;
             this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Co Headline Corp", 26.25F);
+            this.guna2Button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F);
             this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
             this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
@@ -456,7 +456,7 @@
             this.guna2Button3.CheckedState.Parent = this.guna2Button3;
             this.guna2Button3.CustomImages.Parent = this.guna2Button3;
             this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Co Headline Corp", 26.25F);
+            this.guna2Button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F);
             this.guna2Button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
             this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
@@ -495,7 +495,7 @@
             this.BackButton.CheckedState.Parent = this.BackButton;
             this.BackButton.CustomImages.Parent = this.BackButton;
             this.BackButton.FillColor = System.Drawing.Color.Transparent;
-            this.BackButton.Font = new System.Drawing.Font("Co Headline Corp", 28.25F);
+            this.BackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F);
             this.BackButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.BackButton.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.BackButton.HoverState.Parent = this.BackButton;

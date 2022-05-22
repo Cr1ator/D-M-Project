@@ -46,6 +46,7 @@ namespace reg
             this.DMPicture = new Guna.UI2.WinForms.Guna2PictureBox();
             this.Menu3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.StrelkiPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DMPicture)).BeginInit();
             this.SuspendLayout();
@@ -65,7 +66,7 @@ namespace reg
             this.PasswordImput.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.PasswordImput.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.PasswordImput.FocusedState.Parent = this.PasswordImput;
-            this.PasswordImput.Font = new System.Drawing.Font("Co Headline Corp", 16F);
+            this.PasswordImput.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.PasswordImput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.PasswordImput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.PasswordImput.HoverState.Parent = this.PasswordImput;
@@ -92,7 +93,7 @@ namespace reg
             this.EntryButton.CheckedState.Parent = this.EntryButton;
             this.EntryButton.CustomImages.Parent = this.EntryButton;
             this.EntryButton.FillColor = System.Drawing.Color.White;
-            this.EntryButton.Font = new System.Drawing.Font("Co Headline Corp", 22F);
+            this.EntryButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F);
             this.EntryButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.EntryButton.HoverState.Parent = this.EntryButton;
             this.EntryButton.Image = ((System.Drawing.Image)(resources.GetObject("EntryButton.Image")));
@@ -150,11 +151,11 @@ namespace reg
             // ShowPasswodText
             // 
             this.ShowPasswodText.AutoSize = true;
-            this.ShowPasswodText.Font = new System.Drawing.Font("Co Headline Corp", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ShowPasswodText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ShowPasswodText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
             this.ShowPasswodText.Location = new System.Drawing.Point(71, 428);
             this.ShowPasswodText.Name = "ShowPasswodText";
-            this.ShowPasswodText.Size = new System.Drawing.Size(146, 20);
+            this.ShowPasswodText.Size = new System.Drawing.Size(141, 20);
             this.ShowPasswodText.TabIndex = 10;
             this.ShowPasswodText.Text = "Показать пароль";
             this.ShowPasswodText.UseWaitCursor = true;
@@ -169,11 +170,11 @@ namespace reg
             this.RegButton.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.RegButton.CustomImages.Parent = this.RegButton;
             this.RegButton.FillColor = System.Drawing.Color.Transparent;
-            this.RegButton.Font = new System.Drawing.Font("Co Headline Corp", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RegButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.RegButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.RegButton.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.RegButton.HoverState.Parent = this.RegButton;
-            this.RegButton.Location = new System.Drawing.Point(47, 576);
+            this.RegButton.Location = new System.Drawing.Point(45, 561);
             this.RegButton.Name = "RegButton";
             this.RegButton.ShadowDecoration.Parent = this.RegButton;
             this.RegButton.Size = new System.Drawing.Size(260, 41);
@@ -231,7 +232,7 @@ namespace reg
             this.LoginImput.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.LoginImput.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.LoginImput.FocusedState.Parent = this.LoginImput;
-            this.LoginImput.Font = new System.Drawing.Font("Co Headline Corp", 16F);
+            this.LoginImput.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.LoginImput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.LoginImput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.LoginImput.HoverState.Parent = this.LoginImput;
@@ -252,11 +253,11 @@ namespace reg
             // DontAccount
             // 
             this.DontAccount.AutoSize = true;
-            this.DontAccount.Font = new System.Drawing.Font("Co Headline Corp", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DontAccount.Font = new System.Drawing.Font("Co Headline Corp", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DontAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
-            this.DontAccount.Location = new System.Drawing.Point(103, 543);
+            this.DontAccount.Location = new System.Drawing.Point(100, 538);
             this.DontAccount.Name = "DontAccount";
-            this.DontAccount.Size = new System.Drawing.Size(144, 20);
+            this.DontAccount.Size = new System.Drawing.Size(147, 19);
             this.DontAccount.TabIndex = 30;
             this.DontAccount.Text = "НЕТ АККАУНТА?";
             this.DontAccount.UseWaitCursor = true;
@@ -265,7 +266,7 @@ namespace reg
             // RegLine
             // 
             this.RegLine.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.RegLine.Location = new System.Drawing.Point(58, 615);
+            this.RegLine.Location = new System.Drawing.Point(58, 597);
             this.RegLine.Name = "RegLine";
             this.RegLine.Size = new System.Drawing.Size(236, 2);
             this.RegLine.TabIndex = 31;
@@ -301,7 +302,7 @@ namespace reg
             this.Menu3.CheckedState.Parent = this.Menu3;
             this.Menu3.CustomImages.Parent = this.Menu3;
             this.Menu3.FillColor = System.Drawing.Color.White;
-            this.Menu3.Font = new System.Drawing.Font("Co Headline Corp", 26.25F);
+            this.Menu3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F);
             this.Menu3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.Menu3.HoverState.Parent = this.Menu3;
             this.Menu3.Image = ((System.Drawing.Image)(resources.GetObject("Menu3.Image")));
@@ -319,12 +320,35 @@ namespace reg
             this.guna2Elipse1.BorderRadius = 40;
             this.guna2Elipse1.TargetControl = this;
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BorderRadius = 19;
+            this.guna2Button1.BorderThickness = 1;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Co Headline Corp", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(87, 602);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(180, 25);
+            this.guna2Button1.TabIndex = 36;
+            this.guna2Button1.Text = "Пользовательское соглашение";
+            this.guna2Button1.UseWaitCursor = true;
+            // 
             // AuthMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(354, 639);
+            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.Menu3);
             this.Controls.Add(this.DMPicture);
             this.Controls.Add(this.RegLine);
@@ -368,5 +392,6 @@ namespace reg
         private Guna.UI2.WinForms.Guna2PictureBox DMPicture;
         private Guna.UI2.WinForms.Guna2Button Menu3;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

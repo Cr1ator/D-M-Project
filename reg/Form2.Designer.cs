@@ -44,17 +44,18 @@
             this.LoginImput = new Guna.UI2.WinForms.Guna2TextBox();
             this.EmailInput = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // DMText
             // 
             this.DMText.AutoSize = true;
-            this.DMText.Font = new System.Drawing.Font("Co Headline Corp", 68.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DMText.Font = new System.Drawing.Font("Microsoft Sans Serif", 68.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DMText.ForeColor = System.Drawing.Color.White;
             this.DMText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.DMText.Location = new System.Drawing.Point(50, 34);
             this.DMText.Name = "DMText";
-            this.DMText.Size = new System.Drawing.Size(264, 110);
+            this.DMText.Size = new System.Drawing.Size(248, 104);
             this.DMText.TabIndex = 0;
             this.DMText.Text = "D&M";
             this.DMText.UseMnemonic = false;
@@ -76,13 +77,13 @@
             this.NameInput.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.NameInput.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.NameInput.FocusedState.Parent = this.NameInput;
-            this.NameInput.Font = new System.Drawing.Font("Co Headline Corp", 15.75F);
+            this.NameInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.NameInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.NameInput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.NameInput.HoverState.Parent = this.NameInput;
             this.NameInput.IconLeft = ((System.Drawing.Image)(resources.GetObject("NameInput.IconLeft")));
             this.NameInput.IconLeftSize = new System.Drawing.Size(25, 25);
-            this.NameInput.Location = new System.Drawing.Point(35, 151);
+            this.NameInput.Location = new System.Drawing.Point(27, 151);
             this.NameInput.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.NameInput.Name = "NameInput";
             this.NameInput.PasswordChar = '\0';
@@ -110,13 +111,13 @@
             this.PasswordInput.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.PasswordInput.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.PasswordInput.FocusedState.Parent = this.PasswordInput;
-            this.PasswordInput.Font = new System.Drawing.Font("Co Headline Corp", 15.75F);
+            this.PasswordInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.PasswordInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.PasswordInput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.PasswordInput.HoverState.Parent = this.PasswordInput;
             this.PasswordInput.IconLeft = ((System.Drawing.Image)(resources.GetObject("PasswordInput.IconLeft")));
             this.PasswordInput.IconLeftSize = new System.Drawing.Size(25, 25);
-            this.PasswordInput.Location = new System.Drawing.Point(33, 374);
+            this.PasswordInput.Location = new System.Drawing.Point(26, 374);
             this.PasswordInput.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.PasswordInput.Name = "PasswordInput";
             this.PasswordInput.PasswordChar = '\0';
@@ -124,7 +125,7 @@
             this.PasswordInput.PlaceholderText = "Пароль";
             this.PasswordInput.SelectedText = "";
             this.PasswordInput.ShadowDecoration.Parent = this.PasswordInput;
-            this.PasswordInput.Size = new System.Drawing.Size(306, 52);
+            this.PasswordInput.Size = new System.Drawing.Size(308, 52);
             this.PasswordInput.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.PasswordInput.TabIndex = 2;
             this.PasswordInput.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
@@ -144,14 +145,14 @@
             this.repeatPasswordInput.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.repeatPasswordInput.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.repeatPasswordInput.FocusedState.Parent = this.repeatPasswordInput;
-            this.repeatPasswordInput.Font = new System.Drawing.Font("Co Headline Corp", 15.75F);
+            this.repeatPasswordInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.repeatPasswordInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.repeatPasswordInput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.repeatPasswordInput.HoverState.Parent = this.repeatPasswordInput;
             this.repeatPasswordInput.IconLeft = ((System.Drawing.Image)(resources.GetObject("repeatPasswordInput.IconLeft")));
             this.repeatPasswordInput.IconLeftSize = new System.Drawing.Size(25, 25);
             this.repeatPasswordInput.IconRightSize = new System.Drawing.Size(25, 25);
-            this.repeatPasswordInput.Location = new System.Drawing.Point(33, 453);
+            this.repeatPasswordInput.Location = new System.Drawing.Point(26, 453);
             this.repeatPasswordInput.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.repeatPasswordInput.Name = "repeatPasswordInput";
             this.repeatPasswordInput.PasswordChar = '\0';
@@ -159,7 +160,7 @@
             this.repeatPasswordInput.PlaceholderText = "Повторите пароль";
             this.repeatPasswordInput.SelectedText = "";
             this.repeatPasswordInput.ShadowDecoration.Parent = this.repeatPasswordInput;
-            this.repeatPasswordInput.Size = new System.Drawing.Size(312, 52);
+            this.repeatPasswordInput.Size = new System.Drawing.Size(308, 52);
             this.repeatPasswordInput.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.repeatPasswordInput.TabIndex = 3;
             this.repeatPasswordInput.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
@@ -170,10 +171,10 @@
             this.EntryRegButton.CheckedState.Parent = this.EntryRegButton;
             this.EntryRegButton.CustomImages.Parent = this.EntryRegButton;
             this.EntryRegButton.FillColor = System.Drawing.Color.White;
-            this.EntryRegButton.Font = new System.Drawing.Font("Co Headline Corp", 26.25F);
+            this.EntryRegButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F);
             this.EntryRegButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.EntryRegButton.HoverState.Parent = this.EntryRegButton;
-            this.EntryRegButton.Location = new System.Drawing.Point(24, 566);
+            this.EntryRegButton.Location = new System.Drawing.Point(22, 547);
             this.EntryRegButton.Name = "EntryRegButton";
             this.EntryRegButton.ShadowDecoration.Parent = this.EntryRegButton;
             this.EntryRegButton.Size = new System.Drawing.Size(312, 48);
@@ -188,7 +189,7 @@
             this.ShowPasswodSwitch.CheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.ShowPasswodSwitch.CheckedState.InnerColor = System.Drawing.Color.White;
             this.ShowPasswodSwitch.CheckedState.Parent = this.ShowPasswodSwitch;
-            this.ShowPasswodSwitch.Location = new System.Drawing.Point(36, 531);
+            this.ShowPasswodSwitch.Location = new System.Drawing.Point(24, 521);
             this.ShowPasswodSwitch.Name = "ShowPasswodSwitch";
             this.ShowPasswodSwitch.ShadowDecoration.Parent = this.ShowPasswodSwitch;
             this.ShowPasswodSwitch.Size = new System.Drawing.Size(35, 20);
@@ -204,11 +205,11 @@
             // ShowPasswodText
             // 
             this.ShowPasswodText.AutoSize = true;
-            this.ShowPasswodText.Font = new System.Drawing.Font("Co Headline Corp", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ShowPasswodText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ShowPasswodText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
-            this.ShowPasswodText.Location = new System.Drawing.Point(76, 531);
+            this.ShowPasswodText.Location = new System.Drawing.Point(64, 521);
             this.ShowPasswodText.Name = "ShowPasswodText";
-            this.ShowPasswodText.Size = new System.Drawing.Size(146, 20);
+            this.ShowPasswodText.Size = new System.Drawing.Size(141, 20);
             this.ShowPasswodText.TabIndex = 6;
             this.ShowPasswodText.Text = "Показать пароль";
             this.ShowPasswodText.Click += new System.EventHandler(this.label2_Click);
@@ -220,7 +221,7 @@
             this.BackButton.CheckedState.Parent = this.BackButton;
             this.BackButton.CustomImages.Parent = this.BackButton;
             this.BackButton.FillColor = System.Drawing.Color.Transparent;
-            this.BackButton.Font = new System.Drawing.Font("Co Headline Corp", 28.25F);
+            this.BackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F);
             this.BackButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.BackButton.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.BackButton.HoverState.Parent = this.BackButton;
@@ -278,13 +279,13 @@
             this.LastNameInput.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.LastNameInput.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.LastNameInput.FocusedState.Parent = this.LastNameInput;
-            this.LastNameInput.Font = new System.Drawing.Font("Co Headline Corp", 15.75F);
+            this.LastNameInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.LastNameInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.LastNameInput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.LastNameInput.HoverState.Parent = this.LastNameInput;
             this.LastNameInput.IconLeft = ((System.Drawing.Image)(resources.GetObject("LastNameInput.IconLeft")));
             this.LastNameInput.IconLeftSize = new System.Drawing.Size(25, 25);
-            this.LastNameInput.Location = new System.Drawing.Point(185, 151);
+            this.LastNameInput.Location = new System.Drawing.Point(195, 151);
             this.LastNameInput.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.LastNameInput.Name = "LastNameInput";
             this.LastNameInput.PasswordChar = '\0';
@@ -312,13 +313,13 @@
             this.LoginImput.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.LoginImput.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.LoginImput.FocusedState.Parent = this.LoginImput;
-            this.LoginImput.Font = new System.Drawing.Font("Co Headline Corp", 15.75F);
+            this.LoginImput.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.LoginImput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.LoginImput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.LoginImput.HoverState.Parent = this.LoginImput;
             this.LoginImput.IconLeft = ((System.Drawing.Image)(resources.GetObject("LoginImput.IconLeft")));
             this.LoginImput.IconLeftSize = new System.Drawing.Size(25, 25);
-            this.LoginImput.Location = new System.Drawing.Point(36, 227);
+            this.LoginImput.Location = new System.Drawing.Point(26, 227);
             this.LoginImput.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.LoginImput.Name = "LoginImput";
             this.LoginImput.PasswordChar = '\0';
@@ -326,7 +327,7 @@
             this.LoginImput.PlaceholderText = "Логин";
             this.LoginImput.SelectedText = "";
             this.LoginImput.ShadowDecoration.Parent = this.LoginImput;
-            this.LoginImput.Size = new System.Drawing.Size(288, 52);
+            this.LoginImput.Size = new System.Drawing.Size(308, 52);
             this.LoginImput.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.LoginImput.TabIndex = 35;
             // 
@@ -345,13 +346,13 @@
             this.EmailInput.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.EmailInput.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.EmailInput.FocusedState.Parent = this.EmailInput;
-            this.EmailInput.Font = new System.Drawing.Font("Co Headline Corp", 15.75F);
+            this.EmailInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.EmailInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(136)))));
             this.EmailInput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.EmailInput.HoverState.Parent = this.EmailInput;
             this.EmailInput.IconLeft = ((System.Drawing.Image)(resources.GetObject("EmailInput.IconLeft")));
             this.EmailInput.IconLeftSize = new System.Drawing.Size(25, 25);
-            this.EmailInput.Location = new System.Drawing.Point(35, 308);
+            this.EmailInput.Location = new System.Drawing.Point(27, 308);
             this.EmailInput.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.EmailInput.Name = "EmailInput";
             this.EmailInput.PasswordChar = '\0';
@@ -359,14 +360,37 @@
             this.EmailInput.PlaceholderText = "Почта";
             this.EmailInput.SelectedText = "";
             this.EmailInput.ShadowDecoration.Parent = this.EmailInput;
-            this.EmailInput.Size = new System.Drawing.Size(297, 52);
+            this.EmailInput.Size = new System.Drawing.Size(307, 52);
             this.EmailInput.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.EmailInput.TabIndex = 37;
+            this.EmailInput.TextChanged += new System.EventHandler(this.EmailInput_TextChanged);
             // 
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 40;
             this.guna2Elipse1.TargetControl = this;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BorderRadius = 19;
+            this.guna2Button1.BorderThickness = 1;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(83, 602);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(180, 25);
+            this.guna2Button1.TabIndex = 38;
+            this.guna2Button1.Text = "Пользовательское соглашение";
+            this.guna2Button1.UseWaitCursor = true;
             // 
             // RegMenu
             // 
@@ -374,6 +398,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(354, 639);
+            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.EmailInput);
             this.Controls.Add(this.LoginImput);
             this.Controls.Add(this.LastNameInput);
@@ -414,5 +439,6 @@
         private Guna.UI2.WinForms.Guna2TextBox EmailInput;
         private Guna.UI2.WinForms.Guna2TextBox LoginImput;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
