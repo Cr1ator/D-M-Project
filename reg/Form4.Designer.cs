@@ -150,9 +150,9 @@
             this.label7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label7.Location = new System.Drawing.Point(21, 315);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(95, 37);
+            this.label7.Size = new System.Drawing.Size(106, 37);
             this.label7.TabIndex = 46;
-            this.label7.Text = "0,0%";
+            this.label7.Text = "12,0%";
             this.label7.UseMnemonic = false;
             this.label7.UseWaitCursor = true;
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -254,14 +254,14 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Co Headline Corp", 10.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.Font = new System.Drawing.Font("Co Headline Corp", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label11.Location = new System.Drawing.Point(14, 411);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(130, 18);
+            this.label11.Size = new System.Drawing.Size(158, 16);
             this.label11.TabIndex = 50;
-            this.label11.Text = "Сумма вкладов:";
+            this.label11.Text = "Общая сумма платежа:";
             this.label11.UseMnemonic = false;
             this.label11.UseWaitCursor = true;
             // 
@@ -290,7 +290,7 @@
             this.guna2PictureBox5.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox5.Image")));
             this.guna2PictureBox5.InitialImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox5.InitialImage")));
-            this.guna2PictureBox5.Location = new System.Drawing.Point(170, 428);
+            this.guna2PictureBox5.Location = new System.Drawing.Point(171, 428);
             this.guna2PictureBox5.Name = "guna2PictureBox5";
             this.guna2PictureBox5.ShadowDecoration.Parent = this.guna2PictureBox5;
             this.guna2PictureBox5.Size = new System.Drawing.Size(172, 86);
@@ -303,12 +303,12 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Co Headline Corp", 10.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label14.Font = new System.Drawing.Font("Co Headline Corp", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label14.ForeColor = System.Drawing.Color.White;
             this.label14.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label14.Location = new System.Drawing.Point(178, 411);
+            this.label14.Location = new System.Drawing.Point(180, 411);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(134, 18);
+            this.label14.Size = new System.Drawing.Size(114, 16);
             this.label14.TabIndex = 54;
             this.label14.Text = "Платёж в месяц:";
             this.label14.UseMnemonic = false;
