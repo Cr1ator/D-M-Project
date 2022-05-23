@@ -56,7 +56,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.ProcentTextBox = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
@@ -131,7 +131,7 @@
             this.label10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label10.Location = new System.Drawing.Point(305, 484);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(29, 14);
+            this.label10.Size = new System.Drawing.Size(29, 13);
             this.label10.TabIndex = 73;
             this.label10.Text = "Мес";
             this.label10.UseMnemonic = false;
@@ -146,7 +146,7 @@
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Location = new System.Drawing.Point(148, 485);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(22, 10);
+            this.label2.Size = new System.Drawing.Size(22, 9);
             this.label2.TabIndex = 72;
             this.label2.Text = "BYN";
             this.label2.UseMnemonic = false;
@@ -161,7 +161,7 @@
             this.DateLabel.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.DateLabel.Location = new System.Drawing.Point(189, 464);
             this.DateLabel.Name = "DateLabel";
-            this.DateLabel.Size = new System.Drawing.Size(37, 37);
+            this.DateLabel.Size = new System.Drawing.Size(35, 36);
             this.DateLabel.TabIndex = 71;
             this.DateLabel.Text = "0";
             this.DateLabel.UseMnemonic = false;
@@ -211,7 +211,7 @@
             this.SumLabel.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.SumLabel.Location = new System.Drawing.Point(23, 464);
             this.SumLabel.Name = "SumLabel";
-            this.SumLabel.Size = new System.Drawing.Size(66, 37);
+            this.SumLabel.Size = new System.Drawing.Size(65, 36);
             this.SumLabel.TabIndex = 68;
             this.SumLabel.Text = "0,0";
             this.SumLabel.UseMnemonic = false;
@@ -245,7 +245,7 @@
             this.label11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label11.Location = new System.Drawing.Point(17, 423);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(121, 18);
+            this.label11.Size = new System.Drawing.Size(122, 18);
             this.label11.TabIndex = 66;
             this.label11.Text = "Сумма вклада:";
             this.label11.UseMnemonic = false;
@@ -334,7 +334,7 @@
             this.AccountText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.AccountText.Location = new System.Drawing.Point(15, 65);
             this.AccountText.Name = "AccountText";
-            this.AccountText.Size = new System.Drawing.Size(191, 28);
+            this.AccountText.Size = new System.Drawing.Size(199, 28);
             this.AccountText.TabIndex = 80;
             this.AccountText.Text = "Онлайн вклады";
             this.AccountText.UseMnemonic = false;
@@ -350,9 +350,9 @@
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label3.Location = new System.Drawing.Point(20, 114);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(149, 17);
+            this.label3.Size = new System.Drawing.Size(129, 17);
             this.label3.TabIndex = 81;
-            this.label3.Text = "СУММА ВЛОЖЕНИЯ";
+            this.label3.Text = "СУММА ВКЛАДА";
             this.label3.UseMnemonic = false;
             this.label3.UseWaitCursor = true;
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -366,9 +366,9 @@
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Location = new System.Drawing.Point(20, 201);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.Size = new System.Drawing.Size(113, 17);
             this.label1.TabIndex = 82;
-            this.label1.Text = "СРОК";
+            this.label1.Text = "СРОК ВКЛАДА";
             this.label1.UseMnemonic = false;
             this.label1.UseWaitCursor = true;
             // 
@@ -413,7 +413,7 @@
             this.label6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label6.Location = new System.Drawing.Point(20, 247);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 17);
+            this.label6.Size = new System.Drawing.Size(49, 17);
             this.label6.TabIndex = 85;
             this.label6.Text = "1 МЕС";
             this.label6.UseMnemonic = false;
@@ -428,7 +428,7 @@
             this.label7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label7.Location = new System.Drawing.Point(274, 247);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 17);
+            this.label7.Size = new System.Drawing.Size(59, 17);
             this.label7.TabIndex = 86;
             this.label7.Text = "24 МЕС";
             this.label7.UseMnemonic = false;
@@ -443,9 +443,9 @@
             this.label8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label8.Location = new System.Drawing.Point(17, 292);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(167, 17);
+            this.label8.Size = new System.Drawing.Size(184, 17);
             this.label8.TabIndex = 88;
-            this.label8.Text = "ПРОЦЕНТНАЯ СТАВКА";
+            this.label8.Text = "ЭФФЕКТИВНАЯ СТАВКА";
             this.label8.UseMnemonic = false;
             this.label8.UseWaitCursor = true;
             // 
@@ -458,26 +458,27 @@
             this.label13.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label13.Location = new System.Drawing.Point(28, 321);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(61, 17);
+            this.label13.Size = new System.Drawing.Size(64, 17);
             this.label13.TabIndex = 92;
             this.label13.Text = "Ставка:";
             this.label13.UseMnemonic = false;
             this.label13.UseWaitCursor = true;
             // 
-            // label15
+            // ProcentTextBox
             // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.White;
-            this.label15.Font = new System.Drawing.Font("Co Headline Corp", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label15.Location = new System.Drawing.Point(24, 335);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(95, 37);
-            this.label15.TabIndex = 91;
-            this.label15.Text = "0,0%";
-            this.label15.UseMnemonic = false;
-            this.label15.UseWaitCursor = true;
+            this.ProcentTextBox.AutoSize = true;
+            this.ProcentTextBox.BackColor = System.Drawing.Color.White;
+            this.ProcentTextBox.Font = new System.Drawing.Font("Co Headline Corp", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ProcentTextBox.ForeColor = System.Drawing.Color.Black;
+            this.ProcentTextBox.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.ProcentTextBox.Location = new System.Drawing.Point(24, 335);
+            this.ProcentTextBox.Name = "ProcentTextBox";
+            this.ProcentTextBox.Size = new System.Drawing.Size(96, 36);
+            this.ProcentTextBox.TabIndex = 91;
+            this.ProcentTextBox.Text = "0,0%";
+            this.ProcentTextBox.UseMnemonic = false;
+            this.ProcentTextBox.UseWaitCursor = true;
+            this.ProcentTextBox.Click += new System.EventHandler(this.ProcentTextBox_Click);
             // 
             // label16
             // 
@@ -488,7 +489,7 @@
             this.label16.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label16.Location = new System.Drawing.Point(294, 358);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(37, 17);
+            this.label16.Size = new System.Drawing.Size(38, 17);
             this.label16.TabIndex = 90;
             this.label16.Text = "BYN";
             this.label16.UseMnemonic = false;
@@ -513,6 +514,7 @@
             this.guna2PictureBox3.TabStop = false;
             this.guna2PictureBox3.UseTransparentBackground = true;
             this.guna2PictureBox3.UseWaitCursor = true;
+            this.guna2PictureBox3.Click += new System.EventHandler(this.guna2PictureBox3_Click);
             // 
             // MenuVklad
             // 
@@ -521,7 +523,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(354, 639);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.label15);
+            this.Controls.Add(this.ProcentTextBox);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.guna2PictureBox3);
             this.Controls.Add(this.label8);
@@ -590,7 +592,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label ProcentTextBox;
         private System.Windows.Forms.Label label16;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
     }

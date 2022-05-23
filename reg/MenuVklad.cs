@@ -15,6 +15,7 @@ namespace reg
         public MenuVklad()
         {
             InitializeComponent();
+            ProcentTextBox.Text = "14%";
         }
 
         protected override void WndProc(ref Message m)
@@ -86,9 +87,35 @@ namespace reg
         private void guna2TrackBar2_Scroll(object sender, ScrollEventArgs e)
         {
             DateLabel.Text = DateTrackBar.Value.ToString();
+            if (DateTrackBar.Value <= 8)
+            {
+                ProcentTextBox.Text = "14%";
+            }
+            else
+            {
+                if (DateTrackBar.Value >= 9 && DateTrackBar.Value <= 19)
+                {
+                    ProcentTextBox.Text = "20%";
+                }
+                else
+                {
+                    if (DateTrackBar.Value >= 20)
+                        ProcentTextBox.Text = "24%";
+                }
+            }
         }
 
         private void EntryRegButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ProcentTextBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox3_Click(object sender, EventArgs e)
         {
 
         }
