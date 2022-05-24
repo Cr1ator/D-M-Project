@@ -37,6 +37,8 @@ namespace reg
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            //Создание объекта для генерации чисел
+            Random rnd = new Random();
             String query2 = "select * from Users1";
             if (NameInput.Text != "" && LastNameInput.Text != "" && LoginImput.Text != "" && EmailInput.Text != "" && PasswordInput.Text != "" && repeatPasswordInput.Text != "")
             {
@@ -46,6 +48,7 @@ namespace reg
                 String login = LoginImput.Text;
                 String email = EmailInput.Text;
                 String password = PasswordInput.Text;
+                int userid = rnd.Next(10000, 99999);
                 String message = "Вы успешно зарегистрировались!";
                 if (PasswordInput.Text == repeatPasswordInput.Text)
                 {
@@ -57,7 +60,7 @@ namespace reg
                     {
                         if (email_check.IsValid(email))
                         {
-                            query = "insert into Users1(username, usersurname, userlogin, useremail, userpassword) values ('" + name + "', '" + lastname + "', '" + login + "', '" + email + "', '" + password + "')";
+                            query = "insert into Users1(userID, username, usersurname, userlogin, useremail, userpassword) values ('" + userid + "', '" + name + "', '" + lastname + "', '" + login + "', '" + email + "', '" + password + "')";
                             func.setData(query, message);
                             ProfileMenu f3 = new ProfileMenu();
                             this.Hide();

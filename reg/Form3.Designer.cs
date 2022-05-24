@@ -160,12 +160,12 @@
             // MenuText
             // 
             this.MenuText.AutoSize = true;
-            this.MenuText.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MenuText.Font = new System.Drawing.Font("Corbel", 14F);
             this.MenuText.ForeColor = System.Drawing.Color.White;
             this.MenuText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.MenuText.Location = new System.Drawing.Point(12, 302);
             this.MenuText.Name = "MenuText";
-            this.MenuText.Size = new System.Drawing.Size(35, 13);
+            this.MenuText.Size = new System.Drawing.Size(59, 23);
             this.MenuText.TabIndex = 6;
             this.MenuText.Text = "Меню";
             this.MenuText.UseMnemonic = false;
