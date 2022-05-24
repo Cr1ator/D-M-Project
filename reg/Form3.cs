@@ -12,6 +12,11 @@ namespace reg
 {
     public partial class ProfileMenu : Form
     {
+        public string userIDstr
+        {
+            get { return MyAccountLabel.Text; }
+            set { MyAccountLabel.Text = value; }
+        }
         public ProfileMenu()
         {
             InitializeComponent();
@@ -148,6 +153,11 @@ namespace reg
             MenuVklad MenuVklad = new MenuVklad();
             this.Hide();
             MenuVklad.Show();
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

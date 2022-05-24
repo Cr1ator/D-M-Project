@@ -40,9 +40,9 @@
             this.MenuText = new System.Windows.Forms.Label();
             this.StockText = new System.Windows.Forms.Label();
             this.LineMenu = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.MyAccountTextBox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.BynText = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.MyAccountLabel = new System.Windows.Forms.Label();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -59,7 +59,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.BackButton = new Guna.UI2.WinForms.Guna2Button();
             this.noComfirmAccount = new Guna.UI2.WinForms.Guna2PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyAccountTextBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlider)).BeginInit();
@@ -196,25 +196,26 @@
             this.LineMenu.TabIndex = 30;
             this.LineMenu.UseWaitCursor = true;
             // 
-            // guna2PictureBox1
+            // MyAccountTextBox
             // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2PictureBox1.BorderRadius = 15;
-            this.guna2PictureBox1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.guna2PictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.ErrorImage")));
-            this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.InitialImage")));
-            this.guna2PictureBox1.Location = new System.Drawing.Point(6, 96);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(336, 98);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 31;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
-            this.guna2PictureBox1.UseWaitCursor = true;
+            this.MyAccountTextBox.BackColor = System.Drawing.Color.Transparent;
+            this.MyAccountTextBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MyAccountTextBox.BorderRadius = 15;
+            this.MyAccountTextBox.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.MyAccountTextBox.ErrorImage = ((System.Drawing.Image)(resources.GetObject("MyAccountTextBox.ErrorImage")));
+            this.MyAccountTextBox.FillColor = System.Drawing.Color.Transparent;
+            this.MyAccountTextBox.Image = ((System.Drawing.Image)(resources.GetObject("MyAccountTextBox.Image")));
+            this.MyAccountTextBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("MyAccountTextBox.InitialImage")));
+            this.MyAccountTextBox.Location = new System.Drawing.Point(6, 96);
+            this.MyAccountTextBox.Name = "MyAccountTextBox";
+            this.MyAccountTextBox.ShadowDecoration.Parent = this.MyAccountTextBox;
+            this.MyAccountTextBox.Size = new System.Drawing.Size(336, 98);
+            this.MyAccountTextBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.MyAccountTextBox.TabIndex = 31;
+            this.MyAccountTextBox.TabStop = false;
+            this.MyAccountTextBox.UseTransparentBackground = true;
+            this.MyAccountTextBox.UseWaitCursor = true;
+            this.MyAccountTextBox.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
             // BynText
             // 
@@ -231,21 +232,21 @@
             this.BynText.UseMnemonic = false;
             this.BynText.UseWaitCursor = true;
             // 
-            // label1
+            // MyAccountLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(21, 125);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 36);
-            this.label1.TabIndex = 33;
-            this.label1.Text = "0,0";
-            this.label1.UseMnemonic = false;
-            this.label1.UseWaitCursor = true;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.MyAccountLabel.AutoSize = true;
+            this.MyAccountLabel.BackColor = System.Drawing.Color.White;
+            this.MyAccountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MyAccountLabel.ForeColor = System.Drawing.Color.Black;
+            this.MyAccountLabel.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.MyAccountLabel.Location = new System.Drawing.Point(21, 125);
+            this.MyAccountLabel.Name = "MyAccountLabel";
+            this.MyAccountLabel.Size = new System.Drawing.Size(57, 36);
+            this.MyAccountLabel.TabIndex = 33;
+            this.MyAccountLabel.Text = "0,0";
+            this.MyAccountLabel.UseMnemonic = false;
+            this.MyAccountLabel.UseWaitCursor = true;
+            this.MyAccountLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // guna2PictureBox2
             // 
@@ -548,9 +549,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.guna2PictureBox3);
             this.Controls.Add(this.guna2PictureBox2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.MyAccountLabel);
             this.Controls.Add(this.BynText);
-            this.Controls.Add(this.guna2PictureBox1);
+            this.Controls.Add(this.MyAccountTextBox);
             this.Controls.Add(this.LineMenu);
             this.Controls.Add(this.StockText);
             this.Controls.Add(this.MenuText);
@@ -566,7 +567,7 @@
             this.Text = "Form1";
             this.UseWaitCursor = true;
             this.Load += new System.EventHandler(this.ProfileMenu_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyAccountTextBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlider)).EndInit();
@@ -588,9 +589,9 @@
         private System.Windows.Forms.Label AccountText;
         private System.Windows.Forms.Label DMText;
         private System.Windows.Forms.Label LineMenu;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label MyAccountLabel;
         private System.Windows.Forms.Label BynText;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox MyAccountTextBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
