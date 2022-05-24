@@ -315,7 +315,7 @@
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label3.Location = new System.Drawing.Point(16, 382);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 17);
+            this.label3.Size = new System.Drawing.Size(116, 17);
             this.label3.TabIndex = 58;
             this.label3.Text = "ИМЯ НА КАРТЕ";
             this.label3.UseMnemonic = false;
@@ -364,7 +364,7 @@
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Location = new System.Drawing.Point(16, 470);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 17);
+            this.label1.Size = new System.Drawing.Size(167, 17);
             this.label1.TabIndex = 58;
             this.label1.Text = "СУММА ПОПОЛНЕНИЯ";
             this.label1.UseMnemonic = false;
@@ -411,7 +411,7 @@
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Location = new System.Drawing.Point(30, 135);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 32);
+            this.label2.Size = new System.Drawing.Size(59, 32);
             this.label2.TabIndex = 70;
             this.label2.Text = "0,0";
             this.label2.UseMnemonic = false;
@@ -447,7 +447,7 @@
             this.ScoreText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.ScoreText.Location = new System.Drawing.Point(33, 118);
             this.ScoreText.Name = "ScoreText";
-            this.ScoreText.Size = new System.Drawing.Size(76, 18);
+            this.ScoreText.Size = new System.Drawing.Size(79, 18);
             this.ScoreText.TabIndex = 71;
             this.ScoreText.Text = "Мой счёт";
             this.ScoreText.UseMnemonic = false;
