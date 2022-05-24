@@ -41,15 +41,15 @@
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.SumText = new System.Windows.Forms.Label();
             this.LineMenu = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.IbiTotalPayment = new System.Windows.Forms.Label();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.ibiMonthlyPayment = new System.Windows.Forms.Label();
             this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label14 = new System.Windows.Forms.Label();
             this.BackButton = new Guna.UI2.WinForms.Guna2Button();
-            this.EmailInput = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtLoanAmount = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTerm = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -57,9 +57,23 @@
             this.EntryRegButton = new Guna.UI2.WinForms.Guna2Button();
             this.HideMenu = new Guna.UI2.WinForms.Guna2ControlBox();
             this.ExitMenu = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.EmailInput = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.label16 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
+            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -155,7 +169,6 @@
             this.label7.Text = "12,0%";
             this.label7.UseMnemonic = false;
             this.label7.UseWaitCursor = true;
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -191,7 +204,6 @@
             this.guna2PictureBox3.TabStop = false;
             this.guna2PictureBox3.UseTransparentBackground = true;
             this.guna2PictureBox3.UseWaitCursor = true;
-            this.guna2PictureBox3.Click += new System.EventHandler(this.guna2PictureBox3_Click);
             // 
             // SumText
             // 
@@ -216,20 +228,20 @@
             this.LineMenu.TabIndex = 49;
             this.LineMenu.UseWaitCursor = true;
             // 
-            // label9
+            // IbiTotalPayment
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Font = new System.Drawing.Font("Co Headline Corp", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label9.Location = new System.Drawing.Point(21, 452);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(66, 37);
-            this.label9.TabIndex = 53;
-            this.label9.Text = "0,0";
-            this.label9.UseMnemonic = false;
-            this.label9.UseWaitCursor = true;
+            this.IbiTotalPayment.AutoSize = true;
+            this.IbiTotalPayment.BackColor = System.Drawing.Color.White;
+            this.IbiTotalPayment.Font = new System.Drawing.Font("Co Headline Corp", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.IbiTotalPayment.ForeColor = System.Drawing.Color.Black;
+            this.IbiTotalPayment.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.IbiTotalPayment.Location = new System.Drawing.Point(21, 452);
+            this.IbiTotalPayment.Name = "IbiTotalPayment";
+            this.IbiTotalPayment.Size = new System.Drawing.Size(66, 37);
+            this.IbiTotalPayment.TabIndex = 53;
+            this.IbiTotalPayment.Text = "0,0";
+            this.IbiTotalPayment.UseMnemonic = false;
+            this.IbiTotalPayment.UseWaitCursor = true;
             // 
             // guna2PictureBox4
             // 
@@ -265,20 +277,20 @@
             this.label11.UseMnemonic = false;
             this.label11.UseWaitCursor = true;
             // 
-            // label12
+            // ibiMonthlyPayment
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.White;
-            this.label12.Font = new System.Drawing.Font("Co Headline Corp", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label12.Location = new System.Drawing.Point(185, 452);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(66, 37);
-            this.label12.TabIndex = 57;
-            this.label12.Text = "0,0";
-            this.label12.UseMnemonic = false;
-            this.label12.UseWaitCursor = true;
+            this.ibiMonthlyPayment.AutoSize = true;
+            this.ibiMonthlyPayment.BackColor = System.Drawing.Color.White;
+            this.ibiMonthlyPayment.Font = new System.Drawing.Font("Co Headline Corp", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ibiMonthlyPayment.ForeColor = System.Drawing.Color.Black;
+            this.ibiMonthlyPayment.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.ibiMonthlyPayment.Location = new System.Drawing.Point(185, 452);
+            this.ibiMonthlyPayment.Name = "ibiMonthlyPayment";
+            this.ibiMonthlyPayment.Size = new System.Drawing.Size(66, 37);
+            this.ibiMonthlyPayment.TabIndex = 57;
+            this.ibiMonthlyPayment.Text = "0,0";
+            this.ibiMonthlyPayment.UseMnemonic = false;
+            this.ibiMonthlyPayment.UseWaitCursor = true;
             // 
             // guna2PictureBox5
             // 
@@ -334,69 +346,69 @@
             this.BackButton.UseWaitCursor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
-            // EmailInput
+            // txtLoanAmount
             // 
-            this.EmailInput.BorderColor = System.Drawing.Color.White;
-            this.EmailInput.BorderRadius = 10;
-            this.EmailInput.BorderThickness = 3;
-            this.EmailInput.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.EmailInput.DefaultText = "";
-            this.EmailInput.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.EmailInput.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.EmailInput.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.EmailInput.DisabledState.Parent = this.EmailInput;
-            this.EmailInput.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.EmailInput.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.EmailInput.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.EmailInput.FocusedState.Parent = this.EmailInput;
-            this.EmailInput.Font = new System.Drawing.Font("Co Headline Corp", 15.75F);
-            this.EmailInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.EmailInput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.EmailInput.HoverState.Parent = this.EmailInput;
-            this.EmailInput.Location = new System.Drawing.Point(17, 118);
-            this.EmailInput.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.EmailInput.Name = "EmailInput";
-            this.EmailInput.PasswordChar = '\0';
-            this.EmailInput.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.EmailInput.PlaceholderText = "0,0";
-            this.EmailInput.SelectedText = "";
-            this.EmailInput.ShadowDecoration.Parent = this.EmailInput;
-            this.EmailInput.Size = new System.Drawing.Size(314, 52);
-            this.EmailInput.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.EmailInput.TabIndex = 59;
-            this.EmailInput.UseWaitCursor = true;
+            this.txtLoanAmount.BorderColor = System.Drawing.Color.White;
+            this.txtLoanAmount.BorderRadius = 10;
+            this.txtLoanAmount.BorderThickness = 3;
+            this.txtLoanAmount.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.txtLoanAmount.DefaultText = "";
+            this.txtLoanAmount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtLoanAmount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtLoanAmount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLoanAmount.DisabledState.Parent = this.txtLoanAmount;
+            this.txtLoanAmount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLoanAmount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.txtLoanAmount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.txtLoanAmount.FocusedState.Parent = this.txtLoanAmount;
+            this.txtLoanAmount.Font = new System.Drawing.Font("Co Headline Corp", 15.75F);
+            this.txtLoanAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.txtLoanAmount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.txtLoanAmount.HoverState.Parent = this.txtLoanAmount;
+            this.txtLoanAmount.Location = new System.Drawing.Point(17, 118);
+            this.txtLoanAmount.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.txtLoanAmount.Name = "txtLoanAmount";
+            this.txtLoanAmount.PasswordChar = '\0';
+            this.txtLoanAmount.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.txtLoanAmount.PlaceholderText = "0,0";
+            this.txtLoanAmount.SelectedText = "";
+            this.txtLoanAmount.ShadowDecoration.Parent = this.txtLoanAmount;
+            this.txtLoanAmount.Size = new System.Drawing.Size(314, 52);
+            this.txtLoanAmount.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtLoanAmount.TabIndex = 59;
+            this.txtLoanAmount.UseWaitCursor = true;
             // 
-            // guna2TextBox1
+            // txtTerm
             // 
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.White;
-            this.guna2TextBox1.BorderRadius = 10;
-            this.guna2TextBox1.BorderThickness = 3;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Co Headline Corp", 15.75F);
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(15, 211);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.guna2TextBox1.PlaceholderText = "0";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(314, 39);
-            this.guna2TextBox1.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.guna2TextBox1.TabIndex = 60;
-            this.guna2TextBox1.UseWaitCursor = true;
+            this.txtTerm.BorderColor = System.Drawing.Color.White;
+            this.txtTerm.BorderRadius = 10;
+            this.txtTerm.BorderThickness = 3;
+            this.txtTerm.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.txtTerm.DefaultText = "";
+            this.txtTerm.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTerm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTerm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTerm.DisabledState.Parent = this.txtTerm;
+            this.txtTerm.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTerm.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.txtTerm.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.txtTerm.FocusedState.Parent = this.txtTerm;
+            this.txtTerm.Font = new System.Drawing.Font("Co Headline Corp", 15.75F);
+            this.txtTerm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.txtTerm.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.txtTerm.HoverState.Parent = this.txtTerm;
+            this.txtTerm.Location = new System.Drawing.Point(15, 211);
+            this.txtTerm.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.txtTerm.Name = "txtTerm";
+            this.txtTerm.PasswordChar = '\0';
+            this.txtTerm.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.txtTerm.PlaceholderText = "0";
+            this.txtTerm.SelectedText = "";
+            this.txtTerm.ShadowDecoration.Parent = this.txtTerm;
+            this.txtTerm.Size = new System.Drawing.Size(314, 39);
+            this.txtTerm.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtTerm.TabIndex = 60;
+            this.txtTerm.UseWaitCursor = true;
             // 
             // label4
             // 
@@ -412,7 +424,6 @@
             this.label4.Text = "Введите сумму:";
             this.label4.UseMnemonic = false;
             this.label4.UseWaitCursor = true;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label1
             // 
@@ -468,13 +479,14 @@
             this.EntryRegButton.Font = new System.Drawing.Font("Co Headline Corp", 26.25F);
             this.EntryRegButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.EntryRegButton.HoverState.Parent = this.EntryRegButton;
-            this.EntryRegButton.Location = new System.Drawing.Point(17, 540);
+            this.EntryRegButton.Location = new System.Drawing.Point(17, 554);
             this.EntryRegButton.Name = "EntryRegButton";
             this.EntryRegButton.ShadowDecoration.Parent = this.EntryRegButton;
             this.EntryRegButton.Size = new System.Drawing.Size(314, 54);
             this.EntryRegButton.TabIndex = 65;
             this.EntryRegButton.Text = "Подтвердить";
             this.EntryRegButton.UseWaitCursor = true;
+            this.EntryRegButton.Click += new System.EventHandler(this.EntryRegButton_Click_1);
             // 
             // HideMenu
             // 
@@ -491,7 +503,6 @@
             this.HideMenu.Size = new System.Drawing.Size(21, 19);
             this.HideMenu.TabIndex = 67;
             this.HideMenu.UseWaitCursor = true;
-            this.HideMenu.Click += new System.EventHandler(this.HideMenu_Click);
             // 
             // ExitMenu
             // 
@@ -509,12 +520,240 @@
             this.ExitMenu.UseWaitCursor = true;
             this.ExitMenu.Click += new System.EventHandler(this.ExitMenu_Click);
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BorderRadius = 19;
+            this.guna2Button1.BorderThickness = 1;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Co Headline Corp", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(17, 520);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(309, 25);
+            this.guna2Button1.TabIndex = 68;
+            this.guna2Button1.Text = "Расчитать сумму кредита ";
+            this.guna2Button1.UseWaitCursor = true;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.guna2Panel1.BorderRadius = 40;
+            this.guna2Panel1.Controls.Add(this.label16);
+            this.guna2Panel1.Controls.Add(this.richTextBox1);
+            this.guna2Panel1.Controls.Add(this.guna2Button2);
+            this.guna2Panel1.Controls.Add(this.label9);
+            this.guna2Panel1.Controls.Add(this.label12);
+            this.guna2Panel1.Controls.Add(this.EmailInput);
+            this.guna2Panel1.Controls.Add(this.label13);
+            this.guna2Panel1.Controls.Add(this.label15);
+            this.guna2Panel1.Controls.Add(this.guna2Button3);
+            this.guna2Panel1.Controls.Add(this.guna2ControlBox1);
+            this.guna2Panel1.Controls.Add(this.guna2ControlBox2);
+            this.guna2Panel1.Location = new System.Drawing.Point(-12, 1);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(367, 640);
+            this.guna2Panel1.TabIndex = 69;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.richTextBox1.Font = new System.Drawing.Font("Co Headline Corp", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.White;
+            this.richTextBox1.Location = new System.Drawing.Point(32, 285);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(317, 230);
+            this.richTextBox1.TabIndex = 87;
+            this.richTextBox1.Text = "";
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.BorderRadius = 15;
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.FillColor = System.Drawing.Color.White;
+            this.guna2Button2.Font = new System.Drawing.Font("Co Headline Corp", 26.25F);
+            this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Location = new System.Drawing.Point(33, 547);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.Size = new System.Drawing.Size(314, 54);
+            this.guna2Button2.TabIndex = 86;
+            this.guna2Button2.Text = "Подтвердить";
+            this.guna2Button2.UseWaitCursor = true;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Co Headline Corp", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label9.Location = new System.Drawing.Point(306, 230);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(37, 17);
+            this.label9.TabIndex = 83;
+            this.label9.Text = "BYN";
+            this.label9.UseMnemonic = false;
+            this.label9.UseWaitCursor = true;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Co Headline Corp", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label12.Location = new System.Drawing.Point(29, 193);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(119, 17);
+            this.label12.TabIndex = 85;
+            this.label12.Text = "Введите сумму:";
+            this.label12.UseMnemonic = false;
+            this.label12.UseWaitCursor = true;
+            // 
+            // EmailInput
+            // 
+            this.EmailInput.BorderColor = System.Drawing.Color.White;
+            this.EmailInput.BorderRadius = 10;
+            this.EmailInput.BorderThickness = 3;
+            this.EmailInput.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.EmailInput.DefaultText = "";
+            this.EmailInput.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.EmailInput.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.EmailInput.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.EmailInput.DisabledState.Parent = this.EmailInput;
+            this.EmailInput.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.EmailInput.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.EmailInput.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.EmailInput.FocusedState.Parent = this.EmailInput;
+            this.EmailInput.Font = new System.Drawing.Font("Co Headline Corp", 15.75F);
+            this.EmailInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.EmailInput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.EmailInput.HoverState.Parent = this.EmailInput;
+            this.EmailInput.Location = new System.Drawing.Point(35, 205);
+            this.EmailInput.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.EmailInput.Name = "EmailInput";
+            this.EmailInput.PasswordChar = '\0';
+            this.EmailInput.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.EmailInput.PlaceholderText = "0,0";
+            this.EmailInput.SelectedText = "";
+            this.EmailInput.ShadowDecoration.Parent = this.EmailInput;
+            this.EmailInput.Size = new System.Drawing.Size(314, 52);
+            this.EmailInput.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.EmailInput.TabIndex = 84;
+            this.EmailInput.UseWaitCursor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Co Headline Corp", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label13.ForeColor = System.Drawing.Color.Gray;
+            this.label13.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label13.Location = new System.Drawing.Point(35, 115);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(286, 30);
+            this.label13.TabIndex = 82;
+            this.label13.Text = "Для одобрения кредита необходимо ввести \r\nзаработную плату ";
+            this.label13.UseMnemonic = false;
+            this.label13.UseWaitCursor = true;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Co Headline Corp", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(33, 77);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(243, 28);
+            this.label15.TabIndex = 81;
+            this.label15.Text = "Одобрение кредита";
+            // 
+            // guna2Button3
+            // 
+            this.guna2Button3.BorderColor = System.Drawing.Color.White;
+            this.guna2Button3.BorderRadius = 15;
+            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
+            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
+            this.guna2Button3.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button3.Font = new System.Drawing.Font("Co Headline Corp", 28.25F);
+            this.guna2Button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.guna2Button3.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button3.HoverState.Parent = this.guna2Button3;
+            this.guna2Button3.Location = new System.Drawing.Point(0, 13);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
+            this.guna2Button3.Size = new System.Drawing.Size(75, 41);
+            this.guna2Button3.TabIndex = 80;
+            this.guna2Button3.Text = "<";
+            this.guna2Button3.UseWaitCursor = true;
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(155)))), ((int)(((byte)(15)))));
+            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.guna2ControlBox1.Location = new System.Drawing.Point(303, 13);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(21, 19);
+            this.guna2ControlBox1.TabIndex = 79;
+            this.guna2ControlBox1.UseWaitCursor = true;
+            // 
+            // guna2ControlBox2
+            // 
+            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.guna2ControlBox2.Location = new System.Drawing.Point(330, 13);
+            this.guna2ControlBox2.Name = "guna2ControlBox2";
+            this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.Size = new System.Drawing.Size(21, 19);
+            this.guna2ControlBox2.TabIndex = 78;
+            this.guna2ControlBox2.UseWaitCursor = true;
+            this.guna2ControlBox2.Click += new System.EventHandler(this.guna2ControlBox2_Click);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Co Headline Corp", 22.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label16.Location = new System.Drawing.Point(135, 13);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(90, 37);
+            this.label16.TabIndex = 88;
+            this.label16.Text = "D&M";
+            this.label16.UseMnemonic = false;
+            this.label16.UseWaitCursor = true;
+            // 
             // InvestMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(354, 639);
+            this.Controls.Add(this.guna2Panel1);
+            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.HideMenu);
             this.Controls.Add(this.ExitMenu);
             this.Controls.Add(this.EntryRegButton);
@@ -523,13 +762,13 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.EmailInput);
+            this.Controls.Add(this.txtTerm);
+            this.Controls.Add(this.txtLoanAmount);
             this.Controls.Add(this.BackButton);
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.ibiMonthlyPayment);
             this.Controls.Add(this.guna2PictureBox5);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.IbiTotalPayment);
             this.Controls.Add(this.guna2PictureBox4);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.LineMenu);
@@ -551,6 +790,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -569,21 +810,34 @@
         private System.Windows.Forms.Label DMText;
         private System.Windows.Forms.Label SumText;
         private System.Windows.Forms.Label LineMenu;
-        private System.Windows.Forms.Label label12;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label IbiTotalPayment;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
         private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2Button BackButton;
-        private Guna.UI2.WinForms.Guna2TextBox EmailInput;
+        private Guna.UI2.WinForms.Guna2TextBox txtLoanAmount;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txtTerm;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button EntryRegButton;
         private Guna.UI2.WinForms.Guna2ControlBox HideMenu;
         private Guna.UI2.WinForms.Guna2ControlBox ExitMenu;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        public System.Windows.Forms.Label ibiMonthlyPayment;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label12;
+        private Guna.UI2.WinForms.Guna2TextBox EmailInput;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label15;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
     }
 }
