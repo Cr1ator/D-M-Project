@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace reg
 {
+
     public partial class InvestMenu : Form
     {
         public InvestMenu()
@@ -48,27 +49,34 @@ namespace reg
 
         }
 
+        double MonthlyPayment, InterestRate, monthlyInterestRate, Termofyears, loanAmount, TotalPayment;
         public void guna2Button1_Click(object sender, EventArgs e)
         {
 
-            if (t)
-                double InterestRate = 12.0;
-            double mothlyInterestRate = InterestRate / 1200;
-            double Termofyears = Convert.ToDouble(txtTerm.Text);
-            double loanAmount = Convert.ToDouble(txtLoanAmount.Text);
+            try
+            {
+                InterestRate = 12.0;
+                monthlyInterestRate = InterestRate / 1200;
+                Termofyears = Convert.ToDouble(txtTerm.Text);
+                loanAmount = Convert.ToDouble(txtLoanAmount.Text);
 
-            double MonthlyPayment = loanAmount * mothlyInterestRate / 1 - 1 / Math.Pow(1 + mothlyInterestRate, Termofyears * 12);
+                MonthlyPayment = loanAmount * monthlyInterestRate / 1 - 1 / Math.Pow(1 + monthlyInterestRate, Termofyears * 12);
+                TotalPayment = MonthlyPayment * Termofyears * 12;
 
 
+                string iMonthlyPayment = Convert.ToString(MonthlyPayment);
+                iMonthlyPayment = String.Format("{0:C}", MonthlyPayment);
+                ibiMonthlyPayment.Text = iMonthlyPayment;
 
-            string iMonthlyPayment = Convert.ToString(MonthlyPayment);
-            iMonthlyPayment = String.Format("{0:C}", MonthlyPayment);
-            ibiMonthlyPayment.Text = iMonthlyPayment;
-
-            double TotalPayment = MonthlyPayment * Termofyears * 12;
-            //string iTotalPayment = Convert.ToString(TotalPayment);
-            string iTotalPayment = String.Format("{0:C}", TotalPayment);
-            IbiTotalPayment.Text = iTotalPayment;
+                
+                //string iTotalPayment = Convert.ToString(TotalPayment);
+                string iTotalPayment = String.Format("{0:C}", TotalPayment);
+                IbiTotalPayment.Text = iTotalPayment;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Поля не заполнены!");
+            }
 
 
         }
@@ -98,6 +106,22 @@ namespace reg
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             guna2Panel1.Visible = false;
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            double ZP = Convert.ToDouble(txtZP.Text);
+            double forty = (ZP * 40) / 100;
+            if (MonthlyPayment > forty)
+            {
+                MessageBox.Show("Банк вам отказал в выдаче кридита!"); 
+            }
+            else
+            {
+                MessageBox.Show("Банк вам выдает кредит, проверьте средства на балансе!");
+
+
+            }
         }
     }
 }

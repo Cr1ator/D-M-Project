@@ -63,7 +63,7 @@
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.EmailInput = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtZP = new Guna.UI2.WinForms.Guna2TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
@@ -132,7 +132,7 @@
             this.label5.Font = new System.Drawing.Font("Co Headline Corp", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label5.Location = new System.Drawing.Point(291, 143);
+            this.label5.Location = new System.Drawing.Point(291, 146);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(37, 17);
             this.label5.TabIndex = 41;
@@ -232,12 +232,12 @@
             // 
             this.IbiTotalPayment.AutoSize = true;
             this.IbiTotalPayment.BackColor = System.Drawing.Color.White;
-            this.IbiTotalPayment.Font = new System.Drawing.Font("Co Headline Corp", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.IbiTotalPayment.Font = new System.Drawing.Font("Co Headline Corp", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.IbiTotalPayment.ForeColor = System.Drawing.Color.Black;
             this.IbiTotalPayment.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.IbiTotalPayment.Location = new System.Drawing.Point(21, 452);
+            this.IbiTotalPayment.Location = new System.Drawing.Point(19, 459);
             this.IbiTotalPayment.Name = "IbiTotalPayment";
-            this.IbiTotalPayment.Size = new System.Drawing.Size(66, 37);
+            this.IbiTotalPayment.Size = new System.Drawing.Size(46, 25);
             this.IbiTotalPayment.TabIndex = 53;
             this.IbiTotalPayment.Text = "0,0";
             this.IbiTotalPayment.UseMnemonic = false;
@@ -281,12 +281,12 @@
             // 
             this.ibiMonthlyPayment.AutoSize = true;
             this.ibiMonthlyPayment.BackColor = System.Drawing.Color.White;
-            this.ibiMonthlyPayment.Font = new System.Drawing.Font("Co Headline Corp", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ibiMonthlyPayment.Font = new System.Drawing.Font("Co Headline Corp", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ibiMonthlyPayment.ForeColor = System.Drawing.Color.Black;
             this.ibiMonthlyPayment.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.ibiMonthlyPayment.Location = new System.Drawing.Point(185, 452);
+            this.ibiMonthlyPayment.Location = new System.Drawing.Point(184, 459);
             this.ibiMonthlyPayment.Name = "ibiMonthlyPayment";
-            this.ibiMonthlyPayment.Size = new System.Drawing.Size(66, 37);
+            this.ibiMonthlyPayment.Size = new System.Drawing.Size(46, 25);
             this.ibiMonthlyPayment.TabIndex = 57;
             this.ibiMonthlyPayment.Text = "0,0";
             this.ibiMonthlyPayment.UseMnemonic = false;
@@ -402,7 +402,7 @@
             this.txtTerm.Name = "txtTerm";
             this.txtTerm.PasswordChar = '\0';
             this.txtTerm.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.txtTerm.PlaceholderText = "0";
+            this.txtTerm.PlaceholderText = "0,0";
             this.txtTerm.SelectedText = "";
             this.txtTerm.ShadowDecoration.Parent = this.txtTerm;
             this.txtTerm.Size = new System.Drawing.Size(314, 39);
@@ -432,11 +432,11 @@
             this.label1.Font = new System.Drawing.Font("Co Headline Corp", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(282, 222);
+            this.label1.Location = new System.Drawing.Point(294, 226);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 17);
+            this.label1.Size = new System.Drawing.Size(34, 17);
             this.label1.TabIndex = 62;
-            this.label1.Text = "Дней";
+            this.label1.Text = "Лет";
             this.label1.UseMnemonic = false;
             this.label1.UseWaitCursor = true;
             // 
@@ -552,7 +552,7 @@
             this.guna2Panel1.Controls.Add(this.guna2Button2);
             this.guna2Panel1.Controls.Add(this.label9);
             this.guna2Panel1.Controls.Add(this.label12);
-            this.guna2Panel1.Controls.Add(this.EmailInput);
+            this.guna2Panel1.Controls.Add(this.txtZP);
             this.guna2Panel1.Controls.Add(this.label13);
             this.guna2Panel1.Controls.Add(this.label15);
             this.guna2Panel1.Controls.Add(this.guna2Button3);
@@ -561,7 +561,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(-12, 1);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(367, 640);
+            this.guna2Panel1.Size = new System.Drawing.Size(367, 636);
             this.guna2Panel1.TabIndex = 69;
             // 
             // richTextBox1
@@ -592,6 +592,7 @@
             this.guna2Button2.TabIndex = 86;
             this.guna2Button2.Text = "Подтвердить";
             this.guna2Button2.UseWaitCursor = true;
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // label9
             // 
@@ -623,37 +624,37 @@
             this.label12.UseMnemonic = false;
             this.label12.UseWaitCursor = true;
             // 
-            // EmailInput
+            // txtZP
             // 
-            this.EmailInput.BorderColor = System.Drawing.Color.White;
-            this.EmailInput.BorderRadius = 10;
-            this.EmailInput.BorderThickness = 3;
-            this.EmailInput.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.EmailInput.DefaultText = "";
-            this.EmailInput.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.EmailInput.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.EmailInput.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.EmailInput.DisabledState.Parent = this.EmailInput;
-            this.EmailInput.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.EmailInput.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.EmailInput.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.EmailInput.FocusedState.Parent = this.EmailInput;
-            this.EmailInput.Font = new System.Drawing.Font("Co Headline Corp", 15.75F);
-            this.EmailInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.EmailInput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.EmailInput.HoverState.Parent = this.EmailInput;
-            this.EmailInput.Location = new System.Drawing.Point(35, 205);
-            this.EmailInput.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.EmailInput.Name = "EmailInput";
-            this.EmailInput.PasswordChar = '\0';
-            this.EmailInput.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.EmailInput.PlaceholderText = "0,0";
-            this.EmailInput.SelectedText = "";
-            this.EmailInput.ShadowDecoration.Parent = this.EmailInput;
-            this.EmailInput.Size = new System.Drawing.Size(314, 52);
-            this.EmailInput.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.EmailInput.TabIndex = 84;
-            this.EmailInput.UseWaitCursor = true;
+            this.txtZP.BorderColor = System.Drawing.Color.White;
+            this.txtZP.BorderRadius = 10;
+            this.txtZP.BorderThickness = 3;
+            this.txtZP.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.txtZP.DefaultText = "";
+            this.txtZP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtZP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtZP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtZP.DisabledState.Parent = this.txtZP;
+            this.txtZP.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtZP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.txtZP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.txtZP.FocusedState.Parent = this.txtZP;
+            this.txtZP.Font = new System.Drawing.Font("Co Headline Corp", 15.75F);
+            this.txtZP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.txtZP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.txtZP.HoverState.Parent = this.txtZP;
+            this.txtZP.Location = new System.Drawing.Point(35, 205);
+            this.txtZP.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.txtZP.Name = "txtZP";
+            this.txtZP.PasswordChar = '\0';
+            this.txtZP.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.txtZP.PlaceholderText = "0,0";
+            this.txtZP.SelectedText = "";
+            this.txtZP.ShadowDecoration.Parent = this.txtZP;
+            this.txtZP.Size = new System.Drawing.Size(314, 52);
+            this.txtZP.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtZP.TabIndex = 84;
+            this.txtZP.UseWaitCursor = true;
             // 
             // label13
             // 
@@ -833,7 +834,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label12;
-        private Guna.UI2.WinForms.Guna2TextBox EmailInput;
+        private Guna.UI2.WinForms.Guna2TextBox txtZP;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label15;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
