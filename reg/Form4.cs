@@ -49,18 +49,21 @@ namespace reg
 
         }
 
-        double MonthlyPayment, InterestRate, monthlyInterestRate, Termofyears, loanAmount, TotalPayment;
+        double MonthlyPayment, InterestRate, monthlyInterestRate, Termofyears, loanAmount, TotalPayment, principalDebt;
         public void guna2Button1_Click(object sender, EventArgs e)
         {
 
             try
             {
+               
                 InterestRate = 12.0;
                 monthlyInterestRate = InterestRate / 1200;
                 Termofyears = Convert.ToDouble(txtTerm.Text);
                 loanAmount = Convert.ToDouble(txtLoanAmount.Text);
+                double month = (Termofyears * 12) - 1;
+                principalDebt = loanAmount / month;
 
-                MonthlyPayment = loanAmount * monthlyInterestRate / 1 - 1 / Math.Pow(1 + monthlyInterestRate, Termofyears * 12);
+                MonthlyPayment = (loanAmount * monthlyInterestRate / 1 - 1 / Math.Pow(1 + monthlyInterestRate, Termofyears * 12))+principalDebt;
                 TotalPayment = MonthlyPayment * Termofyears * 12;
 
 
