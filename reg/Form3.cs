@@ -12,11 +12,6 @@ namespace reg
 {
     public partial class ProfileMenu : Form
     {
-        public string userIDstr
-        {
-            get { return MyAccountLabel.Text; }
-            set { MyAccountLabel.Text = value; }
-        }
         public ProfileMenu()
         {
             InitializeComponent();

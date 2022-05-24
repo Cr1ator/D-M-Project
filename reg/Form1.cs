@@ -12,6 +12,7 @@ namespace reg
 {
     public partial class AuthMenu : Form
     {
+        public static string txt1 = "";
         String query;
         funkreg func = new funkreg();
         public AuthMenu()
@@ -61,7 +62,7 @@ namespace reg
                     {
                         ProfileMenu f3 = new ProfileMenu();
                         this.Hide();
-                        f3.userIDstr = ds.Tables[0].Rows[0][0].ToString(); ;
+                        txt1 = ds.Tables[0].Rows[0][0].ToString();
                         f3.Show();
                     }
                     else
