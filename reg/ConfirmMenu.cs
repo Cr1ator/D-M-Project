@@ -145,5 +145,10 @@ namespace reg
         {
 
         }
+
+        private void TrueTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

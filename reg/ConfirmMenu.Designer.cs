@@ -81,7 +81,7 @@
             this.BackButton.Location = new System.Drawing.Point(-5, 16);
             this.BackButton.Name = "BackButton";
             this.BackButton.ShadowDecoration.Parent = this.BackButton;
-            this.BackButton.Size = new System.Drawing.Size(75, 28);
+            this.BackButton.Size = new System.Drawing.Size(75, 38);
             this.BackButton.TabIndex = 70;
             this.BackButton.Text = "<";
             this.BackButton.UseWaitCursor = true;
@@ -358,6 +358,7 @@
             this.TrueTextBox.TabIndex = 88;
             this.TrueTextBox.TabStop = false;
             this.TrueTextBox.UseWaitCursor = true;
+            this.TrueTextBox.TextChanged += new System.EventHandler(this.TrueTextBox_TextChanged);
             // 
             // ConfirmMenu
             // 

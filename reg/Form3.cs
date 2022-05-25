@@ -12,10 +12,22 @@ namespace reg
 {
     public partial class ProfileMenu : Form
     {
+        String query;
+        funkreg func = new funkreg();
         public ProfileMenu()
         {
             InitializeComponent();
-
+            query = $"select Users1.Confirmed from Users1 where UserID='{AuthMenu.txt1}'";
+            DataSet ds = func.getData(query);
+            if ((bool)ds.Tables[0].Rows[0][0] == true)
+            {
+                noComfirmAccount.Hide();
+                TrueComfirmAccount.Show();
+            }
+            else
+            {
+                TrueComfirmAccount.Hide();
+            }
         }
 
         protected override void WndProc(ref Message m)
@@ -72,6 +84,7 @@ namespace reg
             t.SetToolTip(guna2Button1, "Вклады");
             t.SetToolTip(Menu3, "Подтверждение");
             t.SetToolTip(noComfirmAccount, "Подтвердите аккаунт");
+            t.SetToolTip(TrueComfirmAccount, "Аккакут подтверждён");
 
         }
 
@@ -151,6 +164,16 @@ namespace reg
         }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void noComfirmAccount_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox1_Click_1(object sender, EventArgs e)
         {
 
         }

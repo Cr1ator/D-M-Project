@@ -60,9 +60,9 @@ namespace reg
                     string pass = ds.Tables[0].Rows[0][2].ToString();
                     if (log == LoginImput.Text && pass == PasswordImput.Text)
                     {
-                        ProfileMenu f3 = new ProfileMenu();
-                        this.Hide();
                         txt1 = ds.Tables[0].Rows[0][0].ToString();
+                        ProfileMenu f3 = new ProfileMenu();
+                        this.Hide(); 
                         f3.Show();
                     }
                     else
