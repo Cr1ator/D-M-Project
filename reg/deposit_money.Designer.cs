@@ -40,7 +40,6 @@
             this.DMPicture = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.cvvTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -50,6 +49,7 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.ScoreText = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DMPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -273,39 +273,7 @@
             this.guna2TextBox3.Size = new System.Drawing.Size(147, 45);
             this.guna2TextBox3.TabIndex = 56;
             this.guna2TextBox3.UseWaitCursor = true;
-            // 
-            // cvvTextBox
-            // 
-            this.cvvTextBox.BackColor = System.Drawing.Color.Transparent;
-            this.cvvTextBox.BorderColor = System.Drawing.Color.White;
-            this.cvvTextBox.BorderRadius = 5;
-            this.cvvTextBox.BorderThickness = 0;
-            this.cvvTextBox.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.cvvTextBox.DefaultText = "";
-            this.cvvTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.cvvTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.cvvTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.cvvTextBox.DisabledState.Parent = this.cvvTextBox;
-            this.cvvTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
-            this.cvvTextBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.cvvTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.cvvTextBox.FocusedState.Parent = this.cvvTextBox;
-            this.cvvTextBox.Font = new System.Drawing.Font("Co Headline Corp", 16F);
-            this.cvvTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.cvvTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.cvvTextBox.HoverState.Parent = this.cvvTextBox;
-            this.cvvTextBox.Location = new System.Drawing.Point(188, 319);
-            this.cvvTextBox.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.cvvTextBox.Name = "cvvTextBox";
-            this.cvvTextBox.PasswordChar = '\0';
-            this.cvvTextBox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
-            this.cvvTextBox.PlaceholderText = "CVV";
-            this.cvvTextBox.SelectedText = "";
-            this.cvvTextBox.ShadowDecoration.Parent = this.cvvTextBox;
-            this.cvvTextBox.Size = new System.Drawing.Size(149, 45);
-            this.cvvTextBox.TabIndex = 57;
-            this.cvvTextBox.UseWaitCursor = true;
-            this.cvvTextBox.TextChanged += new System.EventHandler(this.guna2TextBox4_TextChanged);
+            this.guna2TextBox3.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
             // 
             // label3
             // 
@@ -471,12 +439,47 @@
             this.guna2Button1.Text = "Вывести";
             this.guna2Button1.UseWaitCursor = true;
             // 
+            // guna2TextBox4
+            // 
+            this.guna2TextBox4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2TextBox4.BorderColor = System.Drawing.Color.White;
+            this.guna2TextBox4.BorderRadius = 5;
+            this.guna2TextBox4.BorderThickness = 0;
+            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.guna2TextBox4.DefaultText = "";
+            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox4.DisabledState.Parent = this.guna2TextBox4;
+            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
+            this.guna2TextBox4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.guna2TextBox4.FocusedState.Parent = this.guna2TextBox4;
+            this.guna2TextBox4.Font = new System.Drawing.Font("Co Headline Corp", 16F);
+            this.guna2TextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
+            this.guna2TextBox4.Location = new System.Drawing.Point(190, 319);
+            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.guna2TextBox4.MaxLength = 3;
+            this.guna2TextBox4.Name = "guna2TextBox4";
+            this.guna2TextBox4.PasswordChar = '\0';
+            this.guna2TextBox4.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
+            this.guna2TextBox4.PlaceholderText = "CVV";
+            this.guna2TextBox4.SelectedText = "";
+            this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
+            this.guna2TextBox4.Size = new System.Drawing.Size(147, 45);
+            this.guna2TextBox4.TabIndex = 73;
+            this.guna2TextBox4.UseWaitCursor = true;
+            this.guna2TextBox4.TextChanged += new System.EventHandler(this.guna2TextBox4_TextChanged_1);
+            // 
             // deposit_money
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(354, 639);
+            this.Controls.Add(this.guna2TextBox4);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.ScoreText);
             this.Controls.Add(this.label2);
@@ -485,7 +488,6 @@
             this.Controls.Add(this.EntryRegButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.cvvTextBox);
             this.Controls.Add(this.guna2TextBox3);
             this.Controls.Add(this.guna2TextBox5);
             this.Controls.Add(this.guna2TextBox2);
@@ -519,7 +521,6 @@
         private Guna.UI2.WinForms.Guna2ControlBox ExitMenu;
         private Guna.UI2.WinForms.Guna2Button BackButton;
         private Guna.UI2.WinForms.Guna2PictureBox DMPicture;
-        private Guna.UI2.WinForms.Guna2TextBox cvvTextBox;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private System.Windows.Forms.Label label3;
@@ -531,5 +532,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.Label ScoreText;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
     }
 }

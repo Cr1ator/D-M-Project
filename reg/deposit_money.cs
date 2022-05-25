@@ -16,7 +16,8 @@ namespace reg
         {
             InitializeComponent();
 
-            cvvTextBox.UseSystemPasswordChar = true;
+            //guna2TextBox4.UseSystemPasswordChar = true;
+            //guna2TextBox4.MaxLength = 4;
         }
         protected override void WndProc(ref Message m)
         {
@@ -65,7 +66,11 @@ namespace reg
 
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
-
+            if (System.Text.RegularExpressions.Regex.IsMatch(guna2TextBox1.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Вводите толька числа");
+                guna2TextBox1.Text = guna2TextBox1.Text.Remove(guna2TextBox1.Text.Length - 1);
+            }
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -92,14 +97,27 @@ namespace reg
 
         }
 
-        private void guna2TextBox4_TextChanged(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void guna2TextBox3_TextChanged(object sender, EventArgs e)
         {
+            if (System.Text.RegularExpressions.Regex.IsMatch(guna2TextBox3.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Вводите толька числа");
+                guna2TextBox3.Text = guna2TextBox3.Text.Remove(guna2TextBox3.Text.Length - 1);
+            }
+        }
 
+        private void guna2TextBox4_TextChanged_1(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(guna2TextBox4.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Вводите толька числа");
+                guna2TextBox4.Text = guna2TextBox4.Text.Remove(guna2TextBox4.Text.Length - 1);
+            }
         }
     }
 }
