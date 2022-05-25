@@ -564,6 +564,7 @@
             this.guna2Panel1.Size = new System.Drawing.Size(367, 493);
             this.guna2Panel1.TabIndex = 69;
             this.guna2Panel1.UseWaitCursor = true;
+            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // label16
             // 

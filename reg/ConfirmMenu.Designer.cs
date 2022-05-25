@@ -37,13 +37,14 @@
             this.ExitMenu = new Guna.UI2.WinForms.Guna2ControlBox();
             this.EntryRegButton = new Guna.UI2.WinForms.Guna2Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.NumberPassportTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.DateBithdayTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.AccountText = new System.Windows.Forms.Label();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.INFCTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.DangerTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TrueTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -134,6 +135,7 @@
             this.EntryRegButton.TabIndex = 79;
             this.EntryRegButton.Text = "Подтвердить";
             this.EntryRegButton.UseWaitCursor = true;
+            this.EntryRegButton.Click += new System.EventHandler(this.EntryRegButton_Click);
             // 
             // label3
             // 
@@ -150,59 +152,59 @@
             this.label3.UseMnemonic = false;
             this.label3.UseWaitCursor = true;
             // 
-            // guna2TextBox1
+            // NumberPassportTextBox
             // 
-            this.guna2TextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.White;
-            this.guna2TextBox1.BorderRadius = 5;
-            this.guna2TextBox1.BorderThickness = 0;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
-            this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Co Headline Corp", 14F);
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(16, 292);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.guna2TextBox1.MaxLength = 9;
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
-            this.guna2TextBox1.PlaceholderText = "Номер паспорта";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(321, 52);
-            this.guna2TextBox1.TabIndex = 72;
-            this.guna2TextBox1.UseWaitCursor = true;
-            this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
+            this.NumberPassportTextBox.BackColor = System.Drawing.Color.Transparent;
+            this.NumberPassportTextBox.BorderColor = System.Drawing.Color.White;
+            this.NumberPassportTextBox.BorderRadius = 5;
+            this.NumberPassportTextBox.BorderThickness = 0;
+            this.NumberPassportTextBox.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.NumberPassportTextBox.DefaultText = "";
+            this.NumberPassportTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.NumberPassportTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.NumberPassportTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.NumberPassportTextBox.DisabledState.Parent = this.NumberPassportTextBox;
+            this.NumberPassportTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
+            this.NumberPassportTextBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.NumberPassportTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.NumberPassportTextBox.FocusedState.Parent = this.NumberPassportTextBox;
+            this.NumberPassportTextBox.Font = new System.Drawing.Font("Co Headline Corp", 14F);
+            this.NumberPassportTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.NumberPassportTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.NumberPassportTextBox.HoverState.Parent = this.NumberPassportTextBox;
+            this.NumberPassportTextBox.Location = new System.Drawing.Point(16, 292);
+            this.NumberPassportTextBox.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.NumberPassportTextBox.MaxLength = 9;
+            this.NumberPassportTextBox.Name = "NumberPassportTextBox";
+            this.NumberPassportTextBox.PasswordChar = '\0';
+            this.NumberPassportTextBox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
+            this.NumberPassportTextBox.PlaceholderText = "Номер паспорта";
+            this.NumberPassportTextBox.SelectedText = "";
+            this.NumberPassportTextBox.ShadowDecoration.Parent = this.NumberPassportTextBox;
+            this.NumberPassportTextBox.Size = new System.Drawing.Size(321, 52);
+            this.NumberPassportTextBox.TabIndex = 72;
+            this.NumberPassportTextBox.UseWaitCursor = true;
+            this.NumberPassportTextBox.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
-            // guna2DateTimePicker1
+            // DateBithdayTimePicker
             // 
-            this.guna2DateTimePicker1.Animated = true;
-            this.guna2DateTimePicker1.BorderRadius = 5;
-            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Co Headline Corp", 16F);
-            this.guna2DateTimePicker1.ForeColor = System.Drawing.SystemColors.Control;
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(16, 454);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(321, 52);
-            this.guna2DateTimePicker1.TabIndex = 80;
-            this.guna2DateTimePicker1.UseWaitCursor = true;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2022, 5, 13, 21, 57, 12, 920);
+            this.DateBithdayTimePicker.Animated = true;
+            this.DateBithdayTimePicker.BorderRadius = 5;
+            this.DateBithdayTimePicker.CheckedState.Parent = this.DateBithdayTimePicker;
+            this.DateBithdayTimePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.DateBithdayTimePicker.Font = new System.Drawing.Font("Co Headline Corp", 16F);
+            this.DateBithdayTimePicker.ForeColor = System.Drawing.SystemColors.Control;
+            this.DateBithdayTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.DateBithdayTimePicker.HoverState.Parent = this.DateBithdayTimePicker;
+            this.DateBithdayTimePicker.Location = new System.Drawing.Point(16, 454);
+            this.DateBithdayTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DateBithdayTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DateBithdayTimePicker.Name = "DateBithdayTimePicker";
+            this.DateBithdayTimePicker.ShadowDecoration.Parent = this.DateBithdayTimePicker;
+            this.DateBithdayTimePicker.Size = new System.Drawing.Size(321, 52);
+            this.DateBithdayTimePicker.TabIndex = 80;
+            this.DateBithdayTimePicker.UseWaitCursor = true;
+            this.DateBithdayTimePicker.Value = new System.DateTime(2022, 5, 13, 21, 57, 12, 920);
             // 
             // AccountText
             // 
@@ -219,38 +221,39 @@
             this.AccountText.UseMnemonic = false;
             this.AccountText.UseWaitCursor = true;
             // 
-            // guna2TextBox3
+            // INFCTextBox
             // 
-            this.guna2TextBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox3.BorderColor = System.Drawing.Color.White;
-            this.guna2TextBox3.BorderRadius = 5;
-            this.guna2TextBox3.BorderThickness = 0;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
-            this.guna2TextBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Font = new System.Drawing.Font("Co Headline Corp", 14F);
-            this.guna2TextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(16, 375);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.guna2TextBox3.MaxLength = 14;
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
-            this.guna2TextBox3.PlaceholderText = "Идентификационный номер";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Size = new System.Drawing.Size(321, 52);
-            this.guna2TextBox3.TabIndex = 82;
-            this.guna2TextBox3.UseWaitCursor = true;
+            this.INFCTextBox.BackColor = System.Drawing.Color.Transparent;
+            this.INFCTextBox.BorderColor = System.Drawing.Color.White;
+            this.INFCTextBox.BorderRadius = 5;
+            this.INFCTextBox.BorderThickness = 0;
+            this.INFCTextBox.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.INFCTextBox.DefaultText = "";
+            this.INFCTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.INFCTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.INFCTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.INFCTextBox.DisabledState.Parent = this.INFCTextBox;
+            this.INFCTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
+            this.INFCTextBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.INFCTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.INFCTextBox.FocusedState.Parent = this.INFCTextBox;
+            this.INFCTextBox.Font = new System.Drawing.Font("Co Headline Corp", 14F);
+            this.INFCTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.INFCTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.INFCTextBox.HoverState.Parent = this.INFCTextBox;
+            this.INFCTextBox.Location = new System.Drawing.Point(16, 375);
+            this.INFCTextBox.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.INFCTextBox.MaxLength = 14;
+            this.INFCTextBox.Name = "INFCTextBox";
+            this.INFCTextBox.PasswordChar = '\0';
+            this.INFCTextBox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
+            this.INFCTextBox.PlaceholderText = "Идентификационный номер";
+            this.INFCTextBox.SelectedText = "";
+            this.INFCTextBox.ShadowDecoration.Parent = this.INFCTextBox;
+            this.INFCTextBox.Size = new System.Drawing.Size(321, 52);
+            this.INFCTextBox.TabIndex = 82;
+            this.INFCTextBox.UseWaitCursor = true;
+            this.INFCTextBox.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
             // 
             // label1
             // 
@@ -283,43 +286,78 @@
             this.label2.UseMnemonic = false;
             this.label2.UseWaitCursor = true;
             // 
-            // guna2TextBox2
+            // DangerTextBox
             // 
-            this.guna2TextBox2.BackColor = System.Drawing.Color.RosyBrown;
-            this.guna2TextBox2.BorderColor = System.Drawing.Color.Red;
-            this.guna2TextBox2.BorderThickness = 2;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.guna2TextBox2.DefaultText = "Этот аккаунт не может \r\nсовершать вклады и \r\nинвестиции.\r\nПодтвердите аккаунт \r\nд" +
-    "ля дальнейшего \r\nиспользования приложения.";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.Red;
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Font = new System.Drawing.Font("Co Headline Corp", 11F);
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.Red;
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.IconLeft = ((System.Drawing.Image)(resources.GetObject("guna2TextBox2.IconLeft")));
-            this.guna2TextBox2.IconLeftSize = new System.Drawing.Size(80, 80);
-            this.guna2TextBox2.Location = new System.Drawing.Point(14, 115);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(5);
-            this.guna2TextBox2.Multiline = true;
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.ReadOnly = true;
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.SelectionStart = 123;
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(323, 124);
-            this.guna2TextBox2.TabIndex = 87;
-            this.guna2TextBox2.TabStop = false;
-            this.guna2TextBox2.UseWaitCursor = true;
-            this.guna2TextBox2.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged_2);
+            this.DangerTextBox.BackColor = System.Drawing.Color.RosyBrown;
+            this.DangerTextBox.BorderColor = System.Drawing.Color.Red;
+            this.DangerTextBox.BorderThickness = 2;
+            this.DangerTextBox.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.DangerTextBox.DefaultText = "Ваш  аккаунт не может \r\nсовершать вклады и \r\nбрать кредит.\r\nПодтвердите аккаунт \r" +
+    "\nдля дальнейшего \r\nиспользования приложения.";
+            this.DangerTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.DangerTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.DangerTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.DangerTextBox.DisabledState.Parent = this.DangerTextBox;
+            this.DangerTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.DangerTextBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.DangerTextBox.FocusedState.BorderColor = System.Drawing.Color.Red;
+            this.DangerTextBox.FocusedState.Parent = this.DangerTextBox;
+            this.DangerTextBox.Font = new System.Drawing.Font("Co Headline Corp", 11F);
+            this.DangerTextBox.ForeColor = System.Drawing.Color.Transparent;
+            this.DangerTextBox.HoverState.BorderColor = System.Drawing.Color.Red;
+            this.DangerTextBox.HoverState.Parent = this.DangerTextBox;
+            this.DangerTextBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("DangerTextBox.IconLeft")));
+            this.DangerTextBox.IconLeftSize = new System.Drawing.Size(80, 80);
+            this.DangerTextBox.Location = new System.Drawing.Point(15, 115);
+            this.DangerTextBox.Margin = new System.Windows.Forms.Padding(5);
+            this.DangerTextBox.Multiline = true;
+            this.DangerTextBox.Name = "DangerTextBox";
+            this.DangerTextBox.PasswordChar = '\0';
+            this.DangerTextBox.PlaceholderText = "";
+            this.DangerTextBox.ReadOnly = true;
+            this.DangerTextBox.SelectedText = "";
+            this.DangerTextBox.ShadowDecoration.Parent = this.DangerTextBox;
+            this.DangerTextBox.Size = new System.Drawing.Size(324, 124);
+            this.DangerTextBox.TabIndex = 87;
+            this.DangerTextBox.TabStop = false;
+            this.DangerTextBox.UseWaitCursor = true;
+            this.DangerTextBox.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged_2);
+            // 
+            // TrueTextBox
+            // 
+            this.TrueTextBox.BackColor = System.Drawing.Color.RosyBrown;
+            this.TrueTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.TrueTextBox.BorderThickness = 2;
+            this.TrueTextBox.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.TrueTextBox.DefaultText = "Теперь вы можете\r\nсовершать вклады и \r\nбрать кредит!\r\nПерейдите в главное меню\r\nи" +
+    " выбирите операцию\r\nкоторую хотите совершить";
+            this.TrueTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TrueTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TrueTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TrueTextBox.DisabledState.Parent = this.TrueTextBox;
+            this.TrueTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TrueTextBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.TrueTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.TrueTextBox.FocusedState.Parent = this.TrueTextBox;
+            this.TrueTextBox.Font = new System.Drawing.Font("Co Headline Corp", 11F);
+            this.TrueTextBox.ForeColor = System.Drawing.Color.Transparent;
+            this.TrueTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.TrueTextBox.HoverState.Parent = this.TrueTextBox;
+            this.TrueTextBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("TrueTextBox.IconLeft")));
+            this.TrueTextBox.IconLeftSize = new System.Drawing.Size(80, 80);
+            this.TrueTextBox.Location = new System.Drawing.Point(15, 115);
+            this.TrueTextBox.Margin = new System.Windows.Forms.Padding(5);
+            this.TrueTextBox.Multiline = true;
+            this.TrueTextBox.Name = "TrueTextBox";
+            this.TrueTextBox.PasswordChar = '\0';
+            this.TrueTextBox.PlaceholderText = "";
+            this.TrueTextBox.ReadOnly = true;
+            this.TrueTextBox.SelectedText = "";
+            this.TrueTextBox.ShadowDecoration.Parent = this.TrueTextBox;
+            this.TrueTextBox.Size = new System.Drawing.Size(324, 124);
+            this.TrueTextBox.TabIndex = 88;
+            this.TrueTextBox.TabStop = false;
+            this.TrueTextBox.UseWaitCursor = true;
             // 
             // ConfirmMenu
             // 
@@ -327,15 +365,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(354, 639);
-            this.Controls.Add(this.guna2TextBox2);
+            this.Controls.Add(this.TrueTextBox);
+            this.Controls.Add(this.DangerTextBox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.guna2TextBox3);
+            this.Controls.Add(this.INFCTextBox);
             this.Controls.Add(this.AccountText);
-            this.Controls.Add(this.guna2DateTimePicker1);
+            this.Controls.Add(this.DateBithdayTimePicker);
             this.Controls.Add(this.EntryRegButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.NumberPassportTextBox);
             this.Controls.Add(this.DMText);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.HideMenu);
@@ -347,6 +386,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             this.UseWaitCursor = true;
+            this.Load += new System.EventHandler(this.ConfirmMenu_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -359,14 +399,15 @@
         private Guna.UI2.WinForms.Guna2Button BackButton;
         private Guna.UI2.WinForms.Guna2ControlBox HideMenu;
         private Guna.UI2.WinForms.Guna2ControlBox ExitMenu;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DateBithdayTimePicker;
         private Guna.UI2.WinForms.Guna2Button EntryRegButton;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private Guna.UI2.WinForms.Guna2TextBox NumberPassportTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox INFCTextBox;
         private System.Windows.Forms.Label AccountText;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox DangerTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox TrueTextBox;
     }
 }
