@@ -106,7 +106,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 65);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(243, 28);
+            this.label1.Size = new System.Drawing.Size(252, 28);
             this.label1.TabIndex = 71;
             this.label1.Text = "Одобрение кредита";
             // 
@@ -118,7 +118,7 @@
             this.SumText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.SumText.Location = new System.Drawing.Point(14, 103);
             this.SumText.Name = "SumText";
-            this.SumText.Size = new System.Drawing.Size(286, 30);
+            this.SumText.Size = new System.Drawing.Size(291, 30);
             this.SumText.TabIndex = 72;
             this.SumText.Text = "Для одобрения кредита необходимо ввести \r\nзаработную плату ";
             this.SumText.UseMnemonic = false;
@@ -133,7 +133,7 @@
             this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label5.Location = new System.Drawing.Point(285, 218);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(37, 17);
+            this.label5.Size = new System.Drawing.Size(38, 17);
             this.label5.TabIndex = 73;
             this.label5.Text = "BYN";
             this.label5.UseMnemonic = false;
@@ -148,7 +148,7 @@
             this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label4.Location = new System.Drawing.Point(8, 181);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 17);
+            this.label4.Size = new System.Drawing.Size(122, 17);
             this.label4.TabIndex = 75;
             this.label4.Text = "Введите сумму:";
             this.label4.UseMnemonic = false;
@@ -236,6 +236,7 @@
             this.Name = "OdobrCredit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OdobrCredit";
+            this.Load += new System.EventHandler(this.OdobrCredit_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -16,6 +16,19 @@ namespace reg
         {
             InitializeComponent();
         }
+        protected override void WndProc(ref Message m)
+        {
+            if (m.Msg == 0x84)
+            {
+                base.WndProc(ref m);
+                if ((int)m.Result == 0x1)
+                    m.Result = (IntPtr)0x2;
+                return;
+            }
+
+            base.WndProc(ref m);
+        }
+
 
         private void ExitMenu_Click(object sender, EventArgs e)
         {
@@ -35,6 +48,11 @@ namespace reg
 
            double iMonthlyPayment = ibiMonthlyPayment.Text;
             if (iMonthlyPayment)*/
+        }
+
+        private void OdobrCredit_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

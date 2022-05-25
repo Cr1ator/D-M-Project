@@ -75,7 +75,11 @@ namespace reg
 
         private void guna2TextBox2_TextChanged(object sender, EventArgs e)
         {
-
+            if (System.Text.RegularExpressions.Regex.IsMatch(guna2TextBox5.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Вводите толька числа");
+                guna2TextBox5.Text = guna2TextBox5.Text.Remove(guna2TextBox5.Text.Length - 1);
+            }
         }
 
         private void BynText_Click(object sender, EventArgs e)

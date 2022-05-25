@@ -67,7 +67,7 @@ namespace reg
         {
             timer1_Tick( sender, e);
             ToolTip t = new ToolTip();
-            t.SetToolTip(guna2Button3, "Инвестиции");
+            t.SetToolTip(guna2Button3, "Кредиты");
             t.SetToolTip(guna2Button2, "Пополнить счёт");
             t.SetToolTip(guna2Button1, "Вклады");
             t.SetToolTip(Menu3, "Подтверждение");

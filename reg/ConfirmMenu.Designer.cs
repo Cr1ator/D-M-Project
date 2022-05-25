@@ -172,6 +172,7 @@
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Location = new System.Drawing.Point(16, 292);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.guna2TextBox1.MaxLength = 9;
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
@@ -181,6 +182,7 @@
             this.guna2TextBox1.Size = new System.Drawing.Size(321, 52);
             this.guna2TextBox1.TabIndex = 72;
             this.guna2TextBox1.UseWaitCursor = true;
+            this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // guna2DateTimePicker1
             // 
@@ -239,6 +241,7 @@
             this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
             this.guna2TextBox3.Location = new System.Drawing.Point(16, 375);
             this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.guna2TextBox3.MaxLength = 14;
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PasswordChar = '\0';
             this.guna2TextBox3.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));

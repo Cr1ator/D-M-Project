@@ -49,6 +49,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.ScoreText = new System.Windows.Forms.Label();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DMPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -342,7 +343,7 @@
             this.guna2TextBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.guna2TextBox5.HoverState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Location = new System.Drawing.Point(17, 493);
+            this.guna2TextBox5.Location = new System.Drawing.Point(19, 488);
             this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.guna2TextBox5.Name = "guna2TextBox5";
             this.guna2TextBox5.PasswordChar = '\0';
@@ -362,7 +363,7 @@
             this.label1.Font = new System.Drawing.Font("Co Headline Corp", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(16, 470);
+            this.label1.Location = new System.Drawing.Point(18, 465);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(167, 17);
             this.label1.TabIndex = 58;
@@ -373,17 +374,17 @@
             // 
             // EntryRegButton
             // 
-            this.EntryRegButton.BorderRadius = 15;
+            this.EntryRegButton.BorderRadius = 10;
             this.EntryRegButton.CheckedState.Parent = this.EntryRegButton;
             this.EntryRegButton.CustomImages.Parent = this.EntryRegButton;
             this.EntryRegButton.FillColor = System.Drawing.Color.White;
-            this.EntryRegButton.Font = new System.Drawing.Font("Co Headline Corp", 26.25F);
+            this.EntryRegButton.Font = new System.Drawing.Font("Co Headline Corp", 20F);
             this.EntryRegButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.EntryRegButton.HoverState.Parent = this.EntryRegButton;
-            this.EntryRegButton.Location = new System.Drawing.Point(17, 561);
+            this.EntryRegButton.Location = new System.Drawing.Point(17, 547);
             this.EntryRegButton.Name = "EntryRegButton";
             this.EntryRegButton.ShadowDecoration.Parent = this.EntryRegButton;
-            this.EntryRegButton.Size = new System.Drawing.Size(321, 54);
+            this.EntryRegButton.Size = new System.Drawing.Size(321, 37);
             this.EntryRegButton.TabIndex = 66;
             this.EntryRegButton.Text = "Пополнить";
             this.EntryRegButton.UseWaitCursor = true;
@@ -453,12 +454,30 @@
             this.ScoreText.UseMnemonic = false;
             this.ScoreText.UseWaitCursor = true;
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderRadius = 10;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.White;
+            this.guna2Button1.Font = new System.Drawing.Font("Co Headline Corp", 20F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(17, 590);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(321, 37);
+            this.guna2Button1.TabIndex = 72;
+            this.guna2Button1.Text = "Вывести";
+            this.guna2Button1.UseWaitCursor = true;
+            // 
             // deposit_money
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(354, 639);
+            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.ScoreText);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.guna2PictureBox1);
@@ -511,5 +530,6 @@
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.Label ScoreText;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
