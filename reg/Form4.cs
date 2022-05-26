@@ -191,7 +191,7 @@ namespace reg
                 rtfReceipt.AppendText("Срок кредита:       " + txtTerm.Text + "\n");
                 rtfReceipt.AppendText("Процентная ставка:  " +  "12%" + "\n");
                 rtfReceipt.AppendText("Ежемесячный платеж: " + ibiMonthlyPayment.Text + "  BYN"+ "\n");
-                rtfReceipt.AppendText("Итоговая сумма:     " + ibiMonthlyPayment.Text + "  BYN"+ "\n");
+                rtfReceipt.AppendText("Итоговая сумма:     " + IbiTotalPayment.Text + "  BYN"+ "\n");
                 rtfReceipt.AppendText("--------------------------------------------------------------" + "\n");
                 rtfReceipt.AppendText("                            D&M Bank                                " + "\n");
 
