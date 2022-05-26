@@ -111,6 +111,11 @@ namespace reg
             }
         }
 
+        private void EntryRegButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void guna2TextBox4_TextChanged_1(object sender, EventArgs e)
         {
             if (System.Text.RegularExpressions.Regex.IsMatch(guna2TextBox4.Text, "[^0-9]"))
