@@ -368,6 +368,7 @@
             this.txtLoanAmount.HoverState.Parent = this.txtLoanAmount;
             this.txtLoanAmount.Location = new System.Drawing.Point(17, 118);
             this.txtLoanAmount.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.txtLoanAmount.MaxLength = 6;
             this.txtLoanAmount.Name = "txtLoanAmount";
             this.txtLoanAmount.PasswordChar = '\0';
             this.txtLoanAmount.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
@@ -401,6 +402,7 @@
             this.txtTerm.HoverState.Parent = this.txtTerm;
             this.txtTerm.Location = new System.Drawing.Point(15, 211);
             this.txtTerm.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.txtTerm.MaxLength = 2;
             this.txtTerm.Name = "txtTerm";
             this.txtTerm.PasswordChar = '\0';
             this.txtTerm.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
@@ -565,7 +567,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(-12, 2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(367, 635);
+            this.guna2Panel1.Size = new System.Drawing.Size(367, 639);
             this.guna2Panel1.TabIndex = 69;
             this.guna2Panel1.UseWaitCursor = true;
             // 
@@ -658,9 +660,9 @@
             this.label12.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label12.Location = new System.Drawing.Point(29, 193);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(119, 17);
+            this.label12.Size = new System.Drawing.Size(142, 17);
             this.label12.TabIndex = 85;
-            this.label12.Text = "Введите сумму:";
+            this.label12.Text = "Введите сумму ЗП:";
             this.label12.UseMnemonic = false;
             this.label12.UseWaitCursor = true;
             // 
