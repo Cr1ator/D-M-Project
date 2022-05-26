@@ -284,7 +284,7 @@
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label3.Location = new System.Drawing.Point(16, 382);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 17);
+            this.label3.Size = new System.Drawing.Size(114, 17);
             this.label3.TabIndex = 58;
             this.label3.Text = "ИМЯ НА КАРТЕ";
             this.label3.UseMnemonic = false;
@@ -333,7 +333,7 @@
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Location = new System.Drawing.Point(18, 465);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(167, 17);
+            this.label1.Size = new System.Drawing.Size(166, 17);
             this.label1.TabIndex = 58;
             this.label1.Text = "СУММА ПОПОЛНЕНИЯ";
             this.label1.UseMnemonic = false;
@@ -356,6 +356,7 @@
             this.EntryRegButton.TabIndex = 66;
             this.EntryRegButton.Text = "Пополнить";
             this.EntryRegButton.UseWaitCursor = true;
+            this.EntryRegButton.Click += new System.EventHandler(this.EntryRegButton_Click);
             // 
             // DMText
             // 
@@ -380,7 +381,7 @@
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Location = new System.Drawing.Point(30, 135);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 32);
+            this.label2.Size = new System.Drawing.Size(58, 32);
             this.label2.TabIndex = 70;
             this.label2.Text = "0,0";
             this.label2.UseMnemonic = false;
@@ -416,7 +417,7 @@
             this.ScoreText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.ScoreText.Location = new System.Drawing.Point(33, 118);
             this.ScoreText.Name = "ScoreText";
-            this.ScoreText.Size = new System.Drawing.Size(79, 18);
+            this.ScoreText.Size = new System.Drawing.Size(76, 18);
             this.ScoreText.TabIndex = 71;
             this.ScoreText.Text = "Мой счёт";
             this.ScoreText.UseMnemonic = false;
@@ -461,7 +462,6 @@
             this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
             this.guna2TextBox4.Location = new System.Drawing.Point(190, 319);
             this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.guna2TextBox4.MaxLength = 3;
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.PasswordChar = '\0';
             this.guna2TextBox4.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));

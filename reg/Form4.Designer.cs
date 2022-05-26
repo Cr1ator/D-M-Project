@@ -59,6 +59,7 @@
             this.ExitMenu = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.label16 = new System.Windows.Forms.Label();
             this.rtfReceipt = new System.Windows.Forms.RichTextBox();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
@@ -377,6 +378,7 @@
             this.txtLoanAmount.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtLoanAmount.TabIndex = 59;
             this.txtLoanAmount.UseWaitCursor = true;
+            this.txtLoanAmount.TextChanged += new System.EventHandler(this.txtLoanAmount_TextChanged);
             // 
             // txtTerm
             // 
@@ -409,6 +411,7 @@
             this.txtTerm.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtTerm.TabIndex = 60;
             this.txtTerm.UseWaitCursor = true;
+            this.txtTerm.TextChanged += new System.EventHandler(this.txtTerm_TextChanged);
             // 
             // label4
             // 
@@ -531,7 +534,7 @@
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
             this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
             this.guna2Button1.Font = new System.Drawing.Font("Co Headline Corp", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
+            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.guna2Button1.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Location = new System.Drawing.Point(17, 520);
@@ -547,6 +550,7 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.guna2Panel1.BorderRadius = 40;
+            this.guna2Panel1.Controls.Add(this.guna2Button4);
             this.guna2Panel1.Controls.Add(this.label16);
             this.guna2Panel1.Controls.Add(this.rtfReceipt);
             this.guna2Panel1.Controls.Add(this.guna2Button2);
@@ -558,12 +562,32 @@
             this.guna2Panel1.Controls.Add(this.guna2Button3);
             this.guna2Panel1.Controls.Add(this.guna2ControlBox1);
             this.guna2Panel1.Controls.Add(this.guna2ControlBox2);
-            this.guna2Panel1.Location = new System.Drawing.Point(-12, 1);
+            this.guna2Panel1.Location = new System.Drawing.Point(-12, 2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(367, 637);
+            this.guna2Panel1.Size = new System.Drawing.Size(367, 635);
             this.guna2Panel1.TabIndex = 69;
             this.guna2Panel1.UseWaitCursor = true;
+            // 
+            // guna2Button4
+            // 
+            this.guna2Button4.BorderColor = System.Drawing.Color.White;
+            this.guna2Button4.BorderThickness = 2;
+            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
+            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
+            this.guna2Button4.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button4.Font = new System.Drawing.Font("Co Headline Corp", 9.749999F);
+            this.guna2Button4.ForeColor = System.Drawing.Color.White;
+            this.guna2Button4.HoverState.Parent = this.guna2Button4;
+            this.guna2Button4.Location = new System.Drawing.Point(32, 482);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
+            this.guna2Button4.Size = new System.Drawing.Size(317, 27);
+            this.guna2Button4.TabIndex = 89;
+            this.guna2Button4.Text = "Скачать";
+            this.guna2Button4.UseWaitCursor = true;
+            this.guna2Button4.Visible = false;
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // label16
             // 
@@ -582,12 +606,12 @@
             // rtfReceipt
             // 
             this.rtfReceipt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.rtfReceipt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rtfReceipt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtfReceipt.Font = new System.Drawing.Font("Co Headline Corp", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.rtfReceipt.ForeColor = System.Drawing.Color.White;
             this.rtfReceipt.Location = new System.Drawing.Point(32, 285);
             this.rtfReceipt.Name = "rtfReceipt";
-            this.rtfReceipt.Size = new System.Drawing.Size(317, 230);
+            this.rtfReceipt.Size = new System.Drawing.Size(317, 198);
             this.rtfReceipt.TabIndex = 87;
             this.rtfReceipt.Text = "";
             this.rtfReceipt.UseWaitCursor = true;
@@ -671,6 +695,7 @@
             this.txtZP.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtZP.TabIndex = 84;
             this.txtZP.UseWaitCursor = true;
+            this.txtZP.TextChanged += new System.EventHandler(this.txtZP_TextChanged);
             // 
             // label13
             // 
@@ -843,5 +868,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button4;
     }
 }

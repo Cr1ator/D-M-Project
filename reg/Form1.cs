@@ -13,6 +13,7 @@ namespace reg
     public partial class AuthMenu : Form
     {
         public static string txt1 = "";
+        public static string txtSN = "";
         String query;
         funkreg func = new funkreg();
         public AuthMenu()
@@ -50,7 +51,7 @@ namespace reg
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            query = $"select Users1.userID, Users1.userlogin, Users1.userpassword from Users1 where userlogin='{LoginImput.Text}'";
+            query = $"select Users1.userID, Users1.userlogin, Users1.userpassword, Users1.usersurname from Users1 where userlogin='{LoginImput.Text}'";
             DataSet ds = func.getData(query);
             if (ds.Tables[0].Rows.Count != 0)
             {
@@ -61,6 +62,7 @@ namespace reg
                     if (log == LoginImput.Text && pass == PasswordImput.Text)
                     {
                         txt1 = ds.Tables[0].Rows[0][0].ToString();
+                        txtSN = ds.Tables[0].Rows[0][3].ToString();
                         ProfileMenu f3 = new ProfileMenu();
                         this.Hide(); 
                         f3.Show();
