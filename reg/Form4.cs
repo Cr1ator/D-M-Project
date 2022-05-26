@@ -84,11 +84,6 @@ namespace reg
 
         }
 
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void EntryRegButton_Click(object sender, EventArgs e)
         {
             OdobrCredit odobrCredit = new OdobrCredit();
@@ -127,7 +122,7 @@ namespace reg
             else
             {
                 MessageBox.Show("Банк вам выдает кредит, проверьте средства на балансе!");
-
+                //rtfReceipt.AppendText("aaaa")
 
             }
         }
