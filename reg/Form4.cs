@@ -211,9 +211,6 @@ namespace reg
                 {"<SN>", AuthMenu.txtSN},
                 {"<DN>", dn},
                 {"<LD>", ld },
-                
-
-
             };
 
             word.Process(items);
