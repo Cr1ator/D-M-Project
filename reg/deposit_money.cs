@@ -119,10 +119,5 @@ namespace reg
                 guna2TextBox4.Text = guna2TextBox4.Text.Remove(guna2TextBox4.Text.Length - 1);
             }
         }
-
-        private void EntryRegButton_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
