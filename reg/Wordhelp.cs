@@ -59,7 +59,7 @@ namespace reg
 
                 }
 
-                Object newFileName = Path.Combine(_fileInfo.DirectoryName, DateTime.Now.ToString("yyyyMMdd HHmmss") + _fileInfo.Name);
+                Object newFileName = Path.Combine(_fileInfo.DirectoryName, DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + _fileInfo.Name);
                 app.ActiveDocument.SaveAs2(newFileName);
                 app.ActiveDocument.Close();
                 app.Quit();
