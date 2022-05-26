@@ -41,7 +41,7 @@
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.SumTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.EntryRegButton = new Guna.UI2.WinForms.Guna2Button();
             this.DMText = new System.Windows.Forms.Label();
@@ -111,7 +111,6 @@
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Location = new System.Drawing.Point(17, 254);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.guna2TextBox1.MaxLength = 16;
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
@@ -234,7 +233,6 @@
             this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
             this.guna2TextBox2.Location = new System.Drawing.Point(17, 405);
             this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.guna2TextBox2.MaxLength = 30;
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
@@ -295,39 +293,38 @@
             this.label3.UseWaitCursor = true;
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // guna2TextBox5
+            // SumTextBox
             // 
-            this.guna2TextBox5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox5.BorderColor = System.Drawing.Color.White;
-            this.guna2TextBox5.BorderRadius = 5;
-            this.guna2TextBox5.BorderThickness = 0;
-            this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.guna2TextBox5.DefaultText = "";
-            this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.DisabledState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
-            this.guna2TextBox5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.guna2TextBox5.FocusedState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Font = new System.Drawing.Font("Co Headline Corp", 16F);
-            this.guna2TextBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.guna2TextBox5.HoverState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Location = new System.Drawing.Point(19, 488);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.guna2TextBox5.MaxLength = 10;
-            this.guna2TextBox5.Name = "guna2TextBox5";
-            this.guna2TextBox5.PasswordChar = '\0';
-            this.guna2TextBox5.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
-            this.guna2TextBox5.PlaceholderText = "Сумма";
-            this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.ShadowDecoration.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Size = new System.Drawing.Size(321, 45);
-            this.guna2TextBox5.TabIndex = 55;
-            this.guna2TextBox5.UseWaitCursor = true;
-            this.guna2TextBox5.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
+            this.SumTextBox.BackColor = System.Drawing.Color.Transparent;
+            this.SumTextBox.BorderColor = System.Drawing.Color.White;
+            this.SumTextBox.BorderRadius = 5;
+            this.SumTextBox.BorderThickness = 0;
+            this.SumTextBox.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.SumTextBox.DefaultText = "";
+            this.SumTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.SumTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.SumTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.SumTextBox.DisabledState.Parent = this.SumTextBox;
+            this.SumTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
+            this.SumTextBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.SumTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.SumTextBox.FocusedState.Parent = this.SumTextBox;
+            this.SumTextBox.Font = new System.Drawing.Font("Co Headline Corp", 16F);
+            this.SumTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.SumTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.SumTextBox.HoverState.Parent = this.SumTextBox;
+            this.SumTextBox.Location = new System.Drawing.Point(19, 488);
+            this.SumTextBox.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.SumTextBox.Name = "SumTextBox";
+            this.SumTextBox.PasswordChar = '\0';
+            this.SumTextBox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
+            this.SumTextBox.PlaceholderText = "Сумма";
+            this.SumTextBox.SelectedText = "";
+            this.SumTextBox.ShadowDecoration.Parent = this.SumTextBox;
+            this.SumTextBox.Size = new System.Drawing.Size(321, 45);
+            this.SumTextBox.TabIndex = 55;
+            this.SumTextBox.UseWaitCursor = true;
+            this.SumTextBox.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
             // 
             // label1
             // 
@@ -467,7 +464,6 @@
             this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
             this.guna2TextBox4.Location = new System.Drawing.Point(103, 329);
             this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.guna2TextBox4.MaxLength = 3;
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.PasswordChar = '\0';
             this.guna2TextBox4.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
@@ -525,7 +521,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.guna2TextBox3);
-            this.Controls.Add(this.guna2TextBox5);
+            this.Controls.Add(this.SumTextBox);
             this.Controls.Add(this.guna2TextBox2);
             this.Controls.Add(this.DMPicture);
             this.Controls.Add(this.guna2TextBox1);
@@ -539,6 +535,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             this.UseWaitCursor = true;
+            this.Load += new System.EventHandler(this.deposit_money_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DMPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
@@ -561,7 +558,7 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
+        private Guna.UI2.WinForms.Guna2TextBox SumTextBox;
         private Guna.UI2.WinForms.Guna2Button EntryRegButton;
         private System.Windows.Forms.Label DMText;
         private System.Windows.Forms.Label label2;

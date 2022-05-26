@@ -60,6 +60,7 @@ namespace reg
                     {
                         if (email_check.IsValid(email))
                         {
+                            AuthMenu.txt1 = userid.ToString();
                             query = "insert into Users1(userID, username, usersurname, userlogin, useremail, userpassword) values ('" + userid + "', '" + name + "', '" + lastname + "', '" + login + "', '" + email + "', '" + password + "')";
                             func.setData(query, message);
                             ProfileMenu f3 = new ProfileMenu();

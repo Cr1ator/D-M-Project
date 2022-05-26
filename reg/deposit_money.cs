@@ -12,6 +12,8 @@ namespace reg
 {
     public partial class deposit_money : Form
     {
+        String query;
+        funkreg func = new funkreg();
         public deposit_money()
         {
             InitializeComponent();
@@ -80,10 +82,10 @@ namespace reg
 
         private void guna2TextBox2_TextChanged(object sender, EventArgs e)
         {
-            if (System.Text.RegularExpressions.Regex.IsMatch(guna2TextBox5.Text, "[^0-9]"))
+            if (System.Text.RegularExpressions.Regex.IsMatch(SumTextBox.Text, "[^0-9]"))
             {
                 MessageBox.Show("Вводите толька числа");
-                guna2TextBox5.Text = guna2TextBox5.Text.Remove(guna2TextBox5.Text.Length - 1);
+                SumTextBox.Text = SumTextBox.Text.Remove(SumTextBox.Text.Length - 1);
             }
         }
 
@@ -121,6 +123,20 @@ namespace reg
         }
 
         private void EntryRegButton_Click(object sender, EventArgs e)
+        {
+            string sum = SumTextBox.Text;
+            MessageBox.Show($"Сумма {sum} на ваш баланс была зачислина");
+
+            query = $"UPDATE Users1 SET numberPassport={sum} WHERE UserID={AuthMenu.txt1}";
+            //func.setData(query, message); ИЗМЕНИТЬ
+
+            ProfileMenu form3 = new ProfileMenu();
+            this.Hide();
+            form3.Show();
+
+        }
+
+        private void deposit_money_Load_1(object sender, EventArgs e)
         {
 
         }
