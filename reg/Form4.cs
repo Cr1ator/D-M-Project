@@ -68,12 +68,12 @@ namespace reg
 
 
                 string iMonthlyPayment = Convert.ToString(MonthlyPayment);
-                iMonthlyPayment = String.Format("{0:C}", MonthlyPayment);
+                iMonthlyPayment = String.Format("{0:0.00}", MonthlyPayment);
                 ibiMonthlyPayment.Text = iMonthlyPayment;
 
                 
                 //string iTotalPayment = Convert.ToString(TotalPayment);
-                string iTotalPayment = String.Format("{0:C}", TotalPayment);
+                string iTotalPayment = String.Format("{0:0.00}", TotalPayment);
                 IbiTotalPayment.Text = iTotalPayment;
             }
             catch (Exception ex)
@@ -122,7 +122,15 @@ namespace reg
             else
             {
                 MessageBox.Show("Банк вам выдает кредит, проверьте средства на балансе!");
-                //rtfReceipt.AppendText("aaaa")
+                rtfReceipt.AppendText("                            D&M Bank                                " + "\n");
+                rtfReceipt.AppendText("--------------------------------------------------------------" + "\n");
+                rtfReceipt.AppendText("Сумма кредита:      " + txtLoanAmount.Text + "\n");
+                rtfReceipt.AppendText("Срок кредита:       " + txtTerm.Text + "\n");
+                rtfReceipt.AppendText("Процентная ставка:  " +  "12%" + "\n");
+                rtfReceipt.AppendText("Ежемесячный платеж: " + ibiMonthlyPayment.Text + "  BYN"+ "\n");
+                rtfReceipt.AppendText("Итоговая сумма:     " + ibiMonthlyPayment.Text + "  BYN"+ "\n");
+                rtfReceipt.AppendText("--------------------------------------------------------------" + "\n");
+                rtfReceipt.AppendText("                            D&M Bank                                " + "\n");
 
             }
         }

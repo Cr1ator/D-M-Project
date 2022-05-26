@@ -60,7 +60,7 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label16 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rtfReceipt = new System.Windows.Forms.RichTextBox();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -548,7 +548,7 @@
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.guna2Panel1.BorderRadius = 40;
             this.guna2Panel1.Controls.Add(this.label16);
-            this.guna2Panel1.Controls.Add(this.richTextBox1);
+            this.guna2Panel1.Controls.Add(this.rtfReceipt);
             this.guna2Panel1.Controls.Add(this.guna2Button2);
             this.guna2Panel1.Controls.Add(this.label9);
             this.guna2Panel1.Controls.Add(this.label12);
@@ -579,18 +579,18 @@
             this.label16.UseMnemonic = false;
             this.label16.UseWaitCursor = true;
             // 
-            // richTextBox1
+            // rtfReceipt
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.richTextBox1.Font = new System.Drawing.Font("Co Headline Corp", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.richTextBox1.ForeColor = System.Drawing.Color.White;
-            this.richTextBox1.Location = new System.Drawing.Point(32, 285);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(317, 230);
-            this.richTextBox1.TabIndex = 87;
-            this.richTextBox1.Text = "";
-            this.richTextBox1.UseWaitCursor = true;
+            this.rtfReceipt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.rtfReceipt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rtfReceipt.Font = new System.Drawing.Font("Co Headline Corp", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rtfReceipt.ForeColor = System.Drawing.Color.White;
+            this.rtfReceipt.Location = new System.Drawing.Point(32, 285);
+            this.rtfReceipt.Name = "rtfReceipt";
+            this.rtfReceipt.Size = new System.Drawing.Size(317, 230);
+            this.rtfReceipt.TabIndex = 87;
+            this.rtfReceipt.Text = "";
+            this.rtfReceipt.UseWaitCursor = true;
             // 
             // guna2Button2
             // 
@@ -833,7 +833,7 @@
         public System.Windows.Forms.Label ibiMonthlyPayment;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtfReceipt;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label12;
