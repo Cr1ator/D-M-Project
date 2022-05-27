@@ -155,7 +155,7 @@ namespace reg
                 string queryInvestedBalanceAll = $"select Users1.InvestedBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
                 DataSet queryIBAll = func.getData(queryInvestedBalanceAll);
 
-                    DataSet sum_amount = func.getData(query);
+                DataSet sum_amount = func.getData(query);
                 int sums = Convert.ToInt32(sum_amount.Tables[0].Rows[0][0].ToString());
 
                 int Sum_ostatok = sums - Sum;
