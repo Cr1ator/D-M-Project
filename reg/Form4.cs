@@ -12,11 +12,16 @@ using Word = Microsoft.Office.Interop.Word;
 namespace reg
 {
 
+
     public partial class InvestMenu : Form
     {
+        String query1;
+        funkreg func = new funkreg();
+
         public InvestMenu()
         {
             InitializeComponent();
+
         }
 
         protected override void WndProc(ref Message m)
@@ -52,7 +57,7 @@ namespace reg
 
         double MonthlyPayment, InterestRate, monthlyInterestRate, loanAmount, TotalPayment, principalDebt;
         int Termofyears;
-        DateTime  DN, LD;
+        DateTime  DN, LD, PD;
         string dn, ld;
 
         private void txtLoanAmount_TextChanged(object sender, EventArgs e)
@@ -96,7 +101,8 @@ namespace reg
                 principalDebt = loanAmount / month;
                 DN = DateTime.Now;
                 LD = DateTime.Now.AddYears(Termofyears);
-                
+                PD = DateTime.Now.AddMonths(1);
+
                 dn = Convert.ToString(DN);
                 ld = Convert.ToString(LD);
 
@@ -144,6 +150,7 @@ namespace reg
                 principalDebt = loanAmount / month;
                 DN = DateTime.Now;
                 LD = DateTime.Now.AddYears(Termofyears);
+                PD = DateTime.Now.AddMonths(1);
 
                 dn = Convert.ToString(DN);
                 ld = Convert.ToString(LD);
@@ -196,8 +203,22 @@ namespace reg
                 rtfReceipt.AppendText("                            D&M Bank                                " + "\n");
 
                 guna2Button4.Visible = true;
+
+
+                query = $"select Users1.Amount from Users1 where UserID='{AuthMenu.txt1}'";
+                DataSet sum_amount = func.getData(query);
+                double Sum_amount = Convert.ToDouble(sum_amount.Tables[0].Rows[0][0].ToString());
+                double Sum_Credit = Sum_amount + loanAmount;
+
+                string query_sumupdate = $"UPDATE Users1 SET Amount={Sum_Credit} WHERE UserID={AuthMenu.txt1}";
+                func.setDataUpd(query_sumupdate);
+              
+                string query_savecredit = "insert into Credits(userID, Amount, interestRate, paymentDate, EndDate, monthlyPaymentAmount, Activity, DateCredits, salary, CreditsTotalPayment) values ('" + AuthMenu.txt1 + "', '" + Convert.ToDouble(txtLoanAmount.Text) + "', '" + 12.0 + "', '" + PD + "', '" + LD + "' , '" + Convert.ToDouble(ibiMonthlyPayment.Text) + "', '" + 1 + "', '" + DN + "', '" + Convert.ToDouble(ZP) + "', '" +  Convert.ToDouble(IbiTotalPayment.Text) + "')";
+                func.setDataUpd(query_savecredit);
+
             }
         }
+
         private void guna2Button4_Click(object sender, EventArgs e)
         {
             DateTime localDate = DateTime.Now;
@@ -215,6 +236,10 @@ namespace reg
 
             word.Process(items);
             MessageBox.Show("Word file created");
+
+
         }
+
+        string query = $"select Users1.Confirmed from Users1 where UserID='{AuthMenu.txt1}'";
     }
 }

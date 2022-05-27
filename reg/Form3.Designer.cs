@@ -305,6 +305,7 @@
             this.VkladSumLabel.Text = "0,0";
             this.VkladSumLabel.UseMnemonic = false;
             this.VkladSumLabel.UseWaitCursor = true;
+            this.VkladSumLabel.Click += new System.EventHandler(this.VkladSumLabel_Click);
             // 
             // label3
             // 

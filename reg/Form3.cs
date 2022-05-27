@@ -183,5 +183,10 @@ namespace reg
         {
 
         }
+
+        private void VkladSumLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

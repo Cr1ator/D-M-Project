@@ -368,7 +368,6 @@
             this.txtLoanAmount.HoverState.Parent = this.txtLoanAmount;
             this.txtLoanAmount.Location = new System.Drawing.Point(17, 118);
             this.txtLoanAmount.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.txtLoanAmount.MaxLength = 6;
             this.txtLoanAmount.Name = "txtLoanAmount";
             this.txtLoanAmount.PasswordChar = '\0';
             this.txtLoanAmount.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
@@ -402,7 +401,6 @@
             this.txtTerm.HoverState.Parent = this.txtTerm;
             this.txtTerm.Location = new System.Drawing.Point(15, 211);
             this.txtTerm.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.txtTerm.MaxLength = 2;
             this.txtTerm.Name = "txtTerm";
             this.txtTerm.PasswordChar = '\0';
             this.txtTerm.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
