@@ -90,7 +90,7 @@
             this.AccountText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.AccountText.Location = new System.Drawing.Point(12, 58);
             this.AccountText.Name = "AccountText";
-            this.AccountText.Size = new System.Drawing.Size(188, 28);
+            this.AccountText.Size = new System.Drawing.Size(195, 28);
             this.AccountText.TabIndex = 34;
             this.AccountText.Text = "Онлайн кредит";
             this.AccountText.UseMnemonic = false;
@@ -120,7 +120,7 @@
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label3.Location = new System.Drawing.Point(12, 187);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 17);
+            this.label3.Size = new System.Drawing.Size(68, 17);
             this.label3.TabIndex = 43;
             this.label3.Text = "На срок:";
             this.label3.UseMnemonic = false;
@@ -135,7 +135,7 @@
             this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label5.Location = new System.Drawing.Point(291, 146);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(37, 17);
+            this.label5.Size = new System.Drawing.Size(38, 17);
             this.label5.TabIndex = 41;
             this.label5.Text = "BYN";
             this.label5.UseMnemonic = false;
@@ -150,7 +150,7 @@
             this.label6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label6.Location = new System.Drawing.Point(25, 301);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 17);
+            this.label6.Size = new System.Drawing.Size(64, 17);
             this.label6.TabIndex = 47;
             this.label6.Text = "Ставка:";
             this.label6.UseMnemonic = false;
@@ -165,7 +165,7 @@
             this.label7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label7.Location = new System.Drawing.Point(21, 315);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(106, 37);
+            this.label7.Size = new System.Drawing.Size(107, 36);
             this.label7.TabIndex = 46;
             this.label7.Text = "12,0%";
             this.label7.UseMnemonic = false;
@@ -180,7 +180,7 @@
             this.label8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label8.Location = new System.Drawing.Point(291, 338);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 17);
+            this.label8.Size = new System.Drawing.Size(38, 17);
             this.label8.TabIndex = 45;
             this.label8.Text = "BYN";
             this.label8.UseMnemonic = false;
@@ -214,7 +214,7 @@
             this.SumText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.SumText.Location = new System.Drawing.Point(14, 268);
             this.SumText.Name = "SumText";
-            this.SumText.Size = new System.Drawing.Size(244, 15);
+            this.SumText.Size = new System.Drawing.Size(245, 15);
             this.SumText.TabIndex = 48;
             this.SumText.Text = "Ставка рассчитывается автоматиески";
             this.SumText.UseMnemonic = false;
@@ -238,7 +238,7 @@
             this.IbiTotalPayment.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.IbiTotalPayment.Location = new System.Drawing.Point(19, 459);
             this.IbiTotalPayment.Name = "IbiTotalPayment";
-            this.IbiTotalPayment.Size = new System.Drawing.Size(46, 25);
+            this.IbiTotalPayment.Size = new System.Drawing.Size(47, 25);
             this.IbiTotalPayment.TabIndex = 53;
             this.IbiTotalPayment.Text = "0,0";
             this.IbiTotalPayment.UseMnemonic = false;
@@ -272,7 +272,7 @@
             this.label11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label11.Location = new System.Drawing.Point(14, 411);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(158, 16);
+            this.label11.Size = new System.Drawing.Size(167, 16);
             this.label11.TabIndex = 50;
             this.label11.Text = "Общая сумма платежа:";
             this.label11.UseMnemonic = false;
@@ -287,7 +287,7 @@
             this.ibiMonthlyPayment.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.ibiMonthlyPayment.Location = new System.Drawing.Point(184, 459);
             this.ibiMonthlyPayment.Name = "ibiMonthlyPayment";
-            this.ibiMonthlyPayment.Size = new System.Drawing.Size(46, 25);
+            this.ibiMonthlyPayment.Size = new System.Drawing.Size(47, 25);
             this.ibiMonthlyPayment.TabIndex = 57;
             this.ibiMonthlyPayment.Text = "0,0";
             this.ibiMonthlyPayment.UseMnemonic = false;
@@ -321,7 +321,7 @@
             this.label14.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label14.Location = new System.Drawing.Point(180, 411);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(114, 16);
+            this.label14.Size = new System.Drawing.Size(118, 16);
             this.label14.TabIndex = 54;
             this.label14.Text = "Платёж в месяц:";
             this.label14.UseMnemonic = false;
@@ -422,7 +422,7 @@
             this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label4.Location = new System.Drawing.Point(14, 106);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 17);
+            this.label4.Size = new System.Drawing.Size(122, 17);
             this.label4.TabIndex = 61;
             this.label4.Text = "Введите сумму:";
             this.label4.UseMnemonic = false;
@@ -452,7 +452,7 @@
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Location = new System.Drawing.Point(127, 467);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 17);
+            this.label2.Size = new System.Drawing.Size(38, 17);
             this.label2.TabIndex = 63;
             this.label2.Text = "BYN";
             this.label2.UseMnemonic = false;
@@ -467,7 +467,7 @@
             this.label10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label10.Location = new System.Drawing.Point(291, 467);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(37, 17);
+            this.label10.Size = new System.Drawing.Size(38, 17);
             this.label10.TabIndex = 64;
             this.label10.Text = "BYN";
             this.label10.UseMnemonic = false;
@@ -568,6 +568,7 @@
             this.guna2Panel1.Size = new System.Drawing.Size(367, 639);
             this.guna2Panel1.TabIndex = 69;
             this.guna2Panel1.UseWaitCursor = true;
+            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // guna2Button4
             // 
@@ -615,6 +616,7 @@
             this.rtfReceipt.TabIndex = 87;
             this.rtfReceipt.Text = "";
             this.rtfReceipt.UseWaitCursor = true;
+            this.rtfReceipt.TextChanged += new System.EventHandler(this.rtfReceipt_TextChanged);
             // 
             // guna2Button2
             // 
@@ -643,7 +645,7 @@
             this.label9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label9.Location = new System.Drawing.Point(306, 230);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(37, 17);
+            this.label9.Size = new System.Drawing.Size(38, 17);
             this.label9.TabIndex = 83;
             this.label9.Text = "BYN";
             this.label9.UseMnemonic = false;
@@ -658,7 +660,7 @@
             this.label12.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label12.Location = new System.Drawing.Point(29, 193);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(142, 17);
+            this.label12.Size = new System.Drawing.Size(144, 17);
             this.label12.TabIndex = 85;
             this.label12.Text = "Введите сумму ЗП:";
             this.label12.UseMnemonic = false;
@@ -705,7 +707,7 @@
             this.label13.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label13.Location = new System.Drawing.Point(35, 115);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(286, 30);
+            this.label13.Size = new System.Drawing.Size(291, 30);
             this.label13.TabIndex = 82;
             this.label13.Text = "Для одобрения кредита необходимо ввести \r\nзаработную плату ";
             this.label13.UseMnemonic = false;
@@ -718,7 +720,7 @@
             this.label15.ForeColor = System.Drawing.Color.White;
             this.label15.Location = new System.Drawing.Point(33, 77);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(243, 28);
+            this.label15.Size = new System.Drawing.Size(252, 28);
             this.label15.TabIndex = 81;
             this.label15.Text = "Одобрение кредита";
             this.label15.UseWaitCursor = true;

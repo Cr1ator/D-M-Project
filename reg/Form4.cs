@@ -87,12 +87,22 @@ namespace reg
             }
         }
 
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void rtfReceipt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         public void guna2Button1_Click(object sender, EventArgs e)
         {
 
             try
             {
-               
+
                 InterestRate = 12.0;
                 monthlyInterestRate = InterestRate / 1200;
                 Termofyears = Convert.ToInt32(txtTerm.Text);
@@ -204,7 +214,6 @@ namespace reg
 
                 guna2Button4.Visible = true;
 
-
                 query = $"select Users1.Amount from Users1 where UserID='{AuthMenu.txt1}'";
                 DataSet sum_amount = func.getData(query);
                 double Sum_amount = Convert.ToDouble(sum_amount.Tables[0].Rows[0][0].ToString());
@@ -213,8 +222,12 @@ namespace reg
                 string query_sumupdate = $"UPDATE Users1 SET Amount={Sum_Credit} WHERE UserID={AuthMenu.txt1}";
                 func.setDataUpd(query_sumupdate);
               
-                string query_savecredit = "insert into Credits(userID, Amount, interestRate, paymentDate, EndDate, monthlyPaymentAmount, Activity, DateCredits, salary, CreditsTotalPayment) values ('" + AuthMenu.txt1 + "', '" + Convert.ToDouble(txtLoanAmount.Text) + "', '" + 12.0 + "', '" + PD + "', '" + LD + "' , '" + Convert.ToDouble(ibiMonthlyPayment.Text) + "', '" + 1 + "', '" + DN + "', '" + Convert.ToDouble(ZP) + "', '" +  Convert.ToDouble(IbiTotalPayment.Text) + "')";
+              //string query_savecredit = "insert into Credits(userID, Amount, interestRate, paymentDate, EndDate, monthlyPaymentAmount, Activity, DateCredits, salary, CreditsTotalPayment) values ('" + AuthMenu.txt1 + "', '" + Convert.ToDouble(txtLoanAmount.Text) + "', '" + 12.0 + "', '" + PD + "', '" + LD + "' , '" + Convert.ToDouble(ibiMonthlyPayment.Text) + "', '" + 1 + "', '" + DN + "', '" + Convert.ToDouble(ZP) + "', '" + BTP + "')";
+                string query_savecredit = "insert into Credits(userID, Amount, interestRate, paymentDate, EndDate, monthlyPaymentAmount, Activity, DateCredits, salary, CreditsTotalPayment) values ('" + AuthMenu.txt1 + "', '" + Convert.ToDouble(txtLoanAmount.Text) + "', '" + 12.0 + "', '" + PD + "', '" + LD + "' , '" +  ibiMonthlyPayment.Text.Replace(',', '.') + "', '" + 1 + "', '" + DN + "', '" + txtZP.Text.Replace(',', '.') + "', '" + IbiTotalPayment.Text.Replace(',', '.') + "')";
+                //string query_savecredit = "insert into Credits(userID, Amount) values ('" + AuthMenu.txt1 + "', '" + Convert.ToDouble(txtLoanAmount.Text) + "')";
                 func.setDataUpd(query_savecredit);
+
+
 
             }
         }
