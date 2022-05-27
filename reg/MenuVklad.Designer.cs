@@ -161,9 +161,9 @@
             this.DateLabel.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.DateLabel.Location = new System.Drawing.Point(189, 464);
             this.DateLabel.Name = "DateLabel";
-            this.DateLabel.Size = new System.Drawing.Size(35, 36);
+            this.DateLabel.Size = new System.Drawing.Size(29, 36);
             this.DateLabel.TabIndex = 71;
-            this.DateLabel.Text = "0";
+            this.DateLabel.Text = "1";
             this.DateLabel.UseMnemonic = false;
             this.DateLabel.UseWaitCursor = true;
             this.DateLabel.Click += new System.EventHandler(this.DateLabel_Click);

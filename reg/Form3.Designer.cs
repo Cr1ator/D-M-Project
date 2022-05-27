@@ -45,7 +45,7 @@
             this.MyAccountLabel = new System.Windows.Forms.Label();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.VkladSumLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -291,20 +291,20 @@
             this.guna2PictureBox3.UseWaitCursor = true;
             this.guna2PictureBox3.Click += new System.EventHandler(this.guna2PictureBox3_Click);
             // 
-            // label2
+            // VkladSumLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Location = new System.Drawing.Point(17, 235);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 36);
-            this.label2.TabIndex = 37;
-            this.label2.Text = "0,0";
-            this.label2.UseMnemonic = false;
-            this.label2.UseWaitCursor = true;
+            this.VkladSumLabel.AutoSize = true;
+            this.VkladSumLabel.BackColor = System.Drawing.Color.White;
+            this.VkladSumLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.VkladSumLabel.ForeColor = System.Drawing.Color.Black;
+            this.VkladSumLabel.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.VkladSumLabel.Location = new System.Drawing.Point(17, 235);
+            this.VkladSumLabel.Name = "VkladSumLabel";
+            this.VkladSumLabel.Size = new System.Drawing.Size(57, 36);
+            this.VkladSumLabel.TabIndex = 37;
+            this.VkladSumLabel.Text = "0,0";
+            this.VkladSumLabel.UseMnemonic = false;
+            this.VkladSumLabel.UseWaitCursor = true;
             // 
             // label3
             // 
@@ -569,7 +569,7 @@
             this.Controls.Add(this.ExitMenu);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.VkladSumLabel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.guna2PictureBox3);
             this.Controls.Add(this.guna2PictureBox2);
@@ -619,7 +619,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox MyAccountTextBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label VkladSumLabel;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;

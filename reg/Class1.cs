@@ -16,7 +16,7 @@ namespace reg
         {
             SqlConnection con = new SqlConnection();
             con.ConnectionString = "data source = DESKTOP-QL32HP5\\SQLEXPRESS; database=D&M; integrated security = True";
-            con.ConnectionString = "data source = DESKTOP-MBDIP47; database=D&M; integrated security = True";
+            //con.ConnectionString = "data source = DESKTOP-MBDIP47; database=D&M; integrated security = True";
             return con;
         }
 
@@ -45,6 +45,17 @@ namespace reg
             MessageBox.Show("'" + message + "'", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        public void setDataUpd(String query)
+        {
+
+            SqlConnection con = getConnection();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            con.Open();
+            cmd.CommandText = query;
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
 
         public Tuple<string, string> getUserInfo(String query)
         {

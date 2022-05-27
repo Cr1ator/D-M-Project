@@ -28,6 +28,12 @@ namespace reg
             {
                 TrueComfirmAccount.Hide();
             }
+
+            query = $"select Users1.Amount, Users1.InvestedBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
+            DataSet sum = func.getData(query);
+            MyAccountLabel.Text = sum.Tables[0].Rows[0][0].ToString();
+            VkladSumLabel.Text = sum.Tables[0].Rows[0][1].ToString();
+
         }
 
         protected override void WndProc(ref Message m)
