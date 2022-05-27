@@ -47,7 +47,7 @@
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.VkladSumLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.CreditSumLabel = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.HideMenu = new Guna.UI2.WinForms.Guna2ControlBox();
             this.ExitMenu = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -322,20 +322,20 @@
             this.label3.UseMnemonic = false;
             this.label3.UseWaitCursor = true;
             // 
-            // label4
+            // CreditSumLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label4.Location = new System.Drawing.Point(185, 237);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 36);
-            this.label4.TabIndex = 39;
-            this.label4.Text = "0,0";
-            this.label4.UseMnemonic = false;
-            this.label4.UseWaitCursor = true;
+            this.CreditSumLabel.AutoSize = true;
+            this.CreditSumLabel.BackColor = System.Drawing.Color.White;
+            this.CreditSumLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CreditSumLabel.ForeColor = System.Drawing.Color.Black;
+            this.CreditSumLabel.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.CreditSumLabel.Location = new System.Drawing.Point(185, 237);
+            this.CreditSumLabel.Name = "CreditSumLabel";
+            this.CreditSumLabel.Size = new System.Drawing.Size(57, 36);
+            this.CreditSumLabel.TabIndex = 39;
+            this.CreditSumLabel.Text = "0,0";
+            this.CreditSumLabel.UseMnemonic = false;
+            this.CreditSumLabel.UseWaitCursor = true;
             // 
             // label5
             // 
@@ -568,7 +568,7 @@
             this.Controls.Add(this.Menu3);
             this.Controls.Add(this.HideMenu);
             this.Controls.Add(this.ExitMenu);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.CreditSumLabel);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.VkladSumLabel);
             this.Controls.Add(this.label3);
@@ -618,7 +618,7 @@
         private System.Windows.Forms.Label MyAccountLabel;
         private System.Windows.Forms.Label BynText;
         private Guna.UI2.WinForms.Guna2PictureBox MyAccountTextBox;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label CreditSumLabel;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label VkladSumLabel;
         private System.Windows.Forms.Label label3;

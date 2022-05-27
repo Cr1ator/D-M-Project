@@ -227,8 +227,13 @@ namespace reg
                 //string query_savecredit = "insert into Credits(userID, Amount) values ('" + AuthMenu.txt1 + "', '" + Convert.ToDouble(txtLoanAmount.Text) + "')";
                 func.setDataUpd(query_savecredit);
 
-
-
+                //суммы которая сейчас на балансе кредитов
+                string queryCreditBalanceAll = $"select Users1.CreditBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
+                DataSet queryCBAll = func.getData(queryCreditBalanceAll);
+                //Сложение суммы взятого кредита с остальными
+                int CreditBalanceAll = Convert.ToInt32(queryCBAll.Tables[0].Rows[0][0]) + Convert.ToInt32(txtLoanAmount.Text);
+                string query_InvestedBalanceAll = $"UPDATE Users1 SET CreditBalanceAll={CreditBalanceAll} WHERE UserID={AuthMenu.txt1}";
+                func.setDataUpd(query_InvestedBalanceAll);
             }
         }
 
