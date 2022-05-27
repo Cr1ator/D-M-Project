@@ -16,7 +16,7 @@ namespace reg
         public MenuVklad()
         {
             InitializeComponent();
-            ProcentTextBox.Text = "14%";
+            ProcentTextBox.Text = "14";
         }
 
         protected override void WndProc(ref Message m)
@@ -76,7 +76,7 @@ namespace reg
             if (Convert.ToInt32(moneyTrackBar.Value.ToString()) <= 100000)
             {
                 DateTrackBar.Value = 8;
-                ProcentTextBox.Text = "14%";
+                ProcentTextBox.Text = "14";
                 DateLabel.Text = "8";
             }
             else
@@ -84,13 +84,13 @@ namespace reg
                 if (Convert.ToInt32(moneyTrackBar.Value.ToString()) > 100000 && Convert.ToInt32(moneyTrackBar.Value.ToString()) <= 300000)
                 {
                     DateTrackBar.Value = 16;
-                    ProcentTextBox.Text = "20%";
+                    ProcentTextBox.Text = "20";
                     DateLabel.Text = "16";
                 }
                 else
                 {
                     DateTrackBar.Value = 24;
-                    ProcentTextBox.Text = "24%";
+                    ProcentTextBox.Text = "24";
                     DateLabel.Text = "24";
                 }
             }
@@ -113,7 +113,7 @@ namespace reg
             {
                 moneyTrackBar.Value = 100000;
                 SumLabel.Text = "100000";
-                ProcentTextBox.Text = "14%";
+                ProcentTextBox.Text = "14";
             }
             else
             {
@@ -121,7 +121,7 @@ namespace reg
                 {
                     moneyTrackBar.Value = 300000;
                     SumLabel.Text = "300000";
-                    ProcentTextBox.Text = "20%";
+                    ProcentTextBox.Text = "20";
                 }
                 else
                 {
@@ -129,7 +129,7 @@ namespace reg
                     {
                         moneyTrackBar.Value = 500000;
                         SumLabel.Text = "500000";
-                        ProcentTextBox.Text = "24%";
+                        ProcentTextBox.Text = "24";
                     }
                 }
             }
@@ -143,19 +143,43 @@ namespace reg
             {
                 int Sum = Convert.ToInt32(SumLabel.Text);
                 string Date = DateLabel.Text;
-                //MessageBox.Show(DateTime.Now.ToString());
                 var dat = DateTime.Now;
-                MessageBox.Show(dat.AddMonths(Convert.ToInt32(Date)).ToString("d"));
+                DateTime DateDeposit = dat.AddMonths(Convert.ToInt32(Date));
+
+                int days = (DateDeposit - dat).Days;
 
                 //суммы которая сейчас на аккаунте
                 query = $"select Users1.Amount from Users1 where UserID='{AuthMenu.txt1}'";
-                DataSet sum_amount = func.getData(query);
+
+                //суммы которая сейчас на балансе вкладов
+                string queryInvestedBalanceAll = $"select Users1.InvestedBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
+                DataSet queryIBAll = func.getData(queryInvestedBalanceAll);
+
+                    DataSet sum_amount = func.getData(query);
                 int sums = Convert.ToInt32(sum_amount.Tables[0].Rows[0][0].ToString());
 
+                int Sum_ostatok = sums - Sum;
+
+                double Sum_viplat = Sum * Math.Pow((1 + ((Convert.ToInt32(ProcentTextBox.Text) * 0.01) / 365.0)), days);
+
+                int InvestedBalanceAll = Convert.ToInt32(queryIBAll.Tables[0].Rows[0][0]) + Convert.ToInt32(Sum_viplat);
                 if (Sum <= sums)
                 {
-                    Sum = sums - Sum;
-                    MessageBox.Show(Sum.ToString());
+                    string query_deposit = "insert into Deposits(userID, Amount, Activity, DateDeposit) values ('" + AuthMenu.txt1 + "', '" + Convert.ToInt32(Sum_viplat) + "', '" + 1 + "', '" + DateDeposit.ToShortDateString() + "')";
+                    string query_operations = "insert into Operation(userID, Amount, TypeOperation, DateOperation) values ('" + AuthMenu.txt1 + "', '" + Sum + "', '" + 4 + "', '" + DateTime.Now + "')"; 
+                    string query_sumupdate = $"UPDATE Users1 SET Amount={Sum_ostatok} WHERE UserID={AuthMenu.txt1}";
+                    string query_InvestedBalanceAll = $"UPDATE Users1 SET InvestedBalanceAll={InvestedBalanceAll} WHERE UserID={AuthMenu.txt1}";
+
+                    func.setDataUpd(query_deposit);
+                    func.setDataUpd(query_operations);
+                    func.setDataUpd(query_sumupdate);
+                    func.setDataUpd(query_InvestedBalanceAll);
+
+                    MessageBox.Show($"Вклад успешно внесён\nДата выплаты вклада: {DateDeposit.ToShortDateString()}");
+
+                    ProfileMenu form3 = new ProfileMenu();
+                    this.Hide();
+                    form3.Show();
                 }
                 else
                 {

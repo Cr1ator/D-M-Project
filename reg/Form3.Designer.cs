@@ -60,6 +60,7 @@
             this.BackButton = new Guna.UI2.WinForms.Guna2Button();
             this.noComfirmAccount = new Guna.UI2.WinForms.Guna2PictureBox();
             this.TrueComfirmAccount = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MyAccountTextBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
@@ -551,12 +552,27 @@
             this.TrueComfirmAccount.UseWaitCursor = true;
             this.TrueComfirmAccount.Click += new System.EventHandler(this.guna2PictureBox1_Click_1);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.Silver;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Location = new System.Drawing.Point(16, 284);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(119, 18);
+            this.label1.TabIndex = 51;
+            this.label1.Text = "Сумма вкладов";
+            this.label1.UseMnemonic = false;
+            this.label1.UseWaitCursor = true;
+            // 
             // ProfileMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(354, 639);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.TrueComfirmAccount);
             this.Controls.Add(this.noComfirmAccount);
             this.Controls.Add(this.BackButton);
@@ -634,5 +650,6 @@
         private Guna.UI2.WinForms.Guna2Button BackButton;
         private Guna.UI2.WinForms.Guna2PictureBox noComfirmAccount;
         private Guna.UI2.WinForms.Guna2PictureBox TrueComfirmAccount;
+        private System.Windows.Forms.Label label1;
     }
 }
