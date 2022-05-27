@@ -56,9 +56,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.ProcentTextBox = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.ProcentTextBox = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
@@ -464,22 +465,6 @@
             this.label13.UseMnemonic = false;
             this.label13.UseWaitCursor = true;
             // 
-            // ProcentTextBox
-            // 
-            this.ProcentTextBox.AutoSize = true;
-            this.ProcentTextBox.BackColor = System.Drawing.Color.White;
-            this.ProcentTextBox.Font = new System.Drawing.Font("Co Headline Corp", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ProcentTextBox.ForeColor = System.Drawing.Color.Black;
-            this.ProcentTextBox.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.ProcentTextBox.Location = new System.Drawing.Point(24, 335);
-            this.ProcentTextBox.Name = "ProcentTextBox";
-            this.ProcentTextBox.Size = new System.Drawing.Size(96, 36);
-            this.ProcentTextBox.TabIndex = 91;
-            this.ProcentTextBox.Text = "0,0%";
-            this.ProcentTextBox.UseMnemonic = false;
-            this.ProcentTextBox.UseWaitCursor = true;
-            this.ProcentTextBox.Click += new System.EventHandler(this.ProcentTextBox_Click);
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -516,12 +501,44 @@
             this.guna2PictureBox3.UseWaitCursor = true;
             this.guna2PictureBox3.Click += new System.EventHandler(this.guna2PictureBox3_Click);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.Font = new System.Drawing.Font("Co Headline Corp", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label9.Location = new System.Drawing.Point(66, 335);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(46, 36);
+            this.label9.TabIndex = 93;
+            this.label9.Text = "%";
+            this.label9.UseMnemonic = false;
+            this.label9.UseWaitCursor = true;
+            // 
+            // ProcentTextBox
+            // 
+            this.ProcentTextBox.AutoSize = true;
+            this.ProcentTextBox.BackColor = System.Drawing.Color.White;
+            this.ProcentTextBox.Font = new System.Drawing.Font("Co Headline Corp", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ProcentTextBox.ForeColor = System.Drawing.Color.Black;
+            this.ProcentTextBox.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.ProcentTextBox.Location = new System.Drawing.Point(24, 335);
+            this.ProcentTextBox.Name = "ProcentTextBox";
+            this.ProcentTextBox.Size = new System.Drawing.Size(48, 36);
+            this.ProcentTextBox.TabIndex = 91;
+            this.ProcentTextBox.Text = "14";
+            this.ProcentTextBox.UseMnemonic = false;
+            this.ProcentTextBox.UseWaitCursor = true;
+            this.ProcentTextBox.Click += new System.EventHandler(this.ProcentTextBox_Click);
+            // 
             // MenuVklad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(354, 639);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.ProcentTextBox);
             this.Controls.Add(this.label16);
@@ -592,8 +609,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label ProcentTextBox;
         private System.Windows.Forms.Label label16;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label ProcentTextBox;
     }
 }
