@@ -137,18 +137,35 @@ namespace reg
 
         private void EntryRegButton_Click(object sender, EventArgs e)
         {
-            string Sum = SumLabel.Text;
-            string Date = DateLabel.Text;
-            //MessageBox.Show(DateTime.Now.ToString());
-            var dat = DateTime.Now;
-            MessageBox.Show(dat.AddMonths(Convert.ToInt32(Date)).ToString("d"));
+            string query = $"select Users1.Confirmed from Users1 where UserID='{AuthMenu.txt1}'";
+            DataSet ds = func.getData(query);
+            if ((bool)ds.Tables[0].Rows[0][0] == true)
+            {
+                int Sum = Convert.ToInt32(SumLabel.Text);
+                string Date = DateLabel.Text;
+                //MessageBox.Show(DateTime.Now.ToString());
+                var dat = DateTime.Now;
+                MessageBox.Show(dat.AddMonths(Convert.ToInt32(Date)).ToString("d"));
 
-            //суммы которая сейчас на аккаунте
-            string query = $"select Users1.Amount from Users1 where UserID='{AuthMenu.txt1}'";
-            DataSet sum_amount = func.getData(query);
-            int sums = Convert.ToInt32(sum_amount.Tables[0].Rows[0][0].ToString());
+                //суммы которая сейчас на аккаунте
+                query = $"select Users1.Amount from Users1 where UserID='{AuthMenu.txt1}'";
+                DataSet sum_amount = func.getData(query);
+                int sums = Convert.ToInt32(sum_amount.Tables[0].Rows[0][0].ToString());
 
-            sum = sum + sums;
+                if (Sum <= sums)
+                {
+                    Sum = sums - Sum;
+                    MessageBox.Show(Sum.ToString());
+                }
+                else
+                {
+                    MessageBox.Show("Недостаточно средств", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Ваш аккаунт не подтверждён! Подтвердите аккаунт чтобы совершить вклад", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void ProcentTextBox_Click(object sender, EventArgs e)
