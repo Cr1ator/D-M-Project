@@ -107,27 +107,35 @@ namespace reg
                 monthlyInterestRate = InterestRate / 1200;
                 Termofyears = Convert.ToInt32(txtTerm.Text);
                 loanAmount = Convert.ToDouble(txtLoanAmount.Text);
-                double month = (Termofyears * 12) - 1;
-                principalDebt = loanAmount / month;
-                DN = DateTime.Now;
-                LD = DateTime.Now.AddYears(Termofyears);
-                PD = DateTime.Now.AddMonths(1);
+                if (loanAmount>1000)
+                {
+                    double month = (Termofyears * 12) - 1;
+                    principalDebt = loanAmount / month;
+                    DN = DateTime.Now;
+                    LD = DateTime.Now.AddYears(Termofyears);
+                    PD = DateTime.Now.AddMonths(1);
 
-                dn = Convert.ToString(DN);
-                ld = Convert.ToString(LD);
+                    dn = Convert.ToString(DN);
+                    ld = Convert.ToString(LD);
 
-                MonthlyPayment = (loanAmount * monthlyInterestRate / 1 - 1 / Math.Pow(1 + monthlyInterestRate, Termofyears * 12))+principalDebt;
-                TotalPayment = MonthlyPayment * Termofyears * 12;
+                    MonthlyPayment = (loanAmount * monthlyInterestRate / 1 - 1 / Math.Pow(1 + monthlyInterestRate, Termofyears * 12)) + principalDebt;
+                    TotalPayment = MonthlyPayment * Termofyears * 12;
 
 
-                string iMonthlyPayment = Convert.ToString(MonthlyPayment);
-                iMonthlyPayment = String.Format("{0:0.00}", MonthlyPayment);
-                ibiMonthlyPayment.Text = iMonthlyPayment;
+                    string iMonthlyPayment = Convert.ToString(MonthlyPayment);
+                    iMonthlyPayment = String.Format("{0:0.00}", MonthlyPayment);
+                    ibiMonthlyPayment.Text = iMonthlyPayment;
 
+
+                    //string iTotalPayment = Convert.ToString(TotalPayment);
+                    string iTotalPayment = String.Format("{0:0.00}", TotalPayment);
+                    IbiTotalPayment.Text = iTotalPayment;
+                }
+                else
+                {
+                    MessageBox.Show("Банк выдает кредит от 1000 BYN", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
                 
-                //string iTotalPayment = Convert.ToString(TotalPayment);
-                string iTotalPayment = String.Format("{0:0.00}", TotalPayment);
-                IbiTotalPayment.Text = iTotalPayment;
             }
             catch (Exception ex)
             {
@@ -151,33 +159,38 @@ namespace reg
         {
             try
             {
-
                 InterestRate = 12.0;
                 monthlyInterestRate = InterestRate / 1200;
                 Termofyears = Convert.ToInt32(txtTerm.Text);
                 loanAmount = Convert.ToDouble(txtLoanAmount.Text);
-                double month = (Termofyears * 12) - 1;
-                principalDebt = loanAmount / month;
-                DN = DateTime.Now;
-                LD = DateTime.Now.AddYears(Termofyears);
-                PD = DateTime.Now.AddMonths(1);
+                if (loanAmount > 1000)
+                {
+                    double month = (Termofyears * 12) - 1;
+                    principalDebt = loanAmount / month;
+                    DN = DateTime.Now;
+                    LD = DateTime.Now.AddYears(Termofyears);
+                    PD = DateTime.Now.AddMonths(1);
 
-                dn = Convert.ToString(DN);
-                ld = Convert.ToString(LD);
+                    dn = Convert.ToString(DN);
+                    ld = Convert.ToString(LD);
 
-                MonthlyPayment = (loanAmount * monthlyInterestRate / 1 - 1 / Math.Pow(1 + monthlyInterestRate, Termofyears * 12)) + principalDebt;
-                TotalPayment = MonthlyPayment * Termofyears * 12;
-
-
-                string iMonthlyPayment = Convert.ToString(MonthlyPayment);
-                iMonthlyPayment = String.Format("{0:0.00}", MonthlyPayment);
-                ibiMonthlyPayment.Text = iMonthlyPayment;
+                    MonthlyPayment = (loanAmount * monthlyInterestRate / 1 - 1 / Math.Pow(1 + monthlyInterestRate, Termofyears * 12)) + principalDebt;
+                    TotalPayment = MonthlyPayment * Termofyears * 12;
 
 
-                //string iTotalPayment = Convert.ToString(TotalPayment);
-                string iTotalPayment = String.Format("{0:0.00}", TotalPayment);
-                IbiTotalPayment.Text = iTotalPayment;
-                guna2Panel1.Visible = true;
+                    string iMonthlyPayment = Convert.ToString(MonthlyPayment);
+                    iMonthlyPayment = String.Format("{0:0.00}", MonthlyPayment);
+                    ibiMonthlyPayment.Text = iMonthlyPayment;
+
+
+                    //string iTotalPayment = Convert.ToString(TotalPayment);
+                    string iTotalPayment = String.Format("{0:0.00}", TotalPayment);
+                    IbiTotalPayment.Text = iTotalPayment;
+                }
+                else
+                {
+                    MessageBox.Show("Банк выдает кредит от 1000 BYN", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             catch (Exception ex)
             {
