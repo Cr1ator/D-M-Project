@@ -134,7 +134,7 @@ namespace reg
                         string iTotalPayment = String.Format("{0:0.00}", TotalPayment);
                         IbiTotalPayment.Text = iTotalPayment;
 
-                       
+                                            
                     }
                     else
                     {
@@ -264,7 +264,7 @@ namespace reg
                 func.setDataUpd(query_savecredit);
 
                 //суммы которая сейчас на балансе кредитов
-                string queryCreditBalanceAll = $"select Users1.CreditBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
+                string queryCreditBalanceAll = $"select Credits.CreditsTotalPayment from Credits where UserID='{AuthMenu.txt1}'";
                 DataSet queryCBAll = func.getData(queryCreditBalanceAll);
                 //Сложение суммы взятого кредита с остальными
                 int CreditBalanceAll = Convert.ToInt32(queryCBAll.Tables[0].Rows[0][0]) + Convert.ToInt32(txtLoanAmount.Text);
