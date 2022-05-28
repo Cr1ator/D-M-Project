@@ -60,12 +60,19 @@
             this.BackButton = new Guna.UI2.WinForms.Guna2Button();
             this.noComfirmAccount = new Guna.UI2.WinForms.Guna2PictureBox();
             this.TrueComfirmAccount = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.repayment = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
+            this.ALLP = new Guna.UI2.WinForms.Guna2Button();
+            this.MP = new Guna.UI2.WinForms.Guna2Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MyAccountTextBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.noComfirmAccount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TrueComfirmAccount)).BeginInit();
+            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2HScrollBar1
@@ -552,12 +559,108 @@
             this.TrueComfirmAccount.UseWaitCursor = true;
             this.TrueComfirmAccount.Click += new System.EventHandler(this.guna2PictureBox1_Click_1);
             // 
+            // repayment
+            // 
+            this.repayment.CheckedState.Parent = this.repayment;
+            this.repayment.CustomImages.Parent = this.repayment;
+            this.repayment.FillColor = System.Drawing.Color.White;
+            this.repayment.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.repayment.ForeColor = System.Drawing.Color.White;
+            this.repayment.HoverState.Parent = this.repayment;
+            this.repayment.Image = ((System.Drawing.Image)(resources.GetObject("repayment.Image")));
+            this.repayment.ImageSize = new System.Drawing.Size(30, 30);
+            this.repayment.Location = new System.Drawing.Point(291, 221);
+            this.repayment.Name = "repayment";
+            this.repayment.ShadowDecoration.Parent = this.repayment;
+            this.repayment.Size = new System.Drawing.Size(39, 35);
+            this.repayment.TabIndex = 51;
+            this.repayment.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.repayment.UseWaitCursor = true;
+            this.repayment.Click += new System.EventHandler(this.repayment_Click);
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.guna2Button6);
+            this.guna2Panel1.Controls.Add(this.ALLP);
+            this.guna2Panel1.Controls.Add(this.MP);
+            this.guna2Panel1.Controls.Add(this.label1);
+            this.guna2Panel1.Location = new System.Drawing.Point(38, 84);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(264, 140);
+            this.guna2Panel1.TabIndex = 52;
+            this.guna2Panel1.UseWaitCursor = true;
+            // 
+            // guna2Button6
+            // 
+            this.guna2Button6.CheckedState.Parent = this.guna2Button6;
+            this.guna2Button6.CustomImages.Parent = this.guna2Button6;
+            this.guna2Button6.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button6.ForeColor = System.Drawing.Color.White;
+            this.guna2Button6.HoverState.Parent = this.guna2Button6;
+            this.guna2Button6.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button6.Image")));
+            this.guna2Button6.Location = new System.Drawing.Point(239, 9);
+            this.guna2Button6.Name = "guna2Button6";
+            this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
+            this.guna2Button6.Size = new System.Drawing.Size(21, 17);
+            this.guna2Button6.TabIndex = 43;
+            this.guna2Button6.UseWaitCursor = true;
+            this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);
+            // 
+            // ALLP
+            // 
+            this.ALLP.CheckedState.Parent = this.ALLP;
+            this.ALLP.CustomImages.Parent = this.ALLP;
+            this.ALLP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.ALLP.Font = new System.Drawing.Font("Co Headline Corp", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ALLP.ForeColor = System.Drawing.Color.Black;
+            this.ALLP.HoverState.Parent = this.ALLP;
+            this.ALLP.Location = new System.Drawing.Point(153, 74);
+            this.ALLP.Name = "ALLP";
+            this.ALLP.ShadowDecoration.Parent = this.ALLP;
+            this.ALLP.Size = new System.Drawing.Size(81, 39);
+            this.ALLP.TabIndex = 2;
+            this.ALLP.Text = "Весь долг";
+            this.ALLP.UseWaitCursor = true;
+            this.ALLP.Click += new System.EventHandler(this.ALLP_Click);
+            // 
+            // MP
+            // 
+            this.MP.CheckedState.Parent = this.MP;
+            this.MP.CustomImages.Parent = this.MP;
+            this.MP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.MP.Font = new System.Drawing.Font("Co Headline Corp", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MP.ForeColor = System.Drawing.Color.Black;
+            this.MP.HoverState.Parent = this.MP;
+            this.MP.Location = new System.Drawing.Point(31, 74);
+            this.MP.Name = "MP";
+            this.MP.ShadowDecoration.Parent = this.MP;
+            this.MP.Size = new System.Drawing.Size(81, 39);
+            this.MP.TabIndex = 1;
+            this.MP.Text = "Месячный платеж";
+            this.MP.UseWaitCursor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Co Headline Corp", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(27, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(207, 23);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Погашение кредита ";
+            this.label1.UseWaitCursor = true;
+            // 
             // ProfileMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(354, 639);
+            this.Controls.Add(this.guna2Panel1);
+            this.Controls.Add(this.repayment);
             this.Controls.Add(this.TrueComfirmAccount);
             this.Controls.Add(this.noComfirmAccount);
             this.Controls.Add(this.BackButton);
@@ -598,6 +701,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.noComfirmAccount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TrueComfirmAccount)).EndInit();
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -635,5 +740,11 @@
         private Guna.UI2.WinForms.Guna2Button BackButton;
         private Guna.UI2.WinForms.Guna2PictureBox noComfirmAccount;
         private Guna.UI2.WinForms.Guna2PictureBox TrueComfirmAccount;
+        private Guna.UI2.WinForms.Guna2Button repayment;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Button ALLP;
+        private Guna.UI2.WinForms.Guna2Button MP;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button6;
     }
 }

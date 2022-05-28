@@ -58,7 +58,7 @@ namespace reg
             {
                 imageno = 1;
             }
-            pictureBoxSlider.ImageLocation = String.Format(@"slider\imageSlide{0}.png", imageno); 
+            pictureBoxSlider.ImageLocation = String.Format(@"slider\imageSlide{0}.png", imageno);
             imageno++;
         }
 
@@ -84,7 +84,7 @@ namespace reg
 
         private void ProfileMenu_Load(object sender, EventArgs e)
         {
-            timer1_Tick( sender, e);
+            timer1_Tick(sender, e);
             ToolTip t = new ToolTip();
             t.SetToolTip(guna2Button3, "Кредиты");
             t.SetToolTip(guna2Button2, "Пополнить счёт");
@@ -92,6 +92,9 @@ namespace reg
             t.SetToolTip(Menu3, "Подтверждение");
             t.SetToolTip(noComfirmAccount, "Подтвердите аккаунт");
             t.SetToolTip(TrueComfirmAccount, "Аккакут подтверждён");
+            t.SetToolTip(repayment, "Погашение кредита");
+
+            guna2Panel1.Visible = false;
 
         }
 
@@ -187,6 +190,41 @@ namespace reg
 
         private void VkladSumLabel_Click(object sender, EventArgs e)
         {
+
+        }
+
+
+        private void repayment_Click(object sender, EventArgs e)
+        {
+            guna2Panel1.Visible = true;
+        }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            guna2Panel1.Visible = false;
+        }
+
+        private void ALLP_Click(object sender, EventArgs e)
+        {
+            query = $"select Users1.Amount, Users1.CreditBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
+            DataSet sum_amount = func.getData(query);
+            DataSet sum_credits = func.getData(query);
+            double Sum_amount = Convert.ToDouble(sum_amount.Tables[0].Rows[0][0].ToString());
+            double Sum_credits = Convert.ToDouble(sum_credits.Tables[0].Rows[0][1].ToString());
+
+            if (Sum_amount > Sum_credits)
+            {
+                double repayment = Sum_amount - Sum_credits;
+
+                string query_sumupdate = $"UPDATE Users1 SET Amount={repayment}, CreditBalanceAll= {0} WHERE UserID={AuthMenu.txt1}";
+                func.setDataUpd(query_sumupdate);
+
+                guna2Panel1.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("Недостаточно средств для вывода", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
         }
     }

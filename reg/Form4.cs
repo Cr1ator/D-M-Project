@@ -177,13 +177,14 @@ namespace reg
                 //string iTotalPayment = Convert.ToString(TotalPayment);
                 string iTotalPayment = String.Format("{0:0.00}", TotalPayment);
                 IbiTotalPayment.Text = iTotalPayment;
+                guna2Panel1.Visible = true;
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Поля не заполнены!");
             }
 
-            guna2Panel1.Visible = true;
+            
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
