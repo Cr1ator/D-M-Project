@@ -212,7 +212,7 @@ namespace reg
             double Sum_amount = Convert.ToDouble(sum_amount.Tables[0].Rows[0][0].ToString());
             double Sum_credits = Convert.ToDouble(sum_credits.Tables[0].Rows[0][1].ToString());
 
-            if (Sum_amount > Sum_credits)
+            if (Sum_amount >= Sum_credits)
             {
                 double repayment = Sum_amount - Sum_credits;
 

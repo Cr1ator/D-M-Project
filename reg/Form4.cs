@@ -99,49 +99,58 @@ namespace reg
 
         public void guna2Button1_Click(object sender, EventArgs e)
         {
-
-            try
+            string query = $"select Users1.Confirmed from Users1 where UserID='{AuthMenu.txt1}'";
+            DataSet ds = func.getData(query);
+            if ((bool)ds.Tables[0].Rows[0][0] == true)
             {
-
-                InterestRate = 12.0;
-                monthlyInterestRate = InterestRate / 1200;
-                Termofyears = Convert.ToInt32(txtTerm.Text);
-                loanAmount = Convert.ToDouble(txtLoanAmount.Text);
-                if (loanAmount>1000)
+                try
                 {
-                    double month = (Termofyears * 12) - 1;
-                    principalDebt = loanAmount / month;
-                    DN = DateTime.Now;
-                    LD = DateTime.Now.AddYears(Termofyears);
-                    PD = DateTime.Now.AddMonths(1);
 
-                    dn = Convert.ToString(DN);
-                    ld = Convert.ToString(LD);
+                    InterestRate = 12.0;
+                    monthlyInterestRate = InterestRate / 1200;
+                    Termofyears = Convert.ToInt32(txtTerm.Text);
+                    loanAmount = Convert.ToDouble(txtLoanAmount.Text);
+                    if (loanAmount > 1000)
+                    {
+                        double month = (Termofyears * 12) - 1;
+                        principalDebt = loanAmount / month;
+                        DN = DateTime.Now;
+                        LD = DateTime.Now.AddYears(Termofyears);
+                        PD = DateTime.Now.AddMonths(1);
 
-                    MonthlyPayment = (loanAmount * monthlyInterestRate / 1 - 1 / Math.Pow(1 + monthlyInterestRate, Termofyears * 12)) + principalDebt;
-                    TotalPayment = MonthlyPayment * Termofyears * 12;
+                        dn = Convert.ToString(DN);
+                        ld = Convert.ToString(LD);
+
+                        MonthlyPayment = (loanAmount * monthlyInterestRate / 1 - 1 / Math.Pow(1 + monthlyInterestRate, Termofyears * 12)) + principalDebt;
+                        TotalPayment = MonthlyPayment * Termofyears * 12;
 
 
-                    string iMonthlyPayment = Convert.ToString(MonthlyPayment);
-                    iMonthlyPayment = String.Format("{0:0.00}", MonthlyPayment);
-                    ibiMonthlyPayment.Text = iMonthlyPayment;
+                        string iMonthlyPayment = Convert.ToString(MonthlyPayment);
+                        iMonthlyPayment = String.Format("{0:0.00}", MonthlyPayment);
+                        ibiMonthlyPayment.Text = iMonthlyPayment;
 
 
-                    //string iTotalPayment = Convert.ToString(TotalPayment);
-                    string iTotalPayment = String.Format("{0:0.00}", TotalPayment);
-                    IbiTotalPayment.Text = iTotalPayment;
+                        //string iTotalPayment = Convert.ToString(TotalPayment);
+                        string iTotalPayment = String.Format("{0:0.00}", TotalPayment);
+                        IbiTotalPayment.Text = iTotalPayment;
+
+                       
+                    }
+                    else
+                    {
+                        MessageBox.Show("Банк выдает кредит от 1000 BYN", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+
                 }
-                else
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Банк выдает кредит от 1000 BYN", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Поля не заполнены!");
                 }
-                
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Поля не заполнены!");
+                MessageBox.Show("Ваш аккаунт не подтверждён! Подтвердите аккаунт чтобы взять кредит", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
 
         }
 
@@ -157,47 +166,60 @@ namespace reg
 
         private void EntryRegButton_Click_1(object sender, EventArgs e)
         {
-            try
+            string query = $"select Users1.Confirmed from Users1 where UserID='{AuthMenu.txt1}'";
+            DataSet ds = func.getData(query);
+            if ((bool)ds.Tables[0].Rows[0][0] == true)
             {
-                InterestRate = 12.0;
-                monthlyInterestRate = InterestRate / 1200;
-                Termofyears = Convert.ToInt32(txtTerm.Text);
-                loanAmount = Convert.ToDouble(txtLoanAmount.Text);
-                if (loanAmount > 1000)
+                try
                 {
-                    double month = (Termofyears * 12) - 1;
-                    principalDebt = loanAmount / month;
-                    DN = DateTime.Now;
-                    LD = DateTime.Now.AddYears(Termofyears);
-                    PD = DateTime.Now.AddMonths(1);
 
-                    dn = Convert.ToString(DN);
-                    ld = Convert.ToString(LD);
+                    InterestRate = 12.0;
+                    monthlyInterestRate = InterestRate / 1200;
+                    Termofyears = Convert.ToInt32(txtTerm.Text);
+                    loanAmount = Convert.ToDouble(txtLoanAmount.Text);
+                    if (loanAmount > 1000)
+                    {
+                        double month = (Termofyears * 12) - 1;
+                        principalDebt = loanAmount / month;
+                        DN = DateTime.Now;
+                        LD = DateTime.Now.AddYears(Termofyears);
+                        PD = DateTime.Now.AddMonths(1);
 
-                    MonthlyPayment = (loanAmount * monthlyInterestRate / 1 - 1 / Math.Pow(1 + monthlyInterestRate, Termofyears * 12)) + principalDebt;
-                    TotalPayment = MonthlyPayment * Termofyears * 12;
+                        dn = Convert.ToString(DN);
+                        ld = Convert.ToString(LD);
+
+                        MonthlyPayment = (loanAmount * monthlyInterestRate / 1 - 1 / Math.Pow(1 + monthlyInterestRate, Termofyears * 12)) + principalDebt;
+                        TotalPayment = MonthlyPayment * Termofyears * 12;
 
 
-                    string iMonthlyPayment = Convert.ToString(MonthlyPayment);
-                    iMonthlyPayment = String.Format("{0:0.00}", MonthlyPayment);
-                    ibiMonthlyPayment.Text = iMonthlyPayment;
+                        string iMonthlyPayment = Convert.ToString(MonthlyPayment);
+                        iMonthlyPayment = String.Format("{0:0.00}", MonthlyPayment);
+                        ibiMonthlyPayment.Text = iMonthlyPayment;
 
 
-                    //string iTotalPayment = Convert.ToString(TotalPayment);
-                    string iTotalPayment = String.Format("{0:0.00}", TotalPayment);
-                    IbiTotalPayment.Text = iTotalPayment;
+                        //string iTotalPayment = Convert.ToString(TotalPayment);
+                        string iTotalPayment = String.Format("{0:0.00}", TotalPayment);
+                        IbiTotalPayment.Text = iTotalPayment;
+
+                        guna2Panel1.Visible = true;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Банк выдает кредит от 1000 BYN", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+
                 }
-                else
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Банк выдает кредит от 1000 BYN", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Поля не заполнены!");
                 }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Поля не заполнены!");
+                MessageBox.Show("Ваш аккаунт не подтверждён! Подтвердите аккаунт чтобы взять кредит", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
-            
+
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
