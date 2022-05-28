@@ -580,14 +580,15 @@
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.BorderRadius = 15;
             this.guna2Panel1.Controls.Add(this.guna2Button6);
             this.guna2Panel1.Controls.Add(this.ALLP);
             this.guna2Panel1.Controls.Add(this.MP);
             this.guna2Panel1.Controls.Add(this.label1);
-            this.guna2Panel1.Location = new System.Drawing.Point(38, 84);
+            this.guna2Panel1.Location = new System.Drawing.Point(56, 215);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(264, 140);
+            this.guna2Panel1.Size = new System.Drawing.Size(242, 136);
             this.guna2Panel1.TabIndex = 52;
             this.guna2Panel1.UseWaitCursor = true;
             // 
@@ -600,7 +601,7 @@
             this.guna2Button6.ForeColor = System.Drawing.Color.White;
             this.guna2Button6.HoverState.Parent = this.guna2Button6;
             this.guna2Button6.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button6.Image")));
-            this.guna2Button6.Location = new System.Drawing.Point(239, 9);
+            this.guna2Button6.Location = new System.Drawing.Point(216, 3);
             this.guna2Button6.Name = "guna2Button6";
             this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
             this.guna2Button6.Size = new System.Drawing.Size(21, 17);
@@ -610,13 +611,14 @@
             // 
             // ALLP
             // 
+            this.ALLP.BorderRadius = 15;
             this.ALLP.CheckedState.Parent = this.ALLP;
             this.ALLP.CustomImages.Parent = this.ALLP;
             this.ALLP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.ALLP.Font = new System.Drawing.Font("Co Headline Corp", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ALLP.Font = new System.Drawing.Font("Co Headline Corp", 9.749999F);
             this.ALLP.ForeColor = System.Drawing.Color.Black;
             this.ALLP.HoverState.Parent = this.ALLP;
-            this.ALLP.Location = new System.Drawing.Point(153, 74);
+            this.ALLP.Location = new System.Drawing.Point(144, 71);
             this.ALLP.Name = "ALLP";
             this.ALLP.ShadowDecoration.Parent = this.ALLP;
             this.ALLP.Size = new System.Drawing.Size(81, 39);
@@ -627,13 +629,14 @@
             // 
             // MP
             // 
+            this.MP.BorderRadius = 15;
             this.MP.CheckedState.Parent = this.MP;
             this.MP.CustomImages.Parent = this.MP;
             this.MP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.MP.Font = new System.Drawing.Font("Co Headline Corp", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MP.Font = new System.Drawing.Font("Co Headline Corp", 9.749999F);
             this.MP.ForeColor = System.Drawing.Color.Black;
             this.MP.HoverState.Parent = this.MP;
-            this.MP.Location = new System.Drawing.Point(31, 74);
+            this.MP.Location = new System.Drawing.Point(22, 71);
             this.MP.Name = "MP";
             this.MP.ShadowDecoration.Parent = this.MP;
             this.MP.Size = new System.Drawing.Size(81, 39);
@@ -646,7 +649,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Co Headline Corp", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(27, 32);
+            this.label1.Location = new System.Drawing.Point(18, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(207, 23);
             this.label1.TabIndex = 0;
