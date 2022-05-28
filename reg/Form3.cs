@@ -12,7 +12,7 @@ namespace reg
 {
     public partial class ProfileMenu : Form
     {
-        String query;
+        String query, queryCreditBalanceAll;
         funkreg func = new funkreg();
         public ProfileMenu()
         {
@@ -207,19 +207,19 @@ namespace reg
         private void ALLP_Click(object sender, EventArgs e)
         {
             query = $"select Users1.Amount, Users1.CreditBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
-            string queryCreditBalanceAll = $"select Credits.CreditsTotalPayment from Credits where UserID='{AuthMenu.txt1}'";
+            //queryCreditBalanceAll = $"select Credits.CreditsTotalPayment from Credits where UserID='{AuthMenu.txt1}'";
             
             DataSet sum_amount = func.getData(query);
             DataSet sum_credits = func.getData(query);
-            DataSet queryCBAll = func.getData(queryCreditBalanceAll);
+            //DataSet queryCBAll = func.getData(queryCreditBalanceAll);
 
             double Sum_amount = Convert.ToDouble(sum_amount.Tables[0].Rows[0][0].ToString());
             double Sum_credits = Convert.ToDouble(sum_credits.Tables[0].Rows[0][1].ToString());
-            double Sum_queryCBAll = Convert.ToDouble(queryCBAll.Tables[0].Rows[0][0].ToString());
+            //double Sum_queryCBAll = Convert.ToDouble(queryCBAll.Tables[0].Rows[0][0].ToString());
 
-            if (Sum_amount >= Sum_queryCBAll)
+            if (Sum_amount >= Sum_credits)
             {
-                double repayment = Sum_amount - Sum_queryCBAll;
+                double repayment = Sum_amount - Sum_credits;
 
                 string query_sumupdate = $"UPDATE Users1 SET Amount={repayment}, CreditBalanceAll= {0} WHERE UserID={AuthMenu.txt1}";
                 func.setDataUpd(query_sumupdate);
