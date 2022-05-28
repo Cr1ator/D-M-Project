@@ -207,7 +207,7 @@ namespace reg
         private void ALLP_Click(object sender, EventArgs e)
         {
             query = $"select Users1.Amount, Users1.CreditBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
-           
+
             
             DataSet sum_amount = func.getData(query);
             DataSet sum_credits = func.getData(query);
@@ -215,7 +215,7 @@ namespace reg
 
             double Sum_amount = Convert.ToDouble(sum_amount.Tables[0].Rows[0][0].ToString());
             double Sum_credits = Convert.ToDouble(sum_credits.Tables[0].Rows[0][1].ToString());
-            
+
 
             if (Sum_amount >= Sum_credits)
             {
