@@ -29,12 +29,46 @@ namespace reg
                 TrueComfirmAccount.Hide();
             }
 
-            query = $"select Users1.Amount, Users1.InvestedBalanceAll, Users1.CreditBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
+            query = $"select Users1.Amount, Users1.CreditBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
             DataSet sum = func.getData(query);
-            MyAccountLabel.Text = sum.Tables[0].Rows[0][0].ToString();
-            VkladSumLabel.Text = sum.Tables[0].Rows[0][1].ToString();
-            CreditSumLabel.Text = sum.Tables[0].Rows[0][2].ToString();
+            int Amount = Convert.ToInt32(sum.Tables[0].Rows[0][0]);
+            //MyAccountLabel.Text = Amount.ToString();
+            
+            CreditSumLabel.Text = sum.Tables[0].Rows[0][1].ToString();
 
+            //Выплата вклада
+            string query_vklad = $"select Deposits.DateDeposit, Deposits.Amount from Deposits where UserID='{AuthMenu.txt1}' and Activity=1 ";
+            DataSet vklad= func.getData(query_vklad);
+            //MessageBox.Show(DateTime.Parse(vklad.Tables[0].Rows[0][0].ToString()).ToString());
+            DateTime Now_time = DateTime.Now;
+
+
+            for (int i = 0; i < vklad.Tables[0].Rows.Count; i++)
+            {
+                DateTime end_vklad_time = DateTime.Parse(vklad.Tables[0].Rows[i][0].ToString());
+                if (Now_time >= end_vklad_time)
+                {
+                    string queryInvestedBalanceAll = $"select Users1.InvestedBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
+                    DataSet queryIBAll = func.getData(queryInvestedBalanceAll);
+
+                    int Sum_ostatok = Amount + Convert.ToInt32(vklad.Tables[0].Rows[i][1]);
+                    int InvestedBalanceAll = Convert.ToInt32(queryIBAll.Tables[0].Rows[0][0]) - Convert.ToInt32(vklad.Tables[0].Rows[i][1]);
+                    string query_sumupdate = $"UPDATE Users1 SET Amount={Sum_ostatok} WHERE UserID={AuthMenu.txt1}";
+                    string query_close_deposit = $"UPDATE Deposits SET Activity=0 WHERE UserID={AuthMenu.txt1} and DateDeposit='{end_vklad_time.ToShortDateString()}'";
+                    string query_InvestedBalanceAll = $"UPDATE Users1 SET InvestedBalanceAll={InvestedBalanceAll} WHERE UserID={AuthMenu.txt1}";
+
+                    func.setDataUpd(query_sumupdate);
+                    func.setDataUpd(query_close_deposit);
+                    func.setDataUpd(query_InvestedBalanceAll);
+
+                    MessageBox.Show($"Вклад на сумму {vklad.Tables[0].Rows[i][1]} BYN выплачен ");
+                }
+            }
+
+            query = $"select Users1.Amount, Users1.InvestedBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
+            DataSet amount = func.getData(query);
+            MyAccountLabel.Text = amount.Tables[0].Rows[0][0].ToString();
+            VkladSumLabel.Text = amount.Tables[0].Rows[0][1].ToString();
         }
 
         protected override void WndProc(ref Message m)
@@ -204,10 +238,25 @@ namespace reg
             guna2Panel1.Visible = false;
         }
 
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            guna2Panel1.Visible = false;
+        }
+
+        private void guna2ControlBox1_Click_1(object sender, EventArgs e)
+        {
+            guna2Panel1.Visible = false;
+        }
+
         private void ALLP_Click(object sender, EventArgs e)
         {
             query = $"select Users1.Amount, Users1.CreditBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
 
+            double Sum_amount = Convert.ToDouble(sum_amount.Tables[0].Rows[0][0].ToString());
+            double Sum_credits = Convert.ToDouble(sum_credits.Tables[0].Rows[0][1].ToString());
+            //double Sum_queryCBAll = Convert.ToDouble(queryCBAll.Tables[0].Rows[0][0].ToString());
+=========
+           
             
             DataSet sum_amount = func.getData(query);
             DataSet sum_credits = func.getData(query);
@@ -215,7 +264,8 @@ namespace reg
 
             double Sum_amount = Convert.ToDouble(sum_amount.Tables[0].Rows[0][0].ToString());
             double Sum_credits = Convert.ToDouble(sum_credits.Tables[0].Rows[0][1].ToString());
-
+            
+>>>>>>>>> Temporary merge branch 2
 
             if (Sum_amount >= Sum_credits)
             {

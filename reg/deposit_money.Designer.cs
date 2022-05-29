@@ -111,7 +111,6 @@
             this.CardTextBox.HoverState.Parent = this.CardTextBox;
             this.CardTextBox.Location = new System.Drawing.Point(17, 254);
             this.CardTextBox.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.CardTextBox.MaxLength = 16;
             this.CardTextBox.Name = "CardTextBox";
             this.CardTextBox.PasswordChar = '\0';
             this.CardTextBox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
@@ -467,7 +466,6 @@
             this.CVVTextBox.HoverState.Parent = this.CVVTextBox;
             this.CVVTextBox.Location = new System.Drawing.Point(103, 329);
             this.CVVTextBox.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.CVVTextBox.MaxLength = 3;
             this.CVVTextBox.Name = "CVVTextBox";
             this.CVVTextBox.PasswordChar = '\0';
             this.CVVTextBox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
@@ -488,7 +486,7 @@
             this.DatesTextBox.Location = new System.Drawing.Point(29, 341);
             this.DatesTextBox.Mask = "00/00";
             this.DatesTextBox.Name = "DatesTextBox";
-            this.DatesTextBox.Size = new System.Drawing.Size(60, 26);
+            this.DatesTextBox.Size = new System.Drawing.Size(50, 26);
             this.DatesTextBox.TabIndex = 74;
             this.DatesTextBox.UseWaitCursor = true;
             // 

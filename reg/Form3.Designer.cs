@@ -362,10 +362,12 @@
             // HideMenu
             // 
             this.HideMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.HideMenu.Animated = true;
             this.HideMenu.BackColor = System.Drawing.Color.Transparent;
+            this.HideMenu.BorderRadius = 3;
             this.HideMenu.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.HideMenu.FillColor = System.Drawing.Color.Transparent;
-            this.HideMenu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(155)))), ((int)(((byte)(15)))));
+            this.HideMenu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.HideMenu.HoverState.Parent = this.HideMenu;
             this.HideMenu.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.HideMenu.Location = new System.Drawing.Point(294, 12);
@@ -379,9 +381,11 @@
             // ExitMenu
             // 
             this.ExitMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ExitMenu.Animated = true;
             this.ExitMenu.BackColor = System.Drawing.Color.Transparent;
+            this.ExitMenu.BorderRadius = 3;
             this.ExitMenu.FillColor = System.Drawing.Color.Transparent;
-            this.ExitMenu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            this.ExitMenu.HoverState.FillColor = System.Drawing.Color.Red;
             this.ExitMenu.HoverState.Parent = this.ExitMenu;
             this.ExitMenu.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.ExitMenu.Location = new System.Drawing.Point(321, 12);
@@ -510,7 +514,7 @@
             this.BackButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.BackButton.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.BackButton.HoverState.Parent = this.BackButton;
-            this.BackButton.Location = new System.Drawing.Point(-5, 9);
+            this.BackButton.Location = new System.Drawing.Point(-9, 9);
             this.BackButton.Name = "BackButton";
             this.BackButton.ShadowDecoration.Parent = this.BackButton;
             this.BackButton.Size = new System.Drawing.Size(75, 41);
@@ -569,7 +573,7 @@
             this.repayment.HoverState.Parent = this.repayment;
             this.repayment.Image = ((System.Drawing.Image)(resources.GetObject("repayment.Image")));
             this.repayment.ImageSize = new System.Drawing.Size(30, 30);
-            this.repayment.Location = new System.Drawing.Point(291, 221);
+            this.repayment.Location = new System.Drawing.Point(289, 223);
             this.repayment.Name = "repayment";
             this.repayment.ShadowDecoration.Parent = this.repayment;
             this.repayment.Size = new System.Drawing.Size(39, 35);
@@ -594,18 +598,21 @@
             // 
             // guna2Button6
             // 
+            this.guna2Button6.Animated = true;
+            this.guna2Button6.BorderRadius = 3;
             this.guna2Button6.CheckedState.Parent = this.guna2Button6;
             this.guna2Button6.CustomImages.Parent = this.guna2Button6;
             this.guna2Button6.FillColor = System.Drawing.Color.Transparent;
             this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button6.ForeColor = System.Drawing.Color.White;
+            this.guna2Button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.guna2Button6.HoverState.FillColor = System.Drawing.Color.Red;
             this.guna2Button6.HoverState.Parent = this.guna2Button6;
-            this.guna2Button6.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button6.Image")));
-            this.guna2Button6.Location = new System.Drawing.Point(216, 3);
+            this.guna2Button6.Location = new System.Drawing.Point(215, 7);
             this.guna2Button6.Name = "guna2Button6";
             this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
-            this.guna2Button6.Size = new System.Drawing.Size(21, 17);
+            this.guna2Button6.Size = new System.Drawing.Size(21, 16);
             this.guna2Button6.TabIndex = 43;
+            this.guna2Button6.Text = "✕";
             this.guna2Button6.UseWaitCursor = true;
             this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);
             // 
@@ -651,7 +658,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(18, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 23);
+            this.label1.Size = new System.Drawing.Size(213, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Погашение кредита ";
             this.label1.UseWaitCursor = true;
