@@ -324,6 +324,7 @@ namespace reg
                     MessageBox.Show("Кредит погашен ", "D&M Bank", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     guna2Panel1.Visible = false;
+
                  }
                  else
                  {

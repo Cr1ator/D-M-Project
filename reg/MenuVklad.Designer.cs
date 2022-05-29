@@ -212,9 +212,9 @@
             this.SumLabel.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.SumLabel.Location = new System.Drawing.Point(23, 464);
             this.SumLabel.Name = "SumLabel";
-            this.SumLabel.Size = new System.Drawing.Size(65, 36);
+            this.SumLabel.Size = new System.Drawing.Size(112, 36);
             this.SumLabel.TabIndex = 68;
-            this.SumLabel.Text = "0,0";
+            this.SumLabel.Text = "50000";
             this.SumLabel.UseMnemonic = false;
             this.SumLabel.UseWaitCursor = true;
             // 
