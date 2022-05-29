@@ -464,6 +464,7 @@
             // 
             // guna2Button3
             // 
+            this.guna2Button3.Animated = true;
             this.guna2Button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Button3.BackgroundImage")));
             this.guna2Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.guna2Button3.BorderColor = System.Drawing.Color.WhiteSmoke;
