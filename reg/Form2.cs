@@ -45,7 +45,7 @@ namespace reg
                 var email_check = new EmailAddressAttribute();
                 String name  = NameInput.Text;
                 String lastname = LastNameInput.Text;   
-                String login = LoginImput.Text;
+                String login = LoginImput.Text.ToLower();
                 String email = EmailInput.Text;
                 String password = PasswordInput.Text;
                 int userid = rnd.Next(10000, 99999);

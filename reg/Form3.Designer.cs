@@ -569,7 +569,7 @@
             this.repayment.HoverState.Parent = this.repayment;
             this.repayment.Image = ((System.Drawing.Image)(resources.GetObject("repayment.Image")));
             this.repayment.ImageSize = new System.Drawing.Size(30, 30);
-            this.repayment.Location = new System.Drawing.Point(291, 221);
+            this.repayment.Location = new System.Drawing.Point(289, 223);
             this.repayment.Name = "repayment";
             this.repayment.ShadowDecoration.Parent = this.repayment;
             this.repayment.Size = new System.Drawing.Size(39, 35);
@@ -651,7 +651,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(18, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 23);
+            this.label1.Size = new System.Drawing.Size(213, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Погашение кредита ";
             this.label1.UseWaitCursor = true;
