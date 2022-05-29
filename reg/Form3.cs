@@ -248,39 +248,77 @@ namespace reg
             guna2Panel1.Visible = false;
         }
 
+
+
         private void ALLP_Click(object sender, EventArgs e)
         {
             query = $"select Users1.Amount, Users1.CreditBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
-
-            double Sum_amount = Convert.ToDouble(sum_amount.Tables[0].Rows[0][0].ToString());
-            double Sum_credits = Convert.ToDouble(sum_credits.Tables[0].Rows[0][1].ToString());
-            //double Sum_queryCBAll = Convert.ToDouble(queryCBAll.Tables[0].Rows[0][0].ToString());
-=========
-           
             
             DataSet sum_amount = func.getData(query);
             DataSet sum_credits = func.getData(query);
             
-
             double Sum_amount = Convert.ToDouble(sum_amount.Tables[0].Rows[0][0].ToString());
             double Sum_credits = Convert.ToDouble(sum_credits.Tables[0].Rows[0][1].ToString());
-            
->>>>>>>>> Temporary merge branch 2
 
-            if (Sum_amount >= Sum_credits)
+            if (Sum_credits > 0)
             {
-                double repayment = Sum_amount - Sum_credits;
+                if (Sum_amount >= Sum_credits)
+                {
+                    double repayment = Sum_amount - Sum_credits;
 
-                string query_sumupdate = $"UPDATE Users1 SET Amount={repayment}, CreditBalanceAll= {0} WHERE UserID={AuthMenu.txt1}";
-                func.setDataUpd(query_sumupdate);
+                    string query_sumupdate = $"UPDATE Users1 SET Amount={repayment}, CreditBalanceAll= {0} WHERE UserID={AuthMenu.txt1}";
+                    func.setDataUpd(query_sumupdate);
 
-                guna2Panel1.Visible = false;
+                    guna2Panel1.Visible = false;
+                }
+                else
+                {
+                    MessageBox.Show("Недостаточно средств для погашения", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             else
             {
-                MessageBox.Show("Недостаточно средств для вывода", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("У вас нет кредита", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                guna2Panel1.Visible = false;
             }
 
+        }
+        private void MP_Click(object sender, EventArgs e)
+        {
+            query = $"select Users1.Amount, Users1.CreditBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
+            string queryMP = $"select Credits.monthlyPaymentAmount from Credits where UserID='{AuthMenu.txt1}'";
+
+            DataSet sum_amount = func.getData(query);
+            DataSet sum_credits = func.getData(query);
+            DataSet sum_MP = func.getData(queryMP);
+
+            double Sum_amount = Convert.ToDouble(sum_amount.Tables[0].Rows[0][0].ToString());
+            double Sum_credits = Convert.ToDouble(sum_credits.Tables[0].Rows[0][1].ToString());
+
+            double Sum_MP = Convert.ToDouble(sum_MP.Tables[0].Rows[0][0].ToString());
+
+            if (Sum_credits > 0)
+            {
+                if (Sum_amount >= Sum_MP)
+                {
+                    double repayment = Sum_amount - Sum_MP;
+                    double LoanBalance = Sum_credits - Sum_MP;  
+
+                    string query_sumupdate = $"UPDATE Users1 SET Amount={repayment}, CreditBalanceAll= {LoanBalance} WHERE UserID={AuthMenu.txt1}";
+                    func.setDataUpd(query_sumupdate);
+
+                    guna2Panel1.Visible = false;
+                }
+                else
+                {
+                    MessageBox.Show("Недостаточно средств для погашения", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            else
+            {
+                MessageBox.Show("У вас нет кредита", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                guna2Panel1.Visible = false;
+            }
         }
     }
 }

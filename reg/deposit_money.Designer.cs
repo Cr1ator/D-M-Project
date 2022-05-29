@@ -111,6 +111,7 @@
             this.CardTextBox.HoverState.Parent = this.CardTextBox;
             this.CardTextBox.Location = new System.Drawing.Point(17, 254);
             this.CardTextBox.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.CardTextBox.MaxLength = 16;
             this.CardTextBox.Name = "CardTextBox";
             this.CardTextBox.PasswordChar = '\0';
             this.CardTextBox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
@@ -287,7 +288,7 @@
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label3.Location = new System.Drawing.Point(16, 382);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 17);
+            this.label3.Size = new System.Drawing.Size(114, 17);
             this.label3.TabIndex = 58;
             this.label3.Text = "ИМЯ НА КАРТЕ";
             this.label3.UseMnemonic = false;
@@ -336,7 +337,7 @@
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Location = new System.Drawing.Point(18, 465);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(167, 17);
+            this.label1.Size = new System.Drawing.Size(166, 17);
             this.label1.TabIndex = 58;
             this.label1.Text = "СУММА ПОПОЛНЕНИЯ";
             this.label1.UseMnemonic = false;
@@ -384,7 +385,7 @@
             this.Sumlabel.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Sumlabel.Location = new System.Drawing.Point(30, 135);
             this.Sumlabel.Name = "Sumlabel";
-            this.Sumlabel.Size = new System.Drawing.Size(59, 32);
+            this.Sumlabel.Size = new System.Drawing.Size(58, 32);
             this.Sumlabel.TabIndex = 70;
             this.Sumlabel.Text = "0,0";
             this.Sumlabel.UseMnemonic = false;
@@ -420,7 +421,7 @@
             this.ScoreText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.ScoreText.Location = new System.Drawing.Point(33, 118);
             this.ScoreText.Name = "ScoreText";
-            this.ScoreText.Size = new System.Drawing.Size(79, 18);
+            this.ScoreText.Size = new System.Drawing.Size(76, 18);
             this.ScoreText.TabIndex = 71;
             this.ScoreText.Text = "Мой счёт";
             this.ScoreText.UseMnemonic = false;
@@ -466,6 +467,7 @@
             this.CVVTextBox.HoverState.Parent = this.CVVTextBox;
             this.CVVTextBox.Location = new System.Drawing.Point(103, 329);
             this.CVVTextBox.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.CVVTextBox.MaxLength = 3;
             this.CVVTextBox.Name = "CVVTextBox";
             this.CVVTextBox.PasswordChar = '\0';
             this.CVVTextBox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
@@ -486,7 +488,7 @@
             this.DatesTextBox.Location = new System.Drawing.Point(29, 341);
             this.DatesTextBox.Mask = "00/00";
             this.DatesTextBox.Name = "DatesTextBox";
-            this.DatesTextBox.Size = new System.Drawing.Size(50, 26);
+            this.DatesTextBox.Size = new System.Drawing.Size(50, 27);
             this.DatesTextBox.TabIndex = 74;
             this.DatesTextBox.UseWaitCursor = true;
             // 

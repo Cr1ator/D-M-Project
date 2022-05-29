@@ -15,8 +15,8 @@ namespace reg
         protected SqlConnection getConnection()
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "data source = DESKTOP-QL32HP5\\SQLEXPRESS; database=D&M; integrated security = True";
-            //con.ConnectionString = "data source = DESKTOP-MBDIP47; database=D&M; integrated security = True";
+           // con.ConnectionString = "data source = DESKTOP-QL32HP5\\SQLEXPRESS; database=D&M; integrated security = True";
+            con.ConnectionString = "data source = DESKTOP-MBDIP47; database=D&M; integrated security = True";
             return con;
         }
 
