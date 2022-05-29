@@ -300,6 +300,7 @@
             // 
             // SumTextBox
             // 
+            this.SumTextBox.Animated = true;
             this.SumTextBox.BackColor = System.Drawing.Color.Transparent;
             this.SumTextBox.BorderColor = System.Drawing.Color.White;
             this.SumTextBox.BorderRadius = 5;
@@ -349,6 +350,7 @@
             // 
             // EntryRegButton
             // 
+            this.EntryRegButton.Animated = true;
             this.EntryRegButton.BorderRadius = 10;
             this.EntryRegButton.CheckedState.Parent = this.EntryRegButton;
             this.EntryRegButton.CustomImages.Parent = this.EntryRegButton;
@@ -432,6 +434,7 @@
             // 
             // guna2Button1
             // 
+            this.guna2Button1.Animated = true;
             this.guna2Button1.BorderRadius = 10;
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;

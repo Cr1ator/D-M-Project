@@ -55,7 +55,7 @@
             this.DMText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.DMText.Location = new System.Drawing.Point(50, 34);
             this.DMText.Name = "DMText";
-            this.DMText.Size = new System.Drawing.Size(267, 110);
+            this.DMText.Size = new System.Drawing.Size(265, 110);
             this.DMText.TabIndex = 0;
             this.DMText.Text = "D&M";
             this.DMText.UseMnemonic = false;
@@ -167,6 +167,7 @@
             // 
             // EntryRegButton
             // 
+            this.EntryRegButton.Animated = true;
             this.EntryRegButton.BorderRadius = 15;
             this.EntryRegButton.CheckedState.Parent = this.EntryRegButton;
             this.EntryRegButton.CustomImages.Parent = this.EntryRegButton;
@@ -184,6 +185,7 @@
             // 
             // ShowPasswodSwitch
             // 
+            this.ShowPasswodSwitch.Animated = true;
             this.ShowPasswodSwitch.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ShowPasswodSwitch.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ShowPasswodSwitch.CheckedState.InnerBorderColor = System.Drawing.Color.White;

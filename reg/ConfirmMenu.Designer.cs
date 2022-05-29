@@ -125,6 +125,7 @@
             // 
             // EntryRegButton
             // 
+            this.EntryRegButton.Animated = true;
             this.EntryRegButton.BorderRadius = 15;
             this.EntryRegButton.CheckedState.Parent = this.EntryRegButton;
             this.EntryRegButton.CustomImages.Parent = this.EntryRegButton;
@@ -150,7 +151,7 @@
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label3.Location = new System.Drawing.Point(20, 434);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(262, 17);
+            this.label3.Size = new System.Drawing.Size(266, 17);
             this.label3.TabIndex = 78;
             this.label3.Text = "ВЫБИРИТЕ ВАШУ ДАТУ РОЖДЕНИЯ";
             this.label3.UseMnemonic = false;
@@ -218,7 +219,7 @@
             this.AccountText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.AccountText.Location = new System.Drawing.Point(18, 67);
             this.AccountText.Name = "AccountText";
-            this.AccountText.Size = new System.Drawing.Size(311, 28);
+            this.AccountText.Size = new System.Drawing.Size(323, 28);
             this.AccountText.TabIndex = 81;
             this.AccountText.Text = "Подтверждение аккаунта";
             this.AccountText.UseMnemonic = false;
@@ -267,7 +268,7 @@
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Location = new System.Drawing.Point(20, 268);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(213, 17);
+            this.label1.Size = new System.Drawing.Size(214, 17);
             this.label1.TabIndex = 77;
             this.label1.Text = "ВВЕДИТЕ НОМЕР ПАСПОРТА";
             this.label1.UseMnemonic = false;
@@ -282,7 +283,7 @@
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Location = new System.Drawing.Point(20, 351);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(309, 17);
+            this.label2.Size = new System.Drawing.Size(312, 17);
             this.label2.TabIndex = 83;
             this.label2.Text = "ВВЕДИТЕ ИДЕНТИФИКАЦИОННЫЙ НОМЕР";
             this.label2.UseMnemonic = false;
@@ -328,6 +329,7 @@
             // 
             // TrueTextBox
             // 
+            this.TrueTextBox.Animated = true;
             this.TrueTextBox.BackColor = System.Drawing.Color.RosyBrown;
             this.TrueTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.TrueTextBox.BorderThickness = 2;

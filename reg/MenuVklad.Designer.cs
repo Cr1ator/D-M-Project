@@ -107,6 +107,7 @@
             // 
             // EntryRegButton
             // 
+            this.EntryRegButton.Animated = true;
             this.EntryRegButton.BorderRadius = 15;
             this.EntryRegButton.CheckedState.Parent = this.EntryRegButton;
             this.EntryRegButton.CustomImages.Parent = this.EntryRegButton;
@@ -132,7 +133,7 @@
             this.label10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label10.Location = new System.Drawing.Point(305, 484);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(29, 14);
+            this.label10.Size = new System.Drawing.Size(29, 13);
             this.label10.TabIndex = 73;
             this.label10.Text = "Мес";
             this.label10.UseMnemonic = false;
@@ -147,7 +148,7 @@
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Location = new System.Drawing.Point(148, 485);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(22, 10);
+            this.label2.Size = new System.Drawing.Size(22, 9);
             this.label2.TabIndex = 72;
             this.label2.Text = "BYN";
             this.label2.UseMnemonic = false;
@@ -162,7 +163,7 @@
             this.DateLabel.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.DateLabel.Location = new System.Drawing.Point(189, 464);
             this.DateLabel.Name = "DateLabel";
-            this.DateLabel.Size = new System.Drawing.Size(31, 37);
+            this.DateLabel.Size = new System.Drawing.Size(29, 36);
             this.DateLabel.TabIndex = 71;
             this.DateLabel.Text = "1";
             this.DateLabel.UseMnemonic = false;
@@ -212,7 +213,7 @@
             this.SumLabel.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.SumLabel.Location = new System.Drawing.Point(23, 464);
             this.SumLabel.Name = "SumLabel";
-            this.SumLabel.Size = new System.Drawing.Size(65, 36);
+            this.SumLabel.Size = new System.Drawing.Size(112, 36);
             this.SumLabel.TabIndex = 68;
             this.SumLabel.Text = "50000";
             this.SumLabel.UseMnemonic = false;
@@ -246,7 +247,7 @@
             this.label11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label11.Location = new System.Drawing.Point(17, 423);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(121, 18);
+            this.label11.Size = new System.Drawing.Size(122, 18);
             this.label11.TabIndex = 66;
             this.label11.Text = "Сумма вклада:";
             this.label11.UseMnemonic = false;
@@ -339,7 +340,7 @@
             this.AccountText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.AccountText.Location = new System.Drawing.Point(15, 65);
             this.AccountText.Name = "AccountText";
-            this.AccountText.Size = new System.Drawing.Size(191, 28);
+            this.AccountText.Size = new System.Drawing.Size(199, 28);
             this.AccountText.TabIndex = 80;
             this.AccountText.Text = "Онлайн вклады";
             this.AccountText.UseMnemonic = false;
@@ -355,7 +356,7 @@
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label3.Location = new System.Drawing.Point(20, 114);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 17);
+            this.label3.Size = new System.Drawing.Size(129, 17);
             this.label3.TabIndex = 81;
             this.label3.Text = "СУММА ВКЛАДА";
             this.label3.UseMnemonic = false;
@@ -371,7 +372,7 @@
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Location = new System.Drawing.Point(20, 201);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 17);
+            this.label1.Size = new System.Drawing.Size(113, 17);
             this.label1.TabIndex = 82;
             this.label1.Text = "СРОК ВКЛАДА";
             this.label1.UseMnemonic = false;
@@ -418,7 +419,7 @@
             this.label6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label6.Location = new System.Drawing.Point(20, 247);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 17);
+            this.label6.Size = new System.Drawing.Size(49, 17);
             this.label6.TabIndex = 85;
             this.label6.Text = "1 МЕС";
             this.label6.UseMnemonic = false;
@@ -433,7 +434,7 @@
             this.label7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label7.Location = new System.Drawing.Point(274, 247);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 17);
+            this.label7.Size = new System.Drawing.Size(59, 17);
             this.label7.TabIndex = 86;
             this.label7.Text = "24 МЕС";
             this.label7.UseMnemonic = false;
@@ -448,7 +449,7 @@
             this.label8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label8.Location = new System.Drawing.Point(17, 292);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(178, 17);
+            this.label8.Size = new System.Drawing.Size(184, 17);
             this.label8.TabIndex = 88;
             this.label8.Text = "ЭФФЕКТИВНАЯ СТАВКА";
             this.label8.UseMnemonic = false;
@@ -463,7 +464,7 @@
             this.label13.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label13.Location = new System.Drawing.Point(28, 321);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(61, 17);
+            this.label13.Size = new System.Drawing.Size(64, 17);
             this.label13.TabIndex = 92;
             this.label13.Text = "Ставка:";
             this.label13.UseMnemonic = false;
@@ -478,7 +479,7 @@
             this.label16.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label16.Location = new System.Drawing.Point(294, 358);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(37, 17);
+            this.label16.Size = new System.Drawing.Size(38, 17);
             this.label16.TabIndex = 90;
             this.label16.Text = "BYN";
             this.label16.UseMnemonic = false;
@@ -514,7 +515,7 @@
             this.label9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label9.Location = new System.Drawing.Point(66, 335);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 37);
+            this.label9.Size = new System.Drawing.Size(46, 36);
             this.label9.TabIndex = 93;
             this.label9.Text = "%";
             this.label9.UseMnemonic = false;
@@ -529,7 +530,7 @@
             this.ProcentTextBox.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.ProcentTextBox.Location = new System.Drawing.Point(24, 335);
             this.ProcentTextBox.Name = "ProcentTextBox";
-            this.ProcentTextBox.Size = new System.Drawing.Size(50, 37);
+            this.ProcentTextBox.Size = new System.Drawing.Size(48, 36);
             this.ProcentTextBox.TabIndex = 91;
             this.ProcentTextBox.Text = "14";
             this.ProcentTextBox.UseMnemonic = false;

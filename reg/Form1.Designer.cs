@@ -85,6 +85,7 @@ namespace reg
             // 
             // EntryButton
             // 
+            this.EntryButton.Animated = true;
             this.EntryButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EntryButton.BackgroundImage")));
             this.EntryButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.EntryButton.BorderColor = System.Drawing.Color.WhiteSmoke;
@@ -110,6 +111,7 @@ namespace reg
             // 
             // ShowPasswodSwitch
             // 
+            this.ShowPasswodSwitch.Animated = true;
             this.ShowPasswodSwitch.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ShowPasswodSwitch.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ShowPasswodSwitch.CheckedState.InnerBorderColor = System.Drawing.Color.White;
@@ -203,6 +205,7 @@ namespace reg
             // 
             // ExitMenu
             // 
+            this.ExitMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ExitMenu.Animated = true;
             this.ExitMenu.BackColor = System.Drawing.Color.Transparent;
             this.ExitMenu.BorderRadius = 3;
@@ -259,7 +262,7 @@ namespace reg
             this.DontAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
             this.DontAccount.Location = new System.Drawing.Point(100, 538);
             this.DontAccount.Name = "DontAccount";
-            this.DontAccount.Size = new System.Drawing.Size(157, 20);
+            this.DontAccount.Size = new System.Drawing.Size(147, 19);
             this.DontAccount.TabIndex = 30;
             this.DontAccount.Text = "НЕТ АККАУНТА?";
             this.DontAccount.UseWaitCursor = true;

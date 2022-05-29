@@ -623,6 +623,7 @@
             // 
             // ALLP
             // 
+            this.ALLP.Animated = true;
             this.ALLP.BorderRadius = 15;
             this.ALLP.CheckedState.Parent = this.ALLP;
             this.ALLP.CustomImages.Parent = this.ALLP;
@@ -641,6 +642,7 @@
             // 
             // MP
             // 
+            this.MP.Animated = true;
             this.MP.BorderRadius = 15;
             this.MP.CheckedState.Parent = this.MP;
             this.MP.CustomImages.Parent = this.MP;

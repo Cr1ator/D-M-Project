@@ -459,6 +459,7 @@
             // 
             // EntryRegButton
             // 
+            this.EntryRegButton.Animated = true;
             this.EntryRegButton.BorderRadius = 15;
             this.EntryRegButton.CheckedState.Parent = this.EntryRegButton;
             this.EntryRegButton.CustomImages.Parent = this.EntryRegButton;
@@ -553,13 +554,14 @@
             this.guna2Panel1.Location = new System.Drawing.Point(-12, 1);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(367, 642);
+            this.guna2Panel1.Size = new System.Drawing.Size(367, 639);
             this.guna2Panel1.TabIndex = 69;
             this.guna2Panel1.UseWaitCursor = true;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // guna2Button4
             // 
+            this.guna2Button4.Animated = true;
             this.guna2Button4.BorderColor = System.Drawing.Color.White;
             this.guna2Button4.BorderThickness = 2;
             this.guna2Button4.CheckedState.Parent = this.guna2Button4;
@@ -608,6 +610,7 @@
             // 
             // guna2Button2
             // 
+            this.guna2Button2.Animated = true;
             this.guna2Button2.BorderRadius = 15;
             this.guna2Button2.CheckedState.Parent = this.guna2Button2;
             this.guna2Button2.CustomImages.Parent = this.guna2Button2;
