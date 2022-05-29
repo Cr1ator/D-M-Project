@@ -254,6 +254,7 @@ namespace reg
         {
             query = $"select Users1.Amount, Users1.CreditBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
             
+            
             DataSet sum_amount = func.getData(query);
             DataSet sum_credits = func.getData(query);
             
@@ -269,9 +270,17 @@ namespace reg
                     string query_sumupdate = $"UPDATE Users1 SET Amount={repayment}, CreditBalanceAll= {0} WHERE UserID={AuthMenu.txt1}";
                     func.setDataUpd(query_sumupdate);
 
+                    string activity = $"UPDATE Credits SET Activity={0} WHERE UserID={AuthMenu.txt1}";
+                    func.setDataUpd(activity);
+
                     MessageBox.Show("Кредит погашен ", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+
                     guna2Panel1.Visible = false;
+
+                    string newQ = $"select Users1.CreditBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
+                    DataSet new_credit_balance = func.getData(newQ);
+                    CreditSumLabel.Text = new_credit_balance.Tables[0].Rows[0][0].ToString();
                 }
                 else
                 {
@@ -324,6 +333,7 @@ namespace reg
             else
             {
                 MessageBox.Show("У вас нет кредита", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
                 guna2Panel1.Visible = false;
             }
         }

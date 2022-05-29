@@ -565,7 +565,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(-12, 2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(367, 642);
+            this.guna2Panel1.Size = new System.Drawing.Size(367, 640);
             this.guna2Panel1.TabIndex = 69;
             this.guna2Panel1.UseWaitCursor = true;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
