@@ -142,6 +142,9 @@
     <None Include="КредитныйДоговорDM.docx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <EmbeddedResource Include="ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ.docx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

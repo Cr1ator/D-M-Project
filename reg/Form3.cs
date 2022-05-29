@@ -269,6 +269,8 @@ namespace reg
                     string query_sumupdate = $"UPDATE Users1 SET Amount={repayment}, CreditBalanceAll= {0} WHERE UserID={AuthMenu.txt1}";
                     func.setDataUpd(query_sumupdate);
 
+                    MessageBox.Show("Кредит погашен ", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                     guna2Panel1.Visible = false;
                 }
                 else
@@ -297,22 +299,27 @@ namespace reg
 
             double Sum_MP = Convert.ToDouble(sum_MP.Tables[0].Rows[0][0].ToString());
 
+            
             if (Sum_credits > 0)
             {
-                if (Sum_amount >= Sum_MP)
-                {
-                    double repayment = Sum_amount - Sum_MP;
-                    double LoanBalance = Sum_credits - Sum_MP;  
+                
+                 if (Sum_amount >= Sum_MP)
+                 {
+                     double repayment = Sum_amount - Sum_MP;
+                     double LoanBalance = Sum_credits - Sum_MP;
 
-                    string query_sumupdate = $"UPDATE Users1 SET Amount={repayment}, CreditBalanceAll= {LoanBalance} WHERE UserID={AuthMenu.txt1}";
+                    
+                    string query_sumupdate = $"UPDATE Users1 SET Amount = {repayment} , CreditBalanceAll = {LoanBalance}  WHERE UserID={AuthMenu.txt1}";
                     func.setDataUpd(query_sumupdate);
 
+                    MessageBox.Show("Кредит погашен ", "D&M Bank", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                     guna2Panel1.Visible = false;
-                }
-                else
-                {
-                    MessageBox.Show("Недостаточно средств для погашения", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
+                 }
+                 else
+                 {
+                     MessageBox.Show("Недостаточно средств для погашения", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                 }
             }
             else
             {

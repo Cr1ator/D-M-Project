@@ -257,7 +257,7 @@ namespace reg
             this.DontAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
             this.DontAccount.Location = new System.Drawing.Point(100, 538);
             this.DontAccount.Name = "DontAccount";
-            this.DontAccount.Size = new System.Drawing.Size(147, 19);
+            this.DontAccount.Size = new System.Drawing.Size(157, 20);
             this.DontAccount.TabIndex = 30;
             this.DontAccount.Text = "НЕТ АККАУНТА?";
             this.DontAccount.UseWaitCursor = true;
@@ -341,6 +341,7 @@ namespace reg
             this.guna2Button1.TabIndex = 36;
             this.guna2Button1.Text = "Пользовательское соглашение";
             this.guna2Button1.UseWaitCursor = true;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_2);
             // 
             // AuthMenu
             // 

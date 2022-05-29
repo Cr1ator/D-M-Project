@@ -110,7 +110,7 @@ namespace reg
                     monthlyInterestRate = InterestRate / 1200;
                     Termofyears = Convert.ToInt32(txtTerm.Text);
                     loanAmount = Convert.ToDouble(txtLoanAmount.Text);
-                    if (loanAmount > 1000)
+                    if (loanAmount >= 1000)
                     {
                         double month = (Termofyears * 12) - 1;
                         principalDebt = loanAmount / month;
@@ -177,7 +177,7 @@ namespace reg
                     monthlyInterestRate = InterestRate / 1200;
                     Termofyears = Convert.ToInt32(txtTerm.Text);
                     loanAmount = Convert.ToDouble(txtLoanAmount.Text);
-                    if (loanAmount > 1000)
+                    if (loanAmount >= 1000)
                     {
                         double month = (Termofyears * 12) - 1;
                         principalDebt = loanAmount / month;

@@ -197,5 +197,18 @@ namespace reg
         {
 
         }
+
+        private void guna2Button1_Click_2(object sender, EventArgs e)
+        {
+            try
+            {
+                // Запускаем нужный файл
+                System.Diagnostics.Process.Start("ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ.docx");
+            }
+            catch (Exception exp)
+            {
+                MessageBox.Show(exp.Message);
+            }
+        }
     }
 }

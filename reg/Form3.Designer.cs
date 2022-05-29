@@ -643,10 +643,10 @@
             this.MP.Font = new System.Drawing.Font("Co Headline Corp", 9.749999F);
             this.MP.ForeColor = System.Drawing.Color.Black;
             this.MP.HoverState.Parent = this.MP;
-            this.MP.Location = new System.Drawing.Point(22, 71);
+            this.MP.Location = new System.Drawing.Point(21, 71);
             this.MP.Name = "MP";
             this.MP.ShadowDecoration.Parent = this.MP;
-            this.MP.Size = new System.Drawing.Size(81, 39);
+            this.MP.Size = new System.Drawing.Size(82, 39);
             this.MP.TabIndex = 1;
             this.MP.Text = "Месячный платеж";
             this.MP.UseWaitCursor = true;
