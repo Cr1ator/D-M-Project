@@ -238,6 +238,16 @@ namespace reg
             guna2Panel1.Visible = false;
         }
 
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            guna2Panel1.Visible = false;
+        }
+
+        private void guna2ControlBox1_Click_1(object sender, EventArgs e)
+        {
+            guna2Panel1.Visible = false;
+        }
+
         private void ALLP_Click(object sender, EventArgs e)
         {
             query = $"select Users1.Amount, Users1.CreditBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
