@@ -398,6 +398,7 @@
             // 
             // Menu3
             // 
+            this.Menu3.Animated = true;
             this.Menu3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Menu3.BackgroundImage")));
             this.Menu3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Menu3.BorderColor = System.Drawing.Color.WhiteSmoke;
@@ -420,6 +421,7 @@
             // 
             // guna2Button1
             // 
+            this.guna2Button1.Animated = true;
             this.guna2Button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Button1.BackgroundImage")));
             this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.guna2Button1.BorderColor = System.Drawing.Color.WhiteSmoke;
@@ -442,6 +444,7 @@
             // 
             // guna2Button2
             // 
+            this.guna2Button2.Animated = true;
             this.guna2Button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Button2.BackgroundImage")));
             this.guna2Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.guna2Button2.BorderColor = System.Drawing.Color.WhiteSmoke;

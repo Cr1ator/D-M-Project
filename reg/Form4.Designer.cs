@@ -478,32 +478,36 @@
             // HideMenu
             // 
             this.HideMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.HideMenu.Animated = true;
             this.HideMenu.BackColor = System.Drawing.Color.Transparent;
+            this.HideMenu.BorderRadius = 3;
             this.HideMenu.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.HideMenu.FillColor = System.Drawing.Color.Transparent;
-            this.HideMenu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(155)))), ((int)(((byte)(15)))));
+            this.HideMenu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.HideMenu.HoverState.Parent = this.HideMenu;
             this.HideMenu.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.HideMenu.Location = new System.Drawing.Point(294, 12);
             this.HideMenu.Name = "HideMenu";
             this.HideMenu.ShadowDecoration.Parent = this.HideMenu;
             this.HideMenu.Size = new System.Drawing.Size(21, 19);
-            this.HideMenu.TabIndex = 67;
+            this.HideMenu.TabIndex = 41;
             this.HideMenu.UseWaitCursor = true;
             // 
             // ExitMenu
             // 
             this.ExitMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ExitMenu.Animated = true;
             this.ExitMenu.BackColor = System.Drawing.Color.Transparent;
+            this.ExitMenu.BorderRadius = 3;
             this.ExitMenu.FillColor = System.Drawing.Color.Transparent;
-            this.ExitMenu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            this.ExitMenu.HoverState.FillColor = System.Drawing.Color.Red;
             this.ExitMenu.HoverState.Parent = this.ExitMenu;
             this.ExitMenu.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.ExitMenu.Location = new System.Drawing.Point(321, 12);
             this.ExitMenu.Name = "ExitMenu";
             this.ExitMenu.ShadowDecoration.Parent = this.ExitMenu;
             this.ExitMenu.Size = new System.Drawing.Size(21, 19);
-            this.ExitMenu.TabIndex = 66;
+            this.ExitMenu.TabIndex = 40;
             this.ExitMenu.UseWaitCursor = true;
             this.ExitMenu.Click += new System.EventHandler(this.ExitMenu_Click);
             // 
@@ -546,10 +550,10 @@
             this.guna2Panel1.Controls.Add(this.guna2Button3);
             this.guna2Panel1.Controls.Add(this.guna2ControlBox1);
             this.guna2Panel1.Controls.Add(this.guna2ControlBox2);
-            this.guna2Panel1.Location = new System.Drawing.Point(-12, 2);
+            this.guna2Panel1.Location = new System.Drawing.Point(-12, 1);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(367, 641);
+            this.guna2Panel1.Size = new System.Drawing.Size(367, 642);
             this.guna2Panel1.TabIndex = 69;
             this.guna2Panel1.UseWaitCursor = true;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
@@ -732,32 +736,36 @@
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.Animated = true;
             this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.BorderRadius = 3;
             this.guna2ControlBox1.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(155)))), ((int)(((byte)(15)))));
-            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.guna2ControlBox1.HoverState.Parent = this.HideMenu;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.guna2ControlBox1.Location = new System.Drawing.Point(303, 13);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(294, 12);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.ShadowDecoration.Parent = this.HideMenu;
             this.guna2ControlBox1.Size = new System.Drawing.Size(21, 19);
-            this.guna2ControlBox1.TabIndex = 79;
+            this.guna2ControlBox1.TabIndex = 41;
             this.guna2ControlBox1.UseWaitCursor = true;
             // 
             // guna2ControlBox2
             // 
             this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.Animated = true;
             this.guna2ControlBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox2.BorderRadius = 3;
             this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.Red;
+            this.guna2ControlBox2.HoverState.Parent = this.ExitMenu;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.guna2ControlBox2.Location = new System.Drawing.Point(330, 13);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(321, 12);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.ShadowDecoration.Parent = this.ExitMenu;
             this.guna2ControlBox2.Size = new System.Drawing.Size(21, 19);
-            this.guna2ControlBox2.TabIndex = 78;
+            this.guna2ControlBox2.TabIndex = 40;
             this.guna2ControlBox2.UseWaitCursor = true;
             this.guna2ControlBox2.Click += new System.EventHandler(this.guna2ControlBox2_Click);
             // 

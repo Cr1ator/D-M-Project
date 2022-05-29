@@ -236,17 +236,20 @@
             // HideMenu
             // 
             this.HideMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.HideMenu.Animated = true;
             this.HideMenu.BackColor = System.Drawing.Color.Transparent;
+            this.HideMenu.BorderRadius = 3;
             this.HideMenu.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.HideMenu.FillColor = System.Drawing.Color.Transparent;
-            this.HideMenu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(155)))), ((int)(((byte)(15)))));
+            this.HideMenu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.HideMenu.HoverState.Parent = this.HideMenu;
             this.HideMenu.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.HideMenu.Location = new System.Drawing.Point(295, 12);
+            this.HideMenu.Location = new System.Drawing.Point(294, 12);
             this.HideMenu.Name = "HideMenu";
             this.HideMenu.ShadowDecoration.Parent = this.HideMenu;
             this.HideMenu.Size = new System.Drawing.Size(21, 19);
-            this.HideMenu.TabIndex = 27;
+            this.HideMenu.TabIndex = 41;
+            this.HideMenu.UseWaitCursor = true;
             this.HideMenu.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
             // ExitMenu

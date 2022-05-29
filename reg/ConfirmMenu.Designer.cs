@@ -90,32 +90,36 @@
             // HideMenu
             // 
             this.HideMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.HideMenu.Animated = true;
             this.HideMenu.BackColor = System.Drawing.Color.Transparent;
+            this.HideMenu.BorderRadius = 3;
             this.HideMenu.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.HideMenu.FillColor = System.Drawing.Color.Transparent;
-            this.HideMenu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(155)))), ((int)(((byte)(15)))));
+            this.HideMenu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.HideMenu.HoverState.Parent = this.HideMenu;
             this.HideMenu.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.HideMenu.Location = new System.Drawing.Point(291, 9);
+            this.HideMenu.Location = new System.Drawing.Point(294, 12);
             this.HideMenu.Name = "HideMenu";
             this.HideMenu.ShadowDecoration.Parent = this.HideMenu;
             this.HideMenu.Size = new System.Drawing.Size(21, 19);
-            this.HideMenu.TabIndex = 69;
+            this.HideMenu.TabIndex = 41;
             this.HideMenu.UseWaitCursor = true;
             // 
             // ExitMenu
             // 
             this.ExitMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ExitMenu.Animated = true;
             this.ExitMenu.BackColor = System.Drawing.Color.Transparent;
+            this.ExitMenu.BorderRadius = 3;
             this.ExitMenu.FillColor = System.Drawing.Color.Transparent;
-            this.ExitMenu.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            this.ExitMenu.HoverState.FillColor = System.Drawing.Color.Red;
             this.ExitMenu.HoverState.Parent = this.ExitMenu;
             this.ExitMenu.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.ExitMenu.Location = new System.Drawing.Point(318, 9);
+            this.ExitMenu.Location = new System.Drawing.Point(321, 12);
             this.ExitMenu.Name = "ExitMenu";
             this.ExitMenu.ShadowDecoration.Parent = this.ExitMenu;
             this.ExitMenu.Size = new System.Drawing.Size(21, 19);
-            this.ExitMenu.TabIndex = 68;
+            this.ExitMenu.TabIndex = 40;
             this.ExitMenu.UseWaitCursor = true;
             this.ExitMenu.Click += new System.EventHandler(this.ExitMenu_Click);
             // 
