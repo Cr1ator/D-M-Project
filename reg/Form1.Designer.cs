@@ -44,7 +44,6 @@ namespace reg
             this.DontAccount = new System.Windows.Forms.Label();
             this.RegLine = new System.Windows.Forms.Label();
             this.DMPicture = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.Menu3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.StrelkiPicture)).BeginInit();
@@ -293,28 +292,6 @@ namespace reg
             this.DMPicture.UseWaitCursor = true;
             this.DMPicture.Click += new System.EventHandler(this.DMPicture_Click);
             // 
-            // Menu3
-            // 
-            this.Menu3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Menu3.BackgroundImage")));
-            this.Menu3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Menu3.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.Menu3.BorderRadius = 15;
-            this.Menu3.CheckedState.Parent = this.Menu3;
-            this.Menu3.CustomImages.Parent = this.Menu3;
-            this.Menu3.FillColor = System.Drawing.Color.White;
-            this.Menu3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F);
-            this.Menu3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
-            this.Menu3.HoverState.Parent = this.Menu3;
-            this.Menu3.Image = ((System.Drawing.Image)(resources.GetObject("Menu3.Image")));
-            this.Menu3.ImageSize = new System.Drawing.Size(50, 50);
-            this.Menu3.Location = new System.Drawing.Point(191, 281);
-            this.Menu3.Name = "Menu3";
-            this.Menu3.ShadowDecoration.Parent = this.Menu3;
-            this.Menu3.Size = new System.Drawing.Size(140, 49);
-            this.Menu3.TabIndex = 34;
-            this.Menu3.UseWaitCursor = true;
-            this.Menu3.Click += new System.EventHandler(this.Menu3_Click);
-            // 
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 40;
@@ -350,7 +327,6 @@ namespace reg
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(354, 639);
             this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.Menu3);
             this.Controls.Add(this.DMPicture);
             this.Controls.Add(this.RegLine);
             this.Controls.Add(this.DontAccount);
@@ -391,7 +367,6 @@ namespace reg
         private System.Windows.Forms.Label DontAccount;
         private System.Windows.Forms.Label RegLine;
         private Guna.UI2.WinForms.Guna2PictureBox DMPicture;
-        private Guna.UI2.WinForms.Guna2Button Menu3;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }

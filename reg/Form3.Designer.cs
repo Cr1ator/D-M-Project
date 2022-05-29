@@ -469,6 +469,7 @@
             this.guna2Button3.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.guna2Button3.BorderRadius = 10;
             this.guna2Button3.CheckedState.Parent = this.guna2Button3;
+            this.guna2Button3.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.guna2Button3.CustomImages.Parent = this.guna2Button3;
             this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.guna2Button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F);
@@ -700,6 +701,7 @@
             this.Controls.Add(this.AccountText);
             this.Controls.Add(this.DMText);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ProfileMenu";
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

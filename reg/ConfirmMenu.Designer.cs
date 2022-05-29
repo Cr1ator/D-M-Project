@@ -146,7 +146,7 @@
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label3.Location = new System.Drawing.Point(20, 434);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(266, 17);
+            this.label3.Size = new System.Drawing.Size(262, 17);
             this.label3.TabIndex = 78;
             this.label3.Text = "ВЫБИРИТЕ ВАШУ ДАТУ РОЖДЕНИЯ";
             this.label3.UseMnemonic = false;
@@ -174,7 +174,6 @@
             this.NumberPassportTextBox.HoverState.Parent = this.NumberPassportTextBox;
             this.NumberPassportTextBox.Location = new System.Drawing.Point(16, 292);
             this.NumberPassportTextBox.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.NumberPassportTextBox.MaxLength = 9;
             this.NumberPassportTextBox.Name = "NumberPassportTextBox";
             this.NumberPassportTextBox.PasswordChar = '\0';
             this.NumberPassportTextBox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
@@ -215,7 +214,7 @@
             this.AccountText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.AccountText.Location = new System.Drawing.Point(18, 67);
             this.AccountText.Name = "AccountText";
-            this.AccountText.Size = new System.Drawing.Size(323, 28);
+            this.AccountText.Size = new System.Drawing.Size(311, 28);
             this.AccountText.TabIndex = 81;
             this.AccountText.Text = "Подтверждение аккаунта";
             this.AccountText.UseMnemonic = false;
@@ -243,7 +242,6 @@
             this.INFCTextBox.HoverState.Parent = this.INFCTextBox;
             this.INFCTextBox.Location = new System.Drawing.Point(16, 375);
             this.INFCTextBox.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.INFCTextBox.MaxLength = 14;
             this.INFCTextBox.Name = "INFCTextBox";
             this.INFCTextBox.PasswordChar = '\0';
             this.INFCTextBox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
@@ -265,7 +263,7 @@
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Location = new System.Drawing.Point(20, 268);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(214, 17);
+            this.label1.Size = new System.Drawing.Size(213, 17);
             this.label1.TabIndex = 77;
             this.label1.Text = "ВВЕДИТЕ НОМЕР ПАСПОРТА";
             this.label1.UseMnemonic = false;
@@ -280,7 +278,7 @@
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Location = new System.Drawing.Point(20, 351);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(312, 17);
+            this.label2.Size = new System.Drawing.Size(309, 17);
             this.label2.TabIndex = 83;
             this.label2.Text = "ВВЕДИТЕ ИДЕНТИФИКАЦИОННЫЙ НОМЕР";
             this.label2.UseMnemonic = false;
@@ -316,6 +314,7 @@
             this.DangerTextBox.PlaceholderText = "";
             this.DangerTextBox.ReadOnly = true;
             this.DangerTextBox.SelectedText = "";
+            this.DangerTextBox.SelectionStart = 125;
             this.DangerTextBox.ShadowDecoration.Parent = this.DangerTextBox;
             this.DangerTextBox.Size = new System.Drawing.Size(324, 124);
             this.DangerTextBox.TabIndex = 87;
@@ -353,6 +352,7 @@
             this.TrueTextBox.PlaceholderText = "";
             this.TrueTextBox.ReadOnly = true;
             this.TrueTextBox.SelectedText = "";
+            this.TrueTextBox.SelectionStart = 125;
             this.TrueTextBox.ShadowDecoration.Parent = this.TrueTextBox;
             this.TrueTextBox.Size = new System.Drawing.Size(324, 124);
             this.TrueTextBox.TabIndex = 88;
@@ -382,6 +382,7 @@
             this.Controls.Add(this.ExitMenu);
             this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ConfirmMenu";
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -179,12 +179,6 @@ namespace reg
             Application.Exit();
         }
 
-        private void Menu3_Click(object sender, EventArgs e)
-        {
-            ProfileMenu form3 = new ProfileMenu();
-            this.Hide();
-            form3.Show();
-        }
 
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {

@@ -168,18 +168,15 @@ namespace reg
         {
             string query = $"select Users1.Confirmed from Users1 where UserID='{AuthMenu.txt1}'";
 
-            
-
             DataSet ds = func.getData(query);
-
-            
 
             if ((bool)ds.Tables[0].Rows[0][0] == true)
             {
-                string activ = $"select Credits.Activity from Credits where UserID='{AuthMenu.txt1}'";
+                string activ = $"select Credits.Activity from Credits where UserID='{AuthMenu.txt1}' and Activity = 1";
 
                 DataSet ac = func.getData(activ);
-                if ((bool)ac.Tables[0].Rows[0][0] == false)
+
+                if (ac.Tables[0].Rows.Count == 0)
                 {
                     try
                     {

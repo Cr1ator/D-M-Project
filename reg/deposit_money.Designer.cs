@@ -534,6 +534,7 @@
             this.Controls.Add(this.ExitMenu);
             this.Controls.Add(this.pictureBoxSlider);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "deposit_money";
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

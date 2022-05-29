@@ -55,7 +55,7 @@
             this.DMText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.DMText.Location = new System.Drawing.Point(50, 34);
             this.DMText.Name = "DMText";
-            this.DMText.Size = new System.Drawing.Size(265, 110);
+            this.DMText.Size = new System.Drawing.Size(267, 110);
             this.DMText.TabIndex = 0;
             this.DMText.Text = "D&M";
             this.DMText.UseMnemonic = false;
@@ -416,6 +416,7 @@
             this.Controls.Add(this.NameInput);
             this.Controls.Add(this.DMText);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RegMenu";
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
