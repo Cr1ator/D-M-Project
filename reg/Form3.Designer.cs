@@ -464,6 +464,7 @@
             // 
             // guna2Button3
             // 
+            this.guna2Button3.Animated = true;
             this.guna2Button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Button3.BackgroundImage")));
             this.guna2Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.guna2Button3.BorderColor = System.Drawing.Color.WhiteSmoke;
@@ -660,7 +661,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(18, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 23);
+            this.label1.Size = new System.Drawing.Size(213, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Погашение кредита ";
             this.label1.UseWaitCursor = true;
