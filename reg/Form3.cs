@@ -333,22 +333,38 @@ namespace reg
                     {
                         double repayment = Sum_amount - Sum_MP;
                         double LoanBalance = Sum_credits - Sum_MP;
+                        if (LoanBalance >= 0)
+                        {
+                            //MessageBox.Show(repayment.ToString());
+                            //MessageBox.Show(Convert.ToInt32(repayment).ToString());
+                            string query_sumupdate = $"UPDATE Users1 SET Amount={Convert.ToInt32(repayment)}, CreditBalanceAll= {Convert.ToInt32(LoanBalance)}  WHERE UserID={AuthMenu.txt1}";
+                            func.setDataUpd(query_sumupdate);
+                            //MessageBox.Show("3 fsdf");
 
-                        //MessageBox.Show(repayment.ToString());
-                        //MessageBox.Show(Convert.ToInt32(repayment).ToString());
-                        string query_sumupdate = $"UPDATE Users1 SET Amount={Convert.ToInt32(repayment)}, CreditBalanceAll= {Convert.ToInt32(LoanBalance)}  WHERE UserID={AuthMenu.txt1}";
-                        func.setDataUpd(query_sumupdate);
-                        //MessageBox.Show("3 fsdf");
+                            MessageBox.Show("Выплачен ежемесячный платеж ", "D&M Bank", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        MessageBox.Show("Кредит погашен ", "D&M Bank", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            string query_sumostatok = $"select Users1.CreditBalanceAll, Users1.Amount  from Users1 where UserID='{AuthMenu.txt1}'";
+                            DataSet dt_sum_ostatok = func.getData(query_sumostatok);
 
-                        string query_sumostatok = $"select Users1.CreditBalanceAll, Users1.Amount  from Users1 where UserID='{AuthMenu.txt1}'";
-                        DataSet dt_sum_ostatok = func.getData(query_sumostatok);
+                            CreditSumLabel.Text = dt_sum_ostatok.Tables[0].Rows[0][0].ToString();
+                            MyAccountLabel.Text = dt_sum_ostatok.Tables[0].Rows[0][1].ToString();
 
-                        CreditSumLabel.Text = dt_sum_ostatok.Tables[0].Rows[0][0].ToString();
-                        MyAccountLabel.Text = dt_sum_ostatok.Tables[0].Rows[0][1].ToString();
+                            guna2Panel1.Visible = false;
+                        }
+                        else
+                        {
+                            MessageBox.Show("Кредит погашен ", "D&M Bank", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            string query_sumupdate = $"UPDATE Users1 SET CreditBalanceAll= {0} WHERE UserID={AuthMenu.txt1}";
+                            func.setDataUpd(query_sumupdate);
+                            string activity = $"UPDATE Credits SET Activity={0} WHERE UserID={AuthMenu.txt1} and Activity='1'";
+                            func.setDataUpd(activity);
+                            guna2Panel1.Visible = false;
 
-                        guna2Panel1.Visible = false;
+                            string newQ = $"select Users1.CreditBalanceAll,  Users1.Amount from Users1 where UserID='{AuthMenu.txt1}'";
+                            DataSet new_credit_balance = func.getData(newQ);
+                            CreditSumLabel.Text = new_credit_balance.Tables[0].Rows[0][0].ToString();
+                            MyAccountLabel.Text = new_credit_balance.Tables[0].Rows[0][1].ToString();
+                        }
 
                     }
                     else
@@ -370,3 +386,4 @@ namespace reg
         }
     }
 }
+
