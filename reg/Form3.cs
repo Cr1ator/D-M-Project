@@ -331,10 +331,12 @@ namespace reg
 
                     if (Sum_amount >= Sum_MP)
                     {
-                        double repayment = Sum_amount - Sum_MP;
-                        double LoanBalance = Sum_credits - Sum_MP;
-                        if (LoanBalance >= 0)
+                        if (Sum_credits >= Sum_MP)
                         {
+                            double repayment = Sum_amount - Sum_MP;
+                            double LoanBalance = Sum_credits - Sum_MP;
+
+
                             //MessageBox.Show(repayment.ToString());
                             //MessageBox.Show(Convert.ToInt32(repayment).ToString());
                             string query_sumupdate = $"UPDATE Users1 SET Amount={Convert.ToInt32(repayment)}, CreditBalanceAll= {Convert.ToInt32(LoanBalance)}  WHERE UserID={AuthMenu.txt1}";
@@ -353,8 +355,12 @@ namespace reg
                         }
                         else
                         {
+
                             MessageBox.Show("Кредит погашен ", "D&M Bank", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            string query_sumupdate = $"UPDATE Users1 SET CreditBalanceAll= {0} WHERE UserID={AuthMenu.txt1}";
+
+                            double Last = Sum_credits - Sum_credits;
+                            double lastP = Sum_amount - Sum_credits;
+                            string query_sumupdate = $"UPDATE Users1 SET Amount={Convert.ToInt32(lastP)}, CreditBalanceAll = {Last} WHERE UserID={AuthMenu.txt1}";
                             func.setDataUpd(query_sumupdate);
                             string activity = $"UPDATE Credits SET Activity={0} WHERE UserID={AuthMenu.txt1} and Activity='1'";
                             func.setDataUpd(activity);
