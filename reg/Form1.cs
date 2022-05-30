@@ -51,36 +51,43 @@ namespace reg
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            string Login = LoginImput.Text.ToLower();
-            query = $"select Users1.userID, Users1.userlogin, Users1.userpassword, Users1.usersurname from Users1 where userlogin='{Login}'";
-            DataSet ds = func.getData(query);
-            if (ds.Tables[0].Rows.Count != 0)
+            try
             {
-                if (PasswordImput.Text != "" || Login != "")
+                string Login = LoginImput.Text.ToLower();
+                query = $"select Users1.userID, Users1.userlogin, Users1.userpassword, Users1.usersurname from Users1 where userlogin='{Login}'";
+                DataSet ds = func.getData(query);
+                if (ds.Tables[0].Rows.Count != 0)
                 {
-                    string log = ds.Tables[0].Rows[0][1].ToString();
-                    string pass = ds.Tables[0].Rows[0][2].ToString();
-                    if (log == Login && pass == PasswordImput.Text)
+                    if (PasswordImput.Text != "" || Login != "")
                     {
-                        txt1 = ds.Tables[0].Rows[0][0].ToString();
-                        txtSN = ds.Tables[0].Rows[0][3].ToString();
-                        ProfileMenu f3 = new ProfileMenu();
-                        this.Hide(); 
-                        f3.Show();
+                        string log = ds.Tables[0].Rows[0][1].ToString();
+                        string pass = ds.Tables[0].Rows[0][2].ToString();
+                        if (log == Login && pass == PasswordImput.Text)
+                        {
+                            txt1 = ds.Tables[0].Rows[0][0].ToString();
+                            txtSN = ds.Tables[0].Rows[0][3].ToString();
+                            ProfileMenu f3 = new ProfileMenu();
+                            this.Hide();
+                            f3.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Неверный пароль", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Неверный пароль", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Не все поля заполнены", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Не все поля заполнены", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Пользователя не существует!", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            else
+            catch
             {
-                MessageBox.Show("Пользователя не существует!", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Проверьте заполненные поля!", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

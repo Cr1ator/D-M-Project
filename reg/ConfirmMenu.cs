@@ -34,7 +34,7 @@ namespace reg
             }
             catch
             {
-
+                MessageBox.Show("Проверьте заполненные поля!", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         protected override void WndProc(ref Message m)
@@ -107,38 +107,45 @@ namespace reg
 
         private void EntryRegButton_Click(object sender, EventArgs e)
         {
-            //query = $"select Users1.numberPassport, Users1.INFC from Users1 where userID='{AuthMenu.txt1}'";
-            //DataSet ds = func.getData(query);
-            //if (ds.Tables[0].Rows.Count != 0)
-            //{
-            if (NumberPassportTextBox.Text != "" || INFCTextBox.Text != "")
+            try
             {
-                string message = "Вы подтвердили свой аккаунт";
-                string NumbPass = NumberPassportTextBox.Text;
-                string INFC = INFCTextBox.Text;
-                string DataBirth = DateBithdayTimePicker.Text;
+                //query = $"select Users1.numberPassport, Users1.INFC from Users1 where userID='{AuthMenu.txt1}'";
+                //DataSet ds = func.getData(query);
+                //if (ds.Tables[0].Rows.Count != 0)
+                //{
+                if (NumberPassportTextBox.Text != "" || INFCTextBox.Text != "")
+                {
+                    string message = "Вы подтвердили свой аккаунт";
+                    string NumbPass = NumberPassportTextBox.Text;
+                    string INFC = INFCTextBox.Text;
+                    string DataBirth = DateBithdayTimePicker.Text;
 
-                //query = "insert into Users1(numberPassport, INFC, DataOfBirthday) values ('" + NumbPass + "', '" + INFC + "', '" + DataBirth + "')";
-                //query = "UPDATE Users1(numberPassport, INFC, DataOfBirthday) VALUES (@NumbPass, @INFC, @DataBirth) WHERE UserID='" + AuthMenu.txt1 + "'";
-                DangerTextBox.Hide();
-                TrueTextBox.Show();
-                query = $"UPDATE Users1 SET numberPassport={NumbPass}, INFC={INFC} , DataOfBirthday='{DataBirth}', Confirmed=1 WHERE UserID={AuthMenu.txt1}";
-                func.setData(query, message);
-                //MessageBox.Show("Ваш аккаунт подтверждён", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    //query = "insert into Users1(numberPassport, INFC, DataOfBirthday) values ('" + NumbPass + "', '" + INFC + "', '" + DataBirth + "')";
+                    //query = "UPDATE Users1(numberPassport, INFC, DataOfBirthday) VALUES (@NumbPass, @INFC, @DataBirth) WHERE UserID='" + AuthMenu.txt1 + "'";
+                    DangerTextBox.Hide();
+                    TrueTextBox.Show();
+                    query = $"UPDATE Users1 SET numberPassport={NumbPass}, INFC={INFC} , DataOfBirthday='{DataBirth}', Confirmed=1 WHERE UserID={AuthMenu.txt1}";
+                    func.setData(query, message);
+                    //MessageBox.Show("Ваш аккаунт подтверждён", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
-                //ProfileMenu f3 = new ProfileMenu();
-                //this.Hide();
-                //f3.Show();
+                    //ProfileMenu f3 = new ProfileMenu();
+                    //this.Hide();
+                    //f3.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Не все поля заполнены", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                //}
+                //else
+                //{
+                //    MessageBox.Show("Не придвиденная ошибка", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //}
             }
-            else
+            catch
             {
-                MessageBox.Show("Не все поля заполнены", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Проверьте заполненные поля!", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Не придвиденная ошибка", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
         }
 
         private void ConfirmMenu_Load_1(object sender, EventArgs e)

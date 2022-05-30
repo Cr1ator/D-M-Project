@@ -37,51 +37,58 @@ namespace reg
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            //Создание объекта для генерации чисел
-            Random rnd = new Random();
-            String query2 = "select * from Users1";
-            if (NameInput.Text != "" && LastNameInput.Text != "" && LoginImput.Text != "" && EmailInput.Text != "" && PasswordInput.Text != "" && repeatPasswordInput.Text != "")
+            try
             {
-                var email_check = new EmailAddressAttribute();
-                String name  = NameInput.Text;
-                String lastname = LastNameInput.Text;   
-                String login = LoginImput.Text.ToLower();
-                String email = EmailInput.Text;
-                String password = PasswordInput.Text;
-                int userid = rnd.Next(10000, 99999);
-                String message = "Вы успешно зарегистрировались!";
-                if (PasswordInput.Text == repeatPasswordInput.Text)
+                //Создание объекта для генерации чисел
+                Random rnd = new Random();
+                String query2 = "select * from Users1";
+                if (NameInput.Text != "" && LastNameInput.Text != "" && LoginImput.Text != "" && EmailInput.Text != "" && PasswordInput.Text != "" && repeatPasswordInput.Text != "")
                 {
-                    if (func.getUserInfo(query2).Item1 == login)
+                    var email_check = new EmailAddressAttribute();
+                    String name = NameInput.Text;
+                    String lastname = LastNameInput.Text;
+                    String login = LoginImput.Text.ToLower();
+                    String email = EmailInput.Text;
+                    String password = PasswordInput.Text;
+                    int userid = rnd.Next(10000, 99999);
+                    String message = "Вы успешно зарегистрировались!";
+                    if (PasswordInput.Text == repeatPasswordInput.Text)
                     {
-                        MessageBox.Show("Пользователь с данным логином уже существует!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    else
-                    {
-                        if (email_check.IsValid(email))
+                        if (func.getUserInfo(query2).Item1 == login)
                         {
-                            AuthMenu.txt1 = userid.ToString();
-                            query = "insert into Users1(userID, username, usersurname, userlogin, useremail, userpassword) values ('" + userid + "', '" + name + "', '" + lastname + "', '" + login + "', '" + email + "', '" + password + "')";
-                            func.setData(query, message);
-                            ProfileMenu f3 = new ProfileMenu();
-                            this.Hide();
-                            f3.Show();
+                            MessageBox.Show("Пользователь с данным логином уже существует!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         else
                         {
-                            MessageBox.Show("Неверный email", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            if (email_check.IsValid(email))
+                            {
+                                AuthMenu.txt1 = userid.ToString();
+                                query = "insert into Users1(userID, username, usersurname, userlogin, useremail, userpassword) values ('" + userid + "', '" + name + "', '" + lastname + "', '" + login + "', '" + email + "', '" + password + "')";
+                                func.setData(query, message);
+                                ProfileMenu f3 = new ProfileMenu();
+                                this.Hide();
+                                f3.Show();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Неверный email", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
                         }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Пароли не совпадают", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Пароли не совпадают", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                    MessageBox.Show("Не все поля заполнены", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
-            else
+            catch
             {
-
-                MessageBox.Show("Не все поля заполнены", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Проверьте заполненные поля!", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

@@ -16,59 +16,66 @@ namespace reg
         funkreg func = new funkreg();
         public ProfileMenu()
         {
-            InitializeComponent();
-            query = $"select Users1.Confirmed from Users1 where UserID='{AuthMenu.txt1}'";
-            DataSet ds = func.getData(query);
-            if ((bool)ds.Tables[0].Rows[0][0] == true)
+            try
             {
-                noComfirmAccount.Hide();
-                TrueComfirmAccount.Show();
-            }
-            else
-            {
-                TrueComfirmAccount.Hide();
-            }
-
-            query = $"select Users1.Amount, Users1.CreditBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
-            DataSet sum = func.getData(query);
-            int Amount = Convert.ToInt32(sum.Tables[0].Rows[0][0]);
-            //MyAccountLabel.Text = Amount.ToString();
-            
-            CreditSumLabel.Text = sum.Tables[0].Rows[0][1].ToString();
-
-            //Выплата вклада
-            string query_vklad = $"select Deposits.DateDeposit, Deposits.Amount from Deposits where UserID='{AuthMenu.txt1}' and Activity=1 ";
-            DataSet vklad= func.getData(query_vklad);
-            //MessageBox.Show(DateTime.Parse(vklad.Tables[0].Rows[0][0].ToString()).ToString());
-            DateTime Now_time = DateTime.Now;
-
-
-            for (int i = 0; i < vklad.Tables[0].Rows.Count; i++)
-            {
-                DateTime end_vklad_time = DateTime.Parse(vklad.Tables[0].Rows[i][0].ToString());
-                if (Now_time >= end_vklad_time)
+                InitializeComponent();
+                query = $"select Users1.Confirmed from Users1 where UserID='{AuthMenu.txt1}'";
+                DataSet ds = func.getData(query);
+                if ((bool)ds.Tables[0].Rows[0][0] == true)
                 {
-                    string queryInvestedBalanceAll = $"select Users1.InvestedBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
-                    DataSet queryIBAll = func.getData(queryInvestedBalanceAll);
-
-                    int Sum_ostatok = Amount + Convert.ToInt32(vklad.Tables[0].Rows[i][1]);
-                    int InvestedBalanceAll = Convert.ToInt32(queryIBAll.Tables[0].Rows[0][0]) - Convert.ToInt32(vklad.Tables[0].Rows[i][1]);
-                    string query_sumupdate = $"UPDATE Users1 SET Amount={Sum_ostatok} WHERE UserID={AuthMenu.txt1}";
-                    string query_close_deposit = $"UPDATE Deposits SET Activity=0 WHERE UserID={AuthMenu.txt1} and DateDeposit='{end_vklad_time.ToShortDateString()}'";
-                    string query_InvestedBalanceAll = $"UPDATE Users1 SET InvestedBalanceAll={InvestedBalanceAll} WHERE UserID={AuthMenu.txt1}";
-
-                    func.setDataUpd(query_sumupdate);
-                    func.setDataUpd(query_close_deposit);
-                    func.setDataUpd(query_InvestedBalanceAll);
-
-                    MessageBox.Show($"Вклад на сумму {vklad.Tables[0].Rows[i][1]} BYN выплачен ");
+                    noComfirmAccount.Hide();
+                    TrueComfirmAccount.Show();
                 }
-            }
+                else
+                {
+                    TrueComfirmAccount.Hide();
+                }
 
-            query = $"select Users1.Amount, Users1.InvestedBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
-            DataSet amount = func.getData(query);
-            MyAccountLabel.Text = amount.Tables[0].Rows[0][0].ToString();
-            VkladSumLabel.Text = amount.Tables[0].Rows[0][1].ToString();
+                query = $"select Users1.Amount, Users1.CreditBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
+                DataSet sum = func.getData(query);
+                int Amount = Convert.ToInt32(sum.Tables[0].Rows[0][0]);
+                //MyAccountLabel.Text = Amount.ToString();
+
+                CreditSumLabel.Text = sum.Tables[0].Rows[0][1].ToString();
+
+                //Выплата вклада
+                string query_vklad = $"select Deposits.DateDeposit, Deposits.Amount from Deposits where UserID='{AuthMenu.txt1}' and Activity=1 ";
+                DataSet vklad = func.getData(query_vklad);
+                //MessageBox.Show(DateTime.Parse(vklad.Tables[0].Rows[0][0].ToString()).ToString());
+                DateTime Now_time = DateTime.Now;
+
+
+                for (int i = 0; i < vklad.Tables[0].Rows.Count; i++)
+                {
+                    DateTime end_vklad_time = DateTime.Parse(vklad.Tables[0].Rows[i][0].ToString());
+                    if (Now_time >= end_vklad_time)
+                    {
+                        string queryInvestedBalanceAll = $"select Users1.InvestedBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
+                        DataSet queryIBAll = func.getData(queryInvestedBalanceAll);
+
+                        int Sum_ostatok = Amount + Convert.ToInt32(vklad.Tables[0].Rows[i][1]);
+                        int InvestedBalanceAll = Convert.ToInt32(queryIBAll.Tables[0].Rows[0][0]) - Convert.ToInt32(vklad.Tables[0].Rows[i][1]);
+                        string query_sumupdate = $"UPDATE Users1 SET Amount={Sum_ostatok} WHERE UserID={AuthMenu.txt1}";
+                        string query_close_deposit = $"UPDATE Deposits SET Activity=0 WHERE UserID={AuthMenu.txt1} and DateDeposit='{end_vklad_time.ToShortDateString()}'";
+                        string query_InvestedBalanceAll = $"UPDATE Users1 SET InvestedBalanceAll={InvestedBalanceAll} WHERE UserID={AuthMenu.txt1}";
+
+                        func.setDataUpd(query_sumupdate);
+                        func.setDataUpd(query_close_deposit);
+                        func.setDataUpd(query_InvestedBalanceAll);
+
+                        MessageBox.Show($"Вклад на сумму {vklad.Tables[0].Rows[i][1]} BYN выплачен ");
+                    }
+                }
+
+                query = $"select Users1.Amount, Users1.InvestedBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
+                DataSet amount = func.getData(query);
+                MyAccountLabel.Text = amount.Tables[0].Rows[0][0].ToString();
+                VkladSumLabel.Text = amount.Tables[0].Rows[0][1].ToString();
+            }
+            catch
+            {
+                MessageBox.Show("Пользователь не найден", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         protected override void WndProc(ref Message m)
@@ -252,99 +259,113 @@ namespace reg
 
         private void ALLP_Click(object sender, EventArgs e)
         {
-            query = $"select Users1.Amount, Users1.CreditBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
-            
-            
-            DataSet sum_amount = func.getData(query);
-            DataSet sum_credits = func.getData(query);
-            
-            double Sum_amount = Convert.ToDouble(sum_amount.Tables[0].Rows[0][0].ToString());
-            double Sum_credits = Convert.ToDouble(sum_credits.Tables[0].Rows[0][1].ToString());
-
-            if (Sum_credits > 0)
+            try
             {
-                if (Sum_amount >= Sum_credits)
+                query = $"select Users1.Amount, Users1.CreditBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
+
+
+                DataSet sum_amount = func.getData(query);
+                DataSet sum_credits = func.getData(query);
+
+                double Sum_amount = Convert.ToDouble(sum_amount.Tables[0].Rows[0][0].ToString());
+                double Sum_credits = Convert.ToDouble(sum_credits.Tables[0].Rows[0][1].ToString());
+
+                if (Sum_credits > 0)
                 {
-                    double repayment = Sum_amount - Sum_credits;
+                    if (Sum_amount >= Sum_credits)
+                    {
+                        double repayment = Sum_amount - Sum_credits;
 
-                    string query_sumupdate = $"UPDATE Users1 SET Amount={repayment}, CreditBalanceAll= {0} WHERE UserID={AuthMenu.txt1}";
-                    func.setDataUpd(query_sumupdate);
+                        string query_sumupdate = $"UPDATE Users1 SET Amount={repayment}, CreditBalanceAll= {0} WHERE UserID={AuthMenu.txt1}";
+                        func.setDataUpd(query_sumupdate);
 
-                    string activity = $"UPDATE Credits SET Activity={0} WHERE UserID={AuthMenu.txt1} and Activity='1'";
-                    func.setDataUpd(activity);
+                        string activity = $"UPDATE Credits SET Activity={0} WHERE UserID={AuthMenu.txt1} and Activity='1'";
+                        func.setDataUpd(activity);
 
-                    MessageBox.Show("Кредит погашен ", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Кредит погашен ", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
-                    guna2Panel1.Visible = false;
+                        guna2Panel1.Visible = false;
 
-                    string newQ = $"select Users1.CreditBalanceAll,  Users1.Amount from Users1 where UserID='{AuthMenu.txt1}'";
-                    DataSet new_credit_balance = func.getData(newQ);
-                    CreditSumLabel.Text = new_credit_balance.Tables[0].Rows[0][0].ToString();
-                    MyAccountLabel.Text = new_credit_balance.Tables[0].Rows[0][1].ToString();
+                        string newQ = $"select Users1.CreditBalanceAll,  Users1.Amount from Users1 where UserID='{AuthMenu.txt1}'";
+                        DataSet new_credit_balance = func.getData(newQ);
+                        CreditSumLabel.Text = new_credit_balance.Tables[0].Rows[0][0].ToString();
+                        MyAccountLabel.Text = new_credit_balance.Tables[0].Rows[0][1].ToString();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Недостаточно средств для погашения", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Недостаточно средств для погашения", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("У вас нет кредита", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    guna2Panel1.Visible = false;
                 }
             }
-            else
+            catch
             {
-                MessageBox.Show("У вас нет кредита", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                guna2Panel1.Visible = false;
+                MessageBox.Show("Пользователь не найден", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
         }
         private void MP_Click(object sender, EventArgs e)
         {
-            query = $"select Users1.Amount, Users1.CreditBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
-            string queryMP = $"select Credits.monthlyPaymentAmount from Credits where UserID='{AuthMenu.txt1}' and Activity=1";
-
-            DataSet sum_amount = func.getData(query);
-            DataSet sum_credits = func.getData(query);
-            DataSet sum_MP = func.getData(queryMP);
-
-            double Sum_amount = Convert.ToDouble(sum_amount.Tables[0].Rows[0][0].ToString());
-            double Sum_credits = Convert.ToDouble(sum_credits.Tables[0].Rows[0][1].ToString());
-
-            double Sum_MP = Convert.ToDouble(sum_MP.Tables[0].Rows[0][0].ToString());
-
-            
-            if (Sum_credits > 0)
+            try
             {
-                
-                 if (Sum_amount >= Sum_MP)
-                 {
-                     double repayment = Sum_amount - Sum_MP;
-                     double LoanBalance = Sum_credits - Sum_MP;
+                query = $"select Users1.Amount, Users1.CreditBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
+                string queryMP = $"select Credits.monthlyPaymentAmount from Credits where UserID='{AuthMenu.txt1}' and Activity=1";
 
-                    //MessageBox.Show(repayment.ToString());
-                    //MessageBox.Show(Convert.ToInt32(repayment).ToString());
-                    string query_sumupdate = $"UPDATE Users1 SET Amount={Convert.ToInt32(repayment)}, CreditBalanceAll= {Convert.ToInt32(LoanBalance)}  WHERE UserID={AuthMenu.txt1}";
-                    func.setDataUpd(query_sumupdate);
-                    //MessageBox.Show("3 fsdf");
+                DataSet sum_amount = func.getData(query);
+                DataSet sum_credits = func.getData(query);
+                DataSet sum_MP = func.getData(queryMP);
 
-                    MessageBox.Show("Кредит погашен ", "D&M Bank", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                double Sum_amount = Convert.ToDouble(sum_amount.Tables[0].Rows[0][0].ToString());
+                double Sum_credits = Convert.ToDouble(sum_credits.Tables[0].Rows[0][1].ToString());
 
-                    string query_sumostatok = $"select Users1.CreditBalanceAll, Users1.Amount  from Users1 where UserID='{AuthMenu.txt1}'";
-                    DataSet dt_sum_ostatok = func.getData(query_sumostatok);
+                double Sum_MP = Convert.ToDouble(sum_MP.Tables[0].Rows[0][0].ToString());
 
-                    CreditSumLabel.Text = dt_sum_ostatok.Tables[0].Rows[0][0].ToString();
-                    MyAccountLabel.Text = dt_sum_ostatok.Tables[0].Rows[0][1].ToString();
+
+                if (Sum_credits > 0)
+                {
+
+                    if (Sum_amount >= Sum_MP)
+                    {
+                        double repayment = Sum_amount - Sum_MP;
+                        double LoanBalance = Sum_credits - Sum_MP;
+
+                        //MessageBox.Show(repayment.ToString());
+                        //MessageBox.Show(Convert.ToInt32(repayment).ToString());
+                        string query_sumupdate = $"UPDATE Users1 SET Amount={Convert.ToInt32(repayment)}, CreditBalanceAll= {Convert.ToInt32(LoanBalance)}  WHERE UserID={AuthMenu.txt1}";
+                        func.setDataUpd(query_sumupdate);
+                        //MessageBox.Show("3 fsdf");
+
+                        MessageBox.Show("Кредит погашен ", "D&M Bank", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        string query_sumostatok = $"select Users1.CreditBalanceAll, Users1.Amount  from Users1 where UserID='{AuthMenu.txt1}'";
+                        DataSet dt_sum_ostatok = func.getData(query_sumostatok);
+
+                        CreditSumLabel.Text = dt_sum_ostatok.Tables[0].Rows[0][0].ToString();
+                        MyAccountLabel.Text = dt_sum_ostatok.Tables[0].Rows[0][1].ToString();
+
+                        guna2Panel1.Visible = false;
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Недостаточно средств для погашения", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("У вас нет кредита", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                     guna2Panel1.Visible = false;
-
-                 }
-                 else
-                 {
-                     MessageBox.Show("Недостаточно средств для погашения", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                 }
+                }
             }
-            else
+            catch
             {
-                MessageBox.Show("У вас нет кредита", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-                guna2Panel1.Visible = false;
+                MessageBox.Show("Пользователь не найден", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

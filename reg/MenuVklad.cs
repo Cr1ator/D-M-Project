@@ -137,58 +137,65 @@ namespace reg
 
         private void EntryRegButton_Click(object sender, EventArgs e)
         {
-            string query = $"select Users1.Confirmed from Users1 where UserID='{AuthMenu.txt1}'";
-            DataSet ds = func.getData(query);
-            if ((bool)ds.Tables[0].Rows[0][0] == true)
+            try
             {
-                int Sum = Convert.ToInt32(SumLabel.Text);
-                string Date = DateLabel.Text;
-                var dat = DateTime.Now;
-                DateTime DateDeposit = dat.AddMonths(Convert.ToInt32(Date));
-
-                int days = (DateDeposit - dat).Days;
-
-                //суммы которая сейчас на аккаунте
-                query = $"select Users1.Amount from Users1 where UserID='{AuthMenu.txt1}'";
-
-                //суммы которая сейчас на балансе вкладов
-                string queryInvestedBalanceAll = $"select Users1.InvestedBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
-                DataSet queryIBAll = func.getData(queryInvestedBalanceAll);
-
-                DataSet sum_amount = func.getData(query);
-                int sums = Convert.ToInt32(sum_amount.Tables[0].Rows[0][0].ToString());
-
-                int Sum_ostatok = sums - Sum;
-
-                double Sum_viplat = Sum * Math.Pow((1 + ((Convert.ToInt32(ProcentTextBox.Text) * 0.01) / 365.0)), days);
-
-                int InvestedBalanceAll = Convert.ToInt32(queryIBAll.Tables[0].Rows[0][0]) + Convert.ToInt32(Sum_viplat);
-                if (Sum <= sums)
+                string query = $"select Users1.Confirmed from Users1 where UserID='{AuthMenu.txt1}'";
+                DataSet ds = func.getData(query);
+                if ((bool)ds.Tables[0].Rows[0][0] == true)
                 {
-                    string query_deposit = "insert into Deposits(userID, Amount, Activity, DateDeposit) values ('" + AuthMenu.txt1 + "', '" + Convert.ToInt32(Sum_viplat) + "', '" + 1 + "', '" + DateDeposit.ToShortDateString() + "')";
-                    string query_operations = "insert into Operation(userID, Amount, TypeOperation, DateOperation) values ('" + AuthMenu.txt1 + "', '" + Sum + "', '" + 4 + "', '" + DateTime.Now + "')"; 
-                    string query_sumupdate = $"UPDATE Users1 SET Amount={Sum_ostatok} WHERE UserID={AuthMenu.txt1}";
-                    string query_InvestedBalanceAll = $"UPDATE Users1 SET InvestedBalanceAll={InvestedBalanceAll} WHERE UserID={AuthMenu.txt1}";
+                    int Sum = Convert.ToInt32(SumLabel.Text);
+                    string Date = DateLabel.Text;
+                    var dat = DateTime.Now;
+                    DateTime DateDeposit = dat.AddMonths(Convert.ToInt32(Date));
 
-                    func.setDataUpd(query_deposit);
-                    func.setDataUpd(query_operations);
-                    func.setDataUpd(query_sumupdate);
-                    func.setDataUpd(query_InvestedBalanceAll);
+                    int days = (DateDeposit - dat).Days;
 
-                    MessageBox.Show($"Вклад успешно внесён\nДата выплаты вклада: {DateDeposit.ToShortDateString()}");
+                    //суммы которая сейчас на аккаунте
+                    query = $"select Users1.Amount from Users1 where UserID='{AuthMenu.txt1}'";
 
-                    ProfileMenu form3 = new ProfileMenu();
-                    this.Hide();
-                    form3.Show();
+                    //суммы которая сейчас на балансе вкладов
+                    string queryInvestedBalanceAll = $"select Users1.InvestedBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
+                    DataSet queryIBAll = func.getData(queryInvestedBalanceAll);
+
+                    DataSet sum_amount = func.getData(query);
+                    int sums = Convert.ToInt32(sum_amount.Tables[0].Rows[0][0].ToString());
+
+                    int Sum_ostatok = sums - Sum;
+
+                    double Sum_viplat = Sum * Math.Pow((1 + ((Convert.ToInt32(ProcentTextBox.Text) * 0.01) / 365.0)), days);
+
+                    int InvestedBalanceAll = Convert.ToInt32(queryIBAll.Tables[0].Rows[0][0]) + Convert.ToInt32(Sum_viplat);
+                    if (Sum <= sums)
+                    {
+                        string query_deposit = "insert into Deposits(userID, Amount, Activity, DateDeposit) values ('" + AuthMenu.txt1 + "', '" + Convert.ToInt32(Sum_viplat) + "', '" + 1 + "', '" + DateDeposit.ToShortDateString() + "')";
+                        string query_operations = "insert into Operation(userID, Amount, TypeOperation, DateOperation) values ('" + AuthMenu.txt1 + "', '" + Sum + "', '" + 4 + "', '" + DateTime.Now + "')";
+                        string query_sumupdate = $"UPDATE Users1 SET Amount={Sum_ostatok} WHERE UserID={AuthMenu.txt1}";
+                        string query_InvestedBalanceAll = $"UPDATE Users1 SET InvestedBalanceAll={InvestedBalanceAll} WHERE UserID={AuthMenu.txt1}";
+
+                        func.setDataUpd(query_deposit);
+                        func.setDataUpd(query_operations);
+                        func.setDataUpd(query_sumupdate);
+                        func.setDataUpd(query_InvestedBalanceAll);
+
+                        MessageBox.Show($"Вклад успешно внесён\nДата выплаты вклада: {DateDeposit.ToShortDateString()}");
+
+                        ProfileMenu form3 = new ProfileMenu();
+                        this.Hide();
+                        form3.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Недостаточно средств", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Недостаточно средств", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Ваш аккаунт не подтверждён! Подтвердите аккаунт чтобы совершить вклад", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
-            else
+            catch
             {
-                MessageBox.Show("Ваш аккаунт не подтверждён! Подтвердите аккаунт чтобы совершить вклад", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Проверьте заполненные поля!", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

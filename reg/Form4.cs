@@ -243,47 +243,54 @@ namespace reg
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            double ZP = Convert.ToDouble(txtZP.Text);
-            double forty = (ZP * 40) / 100;
-            if (MonthlyPayment > forty)
+            try
             {
-                MessageBox.Show("Банк вам отказал в выдаче кридита!"); 
+                double ZP = Convert.ToDouble(txtZP.Text);
+                double forty = (ZP * 40) / 100;
+                if (MonthlyPayment > forty)
+                {
+                    MessageBox.Show("Банк вам отказал в выдаче кридита!");
+                }
+                else
+                {
+                    MessageBox.Show("Банк вам выдает кредит, проверьте средства на балансе!");
+                    rtfReceipt.AppendText("                            D&M Bank                                " + "\n");
+                    rtfReceipt.AppendText("--------------------------------------------------------------" + "\n");
+                    rtfReceipt.AppendText("Сумма кредита:      " + txtLoanAmount.Text + "  BYN" + "\n");
+                    rtfReceipt.AppendText("Срок кредита:       " + txtTerm.Text + "\n");
+                    rtfReceipt.AppendText("Процентная ставка:  " + "12%" + "\n");
+                    rtfReceipt.AppendText("Ежемесячный платеж: " + ibiMonthlyPayment.Text + "  BYN" + "\n");
+                    rtfReceipt.AppendText("Итоговая сумма:     " + IbiTotalPayment.Text + "  BYN" + "\n");
+                    rtfReceipt.AppendText("--------------------------------------------------------------" + "\n");
+                    rtfReceipt.AppendText("                            D&M Bank                                " + "\n");
+
+                    guna2Button4.Visible = true;
+
+                    query = $"select Users1.Amount from Users1 where UserID='{AuthMenu.txt1}'";
+                    DataSet sum_amount = func.getData(query);
+                    double Sum_amount = Convert.ToDouble(sum_amount.Tables[0].Rows[0][0].ToString());
+                    double Sum_Credit = Sum_amount + loanAmount;
+
+                    string query_sumupdate = $"UPDATE Users1 SET Amount={Sum_Credit} WHERE UserID={AuthMenu.txt1}";
+                    func.setDataUpd(query_sumupdate);
+
+                    //string query_savecredit = "insert into Credits(userID, Amount, interestRate, paymentDate, EndDate, monthlyPaymentAmount, Activity, DateCredits, salary, CreditsTotalPayment) values ('" + AuthMenu.txt1 + "', '" + Convert.ToDouble(txtLoanAmount.Text) + "', '" + 12.0 + "', '" + PD + "', '" + LD + "' , '" + Convert.ToDouble(ibiMonthlyPayment.Text) + "', '" + 1 + "', '" + DN + "', '" + Convert.ToDouble(ZP) + "', '" + BTP + "')";
+                    string query_savecredit = "insert into Credits(userID, Amount, interestRate, paymentDate, EndDate, monthlyPaymentAmount, Activity, DateCredits, salary, CreditsTotalPayment) values ('" + AuthMenu.txt1 + "', '" + Convert.ToDouble(txtLoanAmount.Text) + "', '" + 12.0 + "', '" + PD + "', '" + LD + "' , '" + ibiMonthlyPayment.Text.Replace(',', '.') + "', '" + 1 + "', '" + DN + "', '" + txtZP.Text.Replace(',', '.') + "', '" + IbiTotalPayment.Text.Replace(',', '.') + "')";
+                    //string query_savecredit = "insert into Credits(userID, Amount) values ('" + AuthMenu.txt1 + "', '" + Convert.ToDouble(txtLoanAmount.Text) + "')";
+                    func.setDataUpd(query_savecredit);
+
+                    //суммы которая сейчас на балансе кредитов
+                    string queryCreditBalanceAll = $"select Users1.CreditBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
+                    DataSet queryCBAll = func.getData(queryCreditBalanceAll);
+                    //Сложение суммы взятого кредита с остальными
+                    int CreditBalanceAll = Convert.ToInt32(queryCBAll.Tables[0].Rows[0][0]) + Convert.ToInt32(TotalPayment);
+                    string query_InvestedBalanceAll = $"UPDATE Users1 SET CreditBalanceAll={CreditBalanceAll} WHERE UserID={AuthMenu.txt1}";
+                    func.setDataUpd(query_InvestedBalanceAll);
+                }
             }
-            else
+            catch
             {
-                MessageBox.Show("Банк вам выдает кредит, проверьте средства на балансе!");
-                rtfReceipt.AppendText("                            D&M Bank                                " + "\n");
-                rtfReceipt.AppendText("--------------------------------------------------------------" + "\n");
-                rtfReceipt.AppendText("Сумма кредита:      " + txtLoanAmount.Text + "  BYN" + "\n");
-                rtfReceipt.AppendText("Срок кредита:       " + txtTerm.Text + "\n");
-                rtfReceipt.AppendText("Процентная ставка:  " +  "12%" + "\n");
-                rtfReceipt.AppendText("Ежемесячный платеж: " + ibiMonthlyPayment.Text + "  BYN"+ "\n");
-                rtfReceipt.AppendText("Итоговая сумма:     " + IbiTotalPayment.Text + "  BYN"+ "\n");
-                rtfReceipt.AppendText("--------------------------------------------------------------" + "\n");
-                rtfReceipt.AppendText("                            D&M Bank                                " + "\n");
-
-                guna2Button4.Visible = true;
-
-                query = $"select Users1.Amount from Users1 where UserID='{AuthMenu.txt1}'";
-                DataSet sum_amount = func.getData(query);
-                double Sum_amount = Convert.ToDouble(sum_amount.Tables[0].Rows[0][0].ToString());
-                double Sum_Credit = Sum_amount + loanAmount;
-
-                string query_sumupdate = $"UPDATE Users1 SET Amount={Sum_Credit} WHERE UserID={AuthMenu.txt1}";
-                func.setDataUpd(query_sumupdate);
-              
-              //string query_savecredit = "insert into Credits(userID, Amount, interestRate, paymentDate, EndDate, monthlyPaymentAmount, Activity, DateCredits, salary, CreditsTotalPayment) values ('" + AuthMenu.txt1 + "', '" + Convert.ToDouble(txtLoanAmount.Text) + "', '" + 12.0 + "', '" + PD + "', '" + LD + "' , '" + Convert.ToDouble(ibiMonthlyPayment.Text) + "', '" + 1 + "', '" + DN + "', '" + Convert.ToDouble(ZP) + "', '" + BTP + "')";
-                string query_savecredit = "insert into Credits(userID, Amount, interestRate, paymentDate, EndDate, monthlyPaymentAmount, Activity, DateCredits, salary, CreditsTotalPayment) values ('" + AuthMenu.txt1 + "', '" + Convert.ToDouble(txtLoanAmount.Text) + "', '" + 12.0 + "', '" + PD + "', '" + LD + "' , '" +  ibiMonthlyPayment.Text.Replace(',', '.') + "', '" + 1 + "', '" + DN + "', '" + txtZP.Text.Replace(',', '.') + "', '" + IbiTotalPayment.Text.Replace(',', '.') + "')";
-                //string query_savecredit = "insert into Credits(userID, Amount) values ('" + AuthMenu.txt1 + "', '" + Convert.ToDouble(txtLoanAmount.Text) + "')";
-                func.setDataUpd(query_savecredit);
-
-                //суммы которая сейчас на балансе кредитов
-                string queryCreditBalanceAll = $"select Users1.CreditBalanceAll from Users1 where UserID='{AuthMenu.txt1}'";
-                DataSet queryCBAll = func.getData(queryCreditBalanceAll);
-                //Сложение суммы взятого кредита с остальными
-                int CreditBalanceAll = Convert.ToInt32(queryCBAll.Tables[0].Rows[0][0]) + Convert.ToInt32(TotalPayment);
-                string query_InvestedBalanceAll = $"UPDATE Users1 SET CreditBalanceAll={CreditBalanceAll} WHERE UserID={AuthMenu.txt1}";
-                func.setDataUpd(query_InvestedBalanceAll);
+                MessageBox.Show("Не удалось создать отчёт", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

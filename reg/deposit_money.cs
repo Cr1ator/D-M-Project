@@ -16,11 +16,18 @@ namespace reg
         funkreg func = new funkreg();
         public deposit_money()
         {
-            InitializeComponent();
-            query = $"select Users1.Amount from Users1 where UserID='{AuthMenu.txt1}'";
-            DataSet ds = func.getData(query);
+            try
+            {
+                InitializeComponent();
+                query = $"select Users1.Amount from Users1 where UserID='{AuthMenu.txt1}'";
+                DataSet ds = func.getData(query);
 
-            Sumlabel.Text = ds.Tables[0].Rows[0][0].ToString();
+                Sumlabel.Text = ds.Tables[0].Rows[0][0].ToString();
+            }
+            catch
+            {
+                MessageBox.Show("Пользователь не найден", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
         }
         protected override void WndProc(ref Message m)
@@ -126,40 +133,47 @@ namespace reg
 
         private void EntryRegButton_Click(object sender, EventArgs e)
         {
-            String card = CardTextBox.Text;
-            String Date = DatesTextBox.Text;
-            String cvv = CVVTextBox.Text;
-            String name = NameTextBox.Text;
-            int sum = Convert.ToInt32(SumTextBox.Text);
-            String message = $"На ваш баланс была зачислина Сумма {sum}";
-
-            //суммы которая сейчас на аккаунте
-            query = $"select Users1.Amount from Users1 where UserID='{AuthMenu.txt1}'";
-            DataSet sum_amount = func.getData(query);
-            int sums = Convert.ToInt32(sum_amount.Tables[0].Rows[0][0].ToString());
-
-            sum = sum + sums;
-
-            string query_sumupdate = $"UPDATE Users1 SET Amount={sum} WHERE UserID={AuthMenu.txt1}";
-            string query_savecatd = "insert into DepositCard(userID, number, DateCard, anchorDate, cvv) values ('" + AuthMenu.txt1 + "', '" + card + "', '" + Date + "', '" + DateTime.Now + "', '" + cvv + "')";
-            string query_operations = "insert into Operation(userID, Amount, TypeOperation, DateOperation) values ('" + AuthMenu.txt1 + "', '" + sum + "', '" + 1 + "', '" + DateTime.Now + "')";
-
-            if (card != "" && Date != "" && cvv != "" && name != "" && SumTextBox.Text != "")
+            try
             {
+                String card = CardTextBox.Text;
+                String Date = DatesTextBox.Text;
+                String cvv = CVVTextBox.Text;
+                String name = NameTextBox.Text;
+                int sum = Convert.ToInt32(SumTextBox.Text);
+                String message = $"На ваш баланс была зачислина Сумма {sum}";
 
-                func.setDataUpd(query_sumupdate);
+                //суммы которая сейчас на аккаунте
+                query = $"select Users1.Amount from Users1 where UserID='{AuthMenu.txt1}'";
+                DataSet sum_amount = func.getData(query);
+                int sums = Convert.ToInt32(sum_amount.Tables[0].Rows[0][0].ToString());
 
-                func.setDataUpd(query_savecatd);
+                sum = sum + sums;
 
-                func.setData(query_operations, message);
+                string query_sumupdate = $"UPDATE Users1 SET Amount={sum} WHERE UserID={AuthMenu.txt1}";
+                string query_savecatd = "insert into DepositCard(userID, number, DateCard, anchorDate, cvv) values ('" + AuthMenu.txt1 + "', '" + card + "', '" + Date + "', '" + DateTime.Now + "', '" + cvv + "')";
+                string query_operations = "insert into Operation(userID, Amount, TypeOperation, DateOperation) values ('" + AuthMenu.txt1 + "', '" + sum + "', '" + 1 + "', '" + DateTime.Now + "')";
 
-                ProfileMenu f3 = new ProfileMenu();
-                this.Hide();
-                f3.Show();
+                if (card != "" && Date != "" && cvv != "" && name != "" && SumTextBox.Text != "")
+                {
+
+                    func.setDataUpd(query_sumupdate);
+
+                    func.setDataUpd(query_savecatd);
+
+                    func.setData(query_operations, message);
+
+                    ProfileMenu f3 = new ProfileMenu();
+                    this.Hide();
+                    f3.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Не все поля заполнены", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
-            else
+            catch
             {
-                MessageBox.Show("Не все поля заполнены", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Проверьте заполненные поля!", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
         }
@@ -171,52 +185,59 @@ namespace reg
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            query = $"select Users1.Confirmed from Users1 where UserID='{AuthMenu.txt1}'";
-            DataSet ds = func.getData(query);
-            if ((bool)ds.Tables[0].Rows[0][0] == true)
+            try
             {
-                String card = CardTextBox.Text;
-                String Date = DatesTextBox.Text;
-                String cvv = CVVTextBox.Text;
-                String name = NameTextBox.Text;
-                int sum = Convert.ToInt32(SumTextBox.Text);
-                String message = $"Средства успешно выведины {sum}";
-
-                //суммы которая сейчас на аккаунте
-                query = $"select Users1.Amount from Users1 where UserID='{AuthMenu.txt1}'";
-                DataSet sum_amount = func.getData(query);
-                int sums = Convert.ToInt32(sum_amount.Tables[0].Rows[0][0].ToString());
-
-                if (sum <= sums)
+                query = $"select Users1.Confirmed from Users1 where UserID='{AuthMenu.txt1}'";
+                DataSet ds = func.getData(query);
+                if ((bool)ds.Tables[0].Rows[0][0] == true)
                 {
-                    sum = sums - sum;
+                    String card = CardTextBox.Text;
+                    String Date = DatesTextBox.Text;
+                    String cvv = CVVTextBox.Text;
+                    String name = NameTextBox.Text;
+                    int sum = Convert.ToInt32(SumTextBox.Text);
+                    String message = $"Средства успешно выведины {sum}";
 
-                    string query_sumupdate = $"UPDATE Users1 SET Amount={sum} WHERE UserID={AuthMenu.txt1}";
-                    string query_savecatd = "insert into DepositCard(userID, number, DateCard, anchorDate, cvv) values ('" + AuthMenu.txt1 + "', '" + card + "', '" + Date + "', '" + DateTime.Now + "', '" + cvv + "')";
-                    string query_operations = "insert into Operation(userID, Amount, TypeOperation, DateOperation) values ('" + AuthMenu.txt1 + "', '" + sum + "', '" + 2 + "', '" + DateTime.Now + "')";
+                    //суммы которая сейчас на аккаунте
+                    query = $"select Users1.Amount from Users1 where UserID='{AuthMenu.txt1}'";
+                    DataSet sum_amount = func.getData(query);
+                    int sums = Convert.ToInt32(sum_amount.Tables[0].Rows[0][0].ToString());
 
-                    if (card != "" && Date != "" && cvv != "" && name != "" && SumTextBox.Text != "")
+                    if (sum <= sums)
                     {
+                        sum = sums - sum;
 
-                        func.setDataUpd(query_sumupdate);
+                        string query_sumupdate = $"UPDATE Users1 SET Amount={sum} WHERE UserID={AuthMenu.txt1}";
+                        string query_savecatd = "insert into DepositCard(userID, number, DateCard, anchorDate, cvv) values ('" + AuthMenu.txt1 + "', '" + card + "', '" + Date + "', '" + DateTime.Now + "', '" + cvv + "')";
+                        string query_operations = "insert into Operation(userID, Amount, TypeOperation, DateOperation) values ('" + AuthMenu.txt1 + "', '" + sum + "', '" + 2 + "', '" + DateTime.Now + "')";
 
-                        func.setDataUpd(query_savecatd);
+                        if (card != "" && Date != "" && cvv != "" && name != "" && SumTextBox.Text != "")
+                        {
 
-                        func.setData(query_operations, message);
+                            func.setDataUpd(query_sumupdate);
 
-                        ProfileMenu f3 = new ProfileMenu();
-                        this.Hide();
-                        f3.Show();
+                            func.setDataUpd(query_savecatd);
+
+                            func.setData(query_operations, message);
+
+                            ProfileMenu f3 = new ProfileMenu();
+                            this.Hide();
+                            f3.Show();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Недостаточно средств для вывода", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Недостаточно средств для вывода", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Ваш аккаунт не подтверждён! Подтвердите аккаунт чтобы вывести средства", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
-            else
+            catch
             {
-                MessageBox.Show("Ваш аккаунт не подтверждён! Подтвердите аккаунт чтобы вывести средства", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Проверьте заполненные поля!", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }
