@@ -112,8 +112,8 @@ namespace reg
             // ShowPasswodSwitch
             // 
             this.ShowPasswodSwitch.Animated = true;
-            this.ShowPasswodSwitch.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ShowPasswodSwitch.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ShowPasswodSwitch.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
+            this.ShowPasswodSwitch.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(237)))), ((int)(((byte)(135)))));
             this.ShowPasswodSwitch.CheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.ShowPasswodSwitch.CheckedState.InnerColor = System.Drawing.Color.White;
             this.ShowPasswodSwitch.CheckedState.Parent = this.ShowPasswodSwitch;
@@ -262,7 +262,7 @@ namespace reg
             this.DontAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
             this.DontAccount.Location = new System.Drawing.Point(100, 538);
             this.DontAccount.Name = "DontAccount";
-            this.DontAccount.Size = new System.Drawing.Size(147, 19);
+            this.DontAccount.Size = new System.Drawing.Size(157, 20);
             this.DontAccount.TabIndex = 30;
             this.DontAccount.Text = "НЕТ АККАУНТА?";
             this.DontAccount.UseWaitCursor = true;

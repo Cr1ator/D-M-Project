@@ -286,6 +286,9 @@ namespace reg
                     int CreditBalanceAll = Convert.ToInt32(queryCBAll.Tables[0].Rows[0][0]) + Convert.ToInt32(TotalPayment);
                     string query_InvestedBalanceAll = $"UPDATE Users1 SET CreditBalanceAll={CreditBalanceAll} WHERE UserID={AuthMenu.txt1}";
                     func.setDataUpd(query_InvestedBalanceAll);
+
+                    string query_operations = "insert into Operation(userID, Amount, TypeOperation, DateOperation) values ('" + AuthMenu.txt1 + "', '" + loanAmount + "', '" + 3 + "', '" + DateTime.Now + "')";
+                    func.setDataUpd(query_operations);
                 }
             }
             catch

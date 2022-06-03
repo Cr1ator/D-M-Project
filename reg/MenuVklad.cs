@@ -168,7 +168,7 @@ namespace reg
                     if (Sum <= sums)
                     {
                         string query_deposit = "insert into Deposits(userID, Amount, Activity, DateDeposit) values ('" + AuthMenu.txt1 + "', '" + Convert.ToInt32(Sum_viplat) + "', '" + 1 + "', '" + DateDeposit.ToShortDateString() + "')";
-                        string query_operations = "insert into Operation(userID, Amount, TypeOperation, DateOperation) values ('" + AuthMenu.txt1 + "', '" + Sum + "', '" + 4 + "', '" + DateTime.Now + "')";
+                         string query_operations = "insert into Operation(userID, Amount, TypeOperation, DateOperation) values ('" + AuthMenu.txt1 + "', '" + Sum + "', '" + 4 + "', '" + DateTime.Now + "')";
                         string query_sumupdate = $"UPDATE Users1 SET Amount={Sum_ostatok} WHERE UserID={AuthMenu.txt1}";
                         string query_InvestedBalanceAll = $"UPDATE Users1 SET InvestedBalanceAll={InvestedBalanceAll} WHERE UserID={AuthMenu.txt1}";
 
