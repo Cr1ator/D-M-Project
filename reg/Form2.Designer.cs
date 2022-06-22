@@ -55,7 +55,7 @@
             this.DMText.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.DMText.Location = new System.Drawing.Point(50, 34);
             this.DMText.Name = "DMText";
-            this.DMText.Size = new System.Drawing.Size(267, 110);
+            this.DMText.Size = new System.Drawing.Size(265, 110);
             this.DMText.TabIndex = 0;
             this.DMText.Text = "D&M";
             this.DMText.UseMnemonic = false;
@@ -399,6 +399,7 @@
             this.guna2Button1.TabIndex = 38;
             this.guna2Button1.Text = "Пользовательское соглашение";
             this.guna2Button1.UseWaitCursor = true;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
             // 
             // RegMenu
             // 

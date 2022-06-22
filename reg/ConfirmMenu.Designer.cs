@@ -179,6 +179,7 @@
             this.NumberPassportTextBox.HoverState.Parent = this.NumberPassportTextBox;
             this.NumberPassportTextBox.Location = new System.Drawing.Point(16, 292);
             this.NumberPassportTextBox.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.NumberPassportTextBox.MaxLength = 9;
             this.NumberPassportTextBox.Name = "NumberPassportTextBox";
             this.NumberPassportTextBox.PasswordChar = '\0';
             this.NumberPassportTextBox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));
@@ -247,6 +248,7 @@
             this.INFCTextBox.HoverState.Parent = this.INFCTextBox;
             this.INFCTextBox.Location = new System.Drawing.Point(16, 375);
             this.INFCTextBox.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.INFCTextBox.MaxLength = 14;
             this.INFCTextBox.Name = "INFCTextBox";
             this.INFCTextBox.PasswordChar = '\0';
             this.INFCTextBox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(116)))), ((int)(((byte)(76)))));

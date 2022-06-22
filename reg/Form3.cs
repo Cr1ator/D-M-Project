@@ -156,9 +156,18 @@ namespace reg
 
         private void Menu3_Click(object sender, EventArgs e)
         {
-            ConfirmMenu confirmMenu = new ConfirmMenu();
-            this.Hide();
-            confirmMenu.ShowDialog();
+            query = $"select Users1.Confirmed from Users1 where UserID='{AuthMenu.txt1}'";
+            DataSet ds = func.getData(query);
+            if ((bool)ds.Tables[0].Rows[0][0] == true)
+            {
+                MessageBox.Show("Ваш аккаунт уже подтверждён");
+            }
+            else
+            {
+                ConfirmMenu confirmMenu = new ConfirmMenu();
+                this.Hide();
+                confirmMenu.ShowDialog();
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
